@@ -14,7 +14,13 @@ def query(expr,at=None):
 def main():
     try:
         lab.setup_forwards()
-        lab.helm();lab.rollout();time.sleep(5)
+        lab.helm(**{'hpa.enabled':False});lab.rollout()
+        for _ in range(40):
+            pods=lab.get('pods','-l','app=api')['items']
+            if len(pods)==2 and len(lab.ready_pods())==2:break
+            time.sleep(1)
+        else:raise AssertionError('Перед сравнением должны остаться ровно 2 Ready Pod без HPA')
+        time.sleep(5)
         identity=[p['metadata']['uid'] for p in lab.ready_pods()]
         lab.reset_cache();time.sleep(4)
         before=time.time();buckets_before=query('api_ttfc_seconds_bucket',before)

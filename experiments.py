@@ -2,6 +2,7 @@
 import argparse
 import asyncio
 import hashlib
+import gzip
 import json
 import os
 from pathlib import Path
@@ -18,21 +19,29 @@ KUBECONFIG=ROOT/'.kubeconfig'
 KUBECTL=str(ROOT/'tools/kubectl.exe')
 HELM=str(ROOT/'tools/windows-amd64/helm.exe')
 FORWARDS=[]
+LOG_LOCK=threading.Lock()
 
 def save(name,data):
     path=RESULTS/name;path.parent.mkdir(parents=True,exist_ok=True)
-    path.write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8')
+    text=json.dumps(data,ensure_ascii=False,indent=2)
+    if len(text.encode())>4*1024*1024 and name.endswith('-server-logs.json'):
+        with gzip.open(str(path)+'.gz','wt',encoding='utf-8') as stream:stream.write(text)
+    else:path.write_text(text,encoding='utf-8')
 
 def command(args,timeout=60,check=True):
     before=time.time()
     result=subprocess.run(list(map(str,args)),cwd=ROOT,capture_output=True,text=True,encoding='utf-8',timeout=timeout)
     recorded_stdout=result.stdout
-    if 'get' in args and args[0]==KUBECTL:
+    if ('get' in args or 'logs' in args) and args[0]==KUBECTL:
         recorded_stdout={'sha256':hashlib.sha256(result.stdout.encode()).hexdigest(),
                          'bytes':len(result.stdout.encode()),'note':'Поля наблюдения сохранены в timeline/snapshot'}
-    with (RESULTS/'commands.jsonl').open('a',encoding='utf-8') as out:
-        out.write(json.dumps({'unix':before,'args':list(map(str,args)),'exit':result.returncode,
-                              'stdout':recorded_stdout,'stderr':result.stderr},ensure_ascii=False)+'\n')
+    with LOG_LOCK:
+        path=RESULTS/'commands.jsonl';index=1
+        while path.exists() and path.stat().st_size>4*1024*1024:
+            path=RESULTS/f'commands-{index}.jsonl';index+=1
+        with path.open('a',encoding='utf-8') as out:
+            out.write(json.dumps({'unix':before,'args':list(map(str,args)),'exit':result.returncode,
+                                  'stdout':recorded_stdout,'stderr':result.stderr},ensure_ascii=False)+'\n')
     if check and result.returncode:
         raise RuntimeError(f'{args}: {result.stderr[-1500:]}')
     return result.stdout
@@ -46,6 +55,7 @@ def get(resource,*args):
 def helm(**values):
     args=[HELM,'--kubeconfig',str(KUBECONFIG),'upgrade','--install','hw11',str(ROOT/'chart'),
           '--namespace','hw11','--create-namespace','--history-max','8']
+    args+=['--reset-values']
     for key,value in values.items():
         args+=['--set',key+'='+str(value).lower() if isinstance(value,bool) else key+'='+str(value)]
     command(args,timeout=90)
@@ -86,9 +96,14 @@ class Watch:
                         pod['metadata']={key:pod['metadata'][key] for key in ('name','uid','creationTimestamp','deletionTimestamp') if key in pod['metadata']}
                         pod.pop('spec',None)
                         pod['status']={key:pod['status'][key] for key in ('phase','podIP','conditions','containerStatuses') if key in pod['status']}
-                    self.rows.append({'unix':time.time(),'pods':pods,
+                    row={'unix':time.time(),'pods':pods,
                       'endpoints':get('endpointslices','-l','kubernetes.io/service-name=api'),
-                      'hpa':get('hpa'), 'metrics':json.loads(kub('get','--raw','/apis/metrics.k8s.io/v1beta1/namespaces/hw11/pods',check=False) or '{}')})
+                      'hpa':get('hpa'), 'metrics':json.loads(kub('get','--raw','/apis/metrics.k8s.io/v1beta1/namespaces/hw11/pods',check=False) or '{}')}
+                    try:
+                        row['prom_runtime']=httpx.get('http://127.0.0.1:19090/api/v1/query',
+                            params={'query':'{__name__=~"api_running|api_waiting|api_ready",job="api"}'},timeout=4).json()
+                    except httpx.HTTPError as error:row['prom_runtime_error']=str(error)
+                    self.rows.append(row)
                 except Exception as error:self.rows.append({'unix':time.time(),'error':repr(error)})
                 self.stop.wait(1)
         self.thread=threading.Thread(target=loop,daemon=True);self.thread.start();return self
@@ -256,26 +271,38 @@ def prom(query):
     response=httpx.get('http://127.0.0.1:19090/api/v1/query',params={'query':query},timeout=10)
     response.raise_for_status();return response.json()
 
-def run_c():
+def run_c(only_hpa=False):
     helm(**{'hpa.enabled':True});rollout();time.sleep(25)
+    for _ in range(90):
+        hpa=get('hpa','api').get('status',{})
+        if len(ready_pods())==2 and hpa.get('currentReplicas')==2 and hpa.get('desiredReplicas')==2:break
+        time.sleep(2)
+    else:raise AssertionError('Перед нагрузкой нужны 2 Ready Pod и сошедшийся HPA')
+    reset_cache()
+    save('c-hpa-config.json',get('hpa','api'))
+    baseline_uids=[pod['metadata']['uid'] for pod in ready_pods()]
     rows=[]
     with Watch('c-hpa'):
-        start=time.time();start_agents('c-hpa-load',duration=120,rate=12)
+        start=start_agents('c-hpa-load',duration=120,rate=12)
         seen_three=False
         for _ in range(65):
             data=get('hpa','api');rows.append({'unix':time.time(),'hpa':data})
             seen_three |= data.get('status',{}).get('currentReplicas',0)==3
             time.sleep(2)
-        collect_agents('c-hpa-load',timeout=60)
-        down_started=time.time()
+        load_rows=collect_agents('c-hpa-load',timeout=60)
+        down_started=max(row['sent_unix'] for row in load_rows)
+        last_completed=max(row['end_unix'] for row in load_rows)
         for _ in range(120):
             data=get('hpa','api');rows.append({'unix':time.time(),'hpa':data})
             if data.get('status',{}).get('currentReplicas')==2 and data['status'].get('desiredReplicas')==2:break
             time.sleep(2)
         else:raise AssertionError('HPA не вернулся к 2 репликам')
     save('c-hpa.json',{'load_started':start,'load_stopped':down_started,'down_seconds':time.time()-down_started,
+                      'load_planned_stop':start+120,'last_response_unix':last_completed,
+                      'baseline_uids':baseline_uids,'down_observed_unix':time.time(),
                       'seen_three':seen_three,'observations':rows})
     assert seen_three
+    if only_hpa:return
     # Повтор горячего клиента при включённом HPA и ClientIP.
     with Watch('c-hot'):
         start_agents('c-hot-sticky','skew','api-sticky',duration=120,rate=12)
@@ -309,13 +336,14 @@ def run_c():
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('phase',choices=['a','balance','c'])
     parser.add_argument('--skip-warmup',action='store_true')
+    parser.add_argument('--hpa-only',action='store_true')
     args=parser.parse_args()
     RESULTS.mkdir(exist_ok=True)
     try:
         setup_forwards()
         if args.phase=='a':run_a(args.skip_warmup)
         elif args.phase=='balance':run_balance()
-        elif args.phase=='c':run_c()
+        elif args.phase=='c':run_c(args.hpa_only)
     finally:
         for process,stream in FORWARDS:
             process.terminate();stream.close()

@@ -43,6 +43,7 @@ def main():
         run([sys.executable,'-u','verify_metrics.py'],'histogram-comparison')
         run([sys.executable,'-m','unittest','discover','-s','tests','-v'],'kubernetes-checks')
         run([sys.executable,'environment.py'],'environment')
+        run([sys.executable,'collect_evidence.py'],'evidence')
         run([sys.executable,'report.py'],'report')
     except Exception:
         subprocess.run([sys.executable,'report.py'],cwd=ROOT)
