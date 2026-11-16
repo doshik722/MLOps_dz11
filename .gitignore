@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+tools/
+.kubeconfig
+logs/
+*.tar
+*.zip
+!results/*.json
+!results/*.jsonl
