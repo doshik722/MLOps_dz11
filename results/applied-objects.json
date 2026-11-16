@@ -1,0 +1,1032 @@
+{
+  "deployments": {
+    "apiVersion": "v1",
+    "items": [
+      {
+        "apiVersion": "apps/v1",
+        "kind": "Deployment",
+        "metadata": {
+          "annotations": {
+            "deployment.kubernetes.io/revision": "9",
+            "meta.helm.sh/release-name": "hw11",
+            "meta.helm.sh/release-namespace": "hw11"
+          },
+          "creationTimestamp": "2026-11-16T16:00:13Z",
+          "generation": 21,
+          "labels": {
+            "app.kubernetes.io/managed-by": "Helm"
+          },
+          "name": "api",
+          "namespace": "hw11",
+          "resourceVersion": "8047",
+          "uid": "ae923c35-e9c4-43ea-83c6-62294bf826bb"
+        },
+        "spec": {
+          "progressDeadlineSeconds": 180,
+          "replicas": 2,
+          "revisionHistoryLimit": 5,
+          "selector": {
+            "matchLabels": {
+              "app": "api"
+            }
+          },
+          "strategy": {
+            "rollingUpdate": {
+              "maxSurge": 1,
+              "maxUnavailable": 0
+            },
+            "type": "RollingUpdate"
+          },
+          "template": {
+            "metadata": {
+              "annotations": {
+                "config-hash": "3ba753250b47bde00a07a2b9776ef7683a7d1ab8d7aecd4b06c67513e3df7d87",
+                "prometheus.io/scrape": "true"
+              },
+              "labels": {
+                "app": "api"
+              }
+            },
+            "spec": {
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "POD_NAME",
+                      "valueFrom": {
+                        "fieldRef": {
+                          "apiVersion": "v1",
+                          "fieldPath": "metadata.name"
+                        }
+                      }
+                    }
+                  ],
+                  "envFrom": [
+                    {
+                      "configMapRef": {
+                        "name": "api-config"
+                      }
+                    }
+                  ],
+                  "image": "hw11-api:0.1.0",
+                  "imagePullPolicy": "IfNotPresent",
+                  "lifecycle": {
+                    "preStop": {
+                      "exec": {
+                        "command": [
+                          "python",
+                          "-c",
+                          "import urllib.request; urllib.request.urlopen(urllib.request.Request('http://127.0.0.1:8080/drain',method='POST'),timeout=10).read()"
+                        ]
+                      }
+                    }
+                  },
+                  "livenessProbe": {
+                    "failureThreshold": 6,
+                    "httpGet": {
+                      "path": "/health",
+                      "port": "http",
+                      "scheme": "HTTP"
+                    },
+                    "periodSeconds": 5,
+                    "successThreshold": 1,
+                    "timeoutSeconds": 2
+                  },
+                  "name": "api",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http",
+                      "protocol": "TCP"
+                    }
+                  ],
+                  "readinessProbe": {
+                    "failureThreshold": 1,
+                    "httpGet": {
+                      "path": "/ready",
+                      "port": "http",
+                      "scheme": "HTTP"
+                    },
+                    "periodSeconds": 1,
+                    "successThreshold": 1,
+                    "timeoutSeconds": 1
+                  },
+                  "resources": {
+                    "limits": {
+                      "cpu": "600m",
+                      "memory": "192Mi"
+                    },
+                    "requests": {
+                      "cpu": "250m",
+                      "memory": "80Mi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 90,
+                    "httpGet": {
+                      "path": "/startup",
+                      "port": "http",
+                      "scheme": "HTTP"
+                    },
+                    "periodSeconds": 1,
+                    "successThreshold": 1,
+                    "timeoutSeconds": 1
+                  },
+                  "terminationMessagePath": "/dev/termination-log",
+                  "terminationMessagePolicy": "File",
+                  "volumeMounts": [
+                    {
+                      "mountPath": "/artifact",
+                      "name": "artifact",
+                      "readOnly": true
+                    }
+                  ]
+                }
+              ],
+              "dnsPolicy": "ClusterFirst",
+              "restartPolicy": "Always",
+              "schedulerName": "default-scheduler",
+              "securityContext": {},
+              "terminationGracePeriodSeconds": 75,
+              "volumes": [
+                {
+                  "configMap": {
+                    "defaultMode": 420,
+                    "name": "model-a"
+                  },
+                  "name": "artifact"
+                }
+              ]
+            }
+          }
+        },
+        "status": {
+          "availableReplicas": 2,
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-11-16T16:00:13Z",
+              "lastUpdateTime": "2026-11-16T16:13:00Z",
+              "message": "ReplicaSet \"api-8f779df47\" has successfully progressed.",
+              "reason": "NewReplicaSetAvailable",
+              "status": "True",
+              "type": "Progressing"
+            },
+            {
+              "lastTransitionTime": "2026-11-16T17:05:44Z",
+              "lastUpdateTime": "2026-11-16T17:05:44Z",
+              "message": "Deployment has minimum availability.",
+              "reason": "MinimumReplicasAvailable",
+              "status": "True",
+              "type": "Available"
+            }
+          ],
+          "observedGeneration": 21,
+          "readyReplicas": 2,
+          "replicas": 2,
+          "updatedReplicas": 2
+        }
+      },
+      {
+        "apiVersion": "apps/v1",
+        "kind": "Deployment",
+        "metadata": {
+          "annotations": {
+            "deployment.kubernetes.io/revision": "1",
+            "meta.helm.sh/release-name": "hw11",
+            "meta.helm.sh/release-namespace": "hw11"
+          },
+          "creationTimestamp": "2026-11-16T16:00:13Z",
+          "generation": 1,
+          "labels": {
+            "app.kubernetes.io/managed-by": "Helm"
+          },
+          "name": "grafana",
+          "namespace": "hw11",
+          "resourceVersion": "941",
+          "uid": "0aa7b583-bdf0-451a-9390-2d4c7eacaf7f"
+        },
+        "spec": {
+          "progressDeadlineSeconds": 600,
+          "replicas": 1,
+          "revisionHistoryLimit": 10,
+          "selector": {
+            "matchLabels": {
+              "app": "grafana"
+            }
+          },
+          "strategy": {
+            "rollingUpdate": {
+              "maxSurge": "25%",
+              "maxUnavailable": "25%"
+            },
+            "type": "RollingUpdate"
+          },
+          "template": {
+            "metadata": {
+              "labels": {
+                "app": "grafana"
+              }
+            },
+            "spec": {
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "GF_AUTH_ANONYMOUS_ENABLED",
+                      "value": "true"
+                    },
+                    {
+                      "name": "GF_AUTH_ANONYMOUS_ORG_ROLE",
+                      "value": "Viewer"
+                    },
+                    {
+                      "name": "GF_ANALYTICS_REPORTING_ENABLED",
+                      "value": "false"
+                    },
+                    {
+                      "name": "GF_ANALYTICS_CHECK_FOR_UPDATES",
+                      "value": "false"
+                    }
+                  ],
+                  "image": "grafana/grafana:12.1.1",
+                  "imagePullPolicy": "IfNotPresent",
+                  "name": "grafana",
+                  "ports": [
+                    {
+                      "containerPort": 3000,
+                      "protocol": "TCP"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "400m",
+                      "memory": "256Mi"
+                    },
+                    "requests": {
+                      "cpu": "100m",
+                      "memory": "128Mi"
+                    }
+                  },
+                  "terminationMessagePath": "/dev/termination-log",
+                  "terminationMessagePolicy": "File",
+                  "volumeMounts": [
+                    {
+                      "mountPath": "/etc/grafana/provisioning/datasources/datasource.yaml",
+                      "name": "provisioning",
+                      "subPath": "datasource.yaml"
+                    },
+                    {
+                      "mountPath": "/etc/grafana/provisioning/dashboards/dashboards.yaml",
+                      "name": "provisioning",
+                      "subPath": "dashboards.yaml"
+                    },
+                    {
+                      "mountPath": "/dashboards",
+                      "name": "dashboard"
+                    },
+                    {
+                      "mountPath": "/var/lib/grafana",
+                      "name": "data"
+                    }
+                  ]
+                }
+              ],
+              "dnsPolicy": "ClusterFirst",
+              "restartPolicy": "Always",
+              "schedulerName": "default-scheduler",
+              "securityContext": {
+                "fsGroup": 472
+              },
+              "terminationGracePeriodSeconds": 30,
+              "volumes": [
+                {
+                  "configMap": {
+                    "defaultMode": 420,
+                    "name": "grafana-provisioning"
+                  },
+                  "name": "provisioning"
+                },
+                {
+                  "configMap": {
+                    "defaultMode": 420,
+                    "name": "grafana-dashboard"
+                  },
+                  "name": "dashboard"
+                },
+                {
+                  "emptyDir": {
+                    "sizeLimit": "128Mi"
+                  },
+                  "name": "data"
+                }
+              ]
+            }
+          }
+        },
+        "status": {
+          "availableReplicas": 1,
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-11-16T16:02:22Z",
+              "lastUpdateTime": "2026-11-16T16:02:22Z",
+              "message": "Deployment has minimum availability.",
+              "reason": "MinimumReplicasAvailable",
+              "status": "True",
+              "type": "Available"
+            },
+            {
+              "lastTransitionTime": "2026-11-16T16:00:13Z",
+              "lastUpdateTime": "2026-11-16T16:02:22Z",
+              "message": "ReplicaSet \"grafana-596c6455c5\" has successfully progressed.",
+              "reason": "NewReplicaSetAvailable",
+              "status": "True",
+              "type": "Progressing"
+            }
+          ],
+          "observedGeneration": 1,
+          "readyReplicas": 1,
+          "replicas": 1,
+          "updatedReplicas": 1
+        }
+      },
+      {
+        "apiVersion": "apps/v1",
+        "kind": "Deployment",
+        "metadata": {
+          "annotations": {
+            "deployment.kubernetes.io/revision": "1",
+            "meta.helm.sh/release-name": "hw11",
+            "meta.helm.sh/release-namespace": "hw11"
+          },
+          "creationTimestamp": "2026-11-16T16:00:13Z",
+          "generation": 1,
+          "labels": {
+            "app.kubernetes.io/managed-by": "Helm"
+          },
+          "name": "prometheus",
+          "namespace": "hw11",
+          "resourceVersion": "1066",
+          "uid": "22c1fe73-19e7-450f-be22-f13ae7ab2b84"
+        },
+        "spec": {
+          "progressDeadlineSeconds": 600,
+          "replicas": 1,
+          "revisionHistoryLimit": 10,
+          "selector": {
+            "matchLabels": {
+              "app": "prometheus"
+            }
+          },
+          "strategy": {
+            "rollingUpdate": {
+              "maxSurge": "25%",
+              "maxUnavailable": "25%"
+            },
+            "type": "RollingUpdate"
+          },
+          "template": {
+            "metadata": {
+              "labels": {
+                "app": "prometheus"
+              }
+            },
+            "spec": {
+              "containers": [
+                {
+                  "args": [
+                    "--config.file=/etc/prometheus/prometheus.yml",
+                    "--storage.tsdb.path=/prometheus",
+                    "--storage.tsdb.retention.time=2h",
+                    "--storage.tsdb.retention.size=128MB",
+                    "--web.enable-lifecycle"
+                  ],
+                  "image": "prom/prometheus:v3.5.0",
+                  "imagePullPolicy": "IfNotPresent",
+                  "name": "prometheus",
+                  "ports": [
+                    {
+                      "containerPort": 9090,
+                      "protocol": "TCP"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "500m",
+                      "memory": "384Mi"
+                    },
+                    "requests": {
+                      "cpu": "100m",
+                      "memory": "128Mi"
+                    }
+                  },
+                  "terminationMessagePath": "/dev/termination-log",
+                  "terminationMessagePolicy": "File",
+                  "volumeMounts": [
+                    {
+                      "mountPath": "/etc/prometheus",
+                      "name": "config"
+                    },
+                    {
+                      "mountPath": "/prometheus",
+                      "name": "data"
+                    }
+                  ]
+                }
+              ],
+              "dnsPolicy": "ClusterFirst",
+              "restartPolicy": "Always",
+              "schedulerName": "default-scheduler",
+              "securityContext": {
+                "fsGroup": 65534
+              },
+              "serviceAccount": "monitoring",
+              "serviceAccountName": "monitoring",
+              "terminationGracePeriodSeconds": 30,
+              "volumes": [
+                {
+                  "configMap": {
+                    "defaultMode": 420,
+                    "name": "prometheus-config"
+                  },
+                  "name": "config"
+                },
+                {
+                  "emptyDir": {
+                    "sizeLimit": "256Mi"
+                  },
+                  "name": "data"
+                }
+              ]
+            }
+          }
+        },
+        "status": {
+          "availableReplicas": 1,
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-11-16T16:03:49Z",
+              "lastUpdateTime": "2026-11-16T16:03:49Z",
+              "message": "Deployment has minimum availability.",
+              "reason": "MinimumReplicasAvailable",
+              "status": "True",
+              "type": "Available"
+            },
+            {
+              "lastTransitionTime": "2026-11-16T16:00:13Z",
+              "lastUpdateTime": "2026-11-16T16:03:49Z",
+              "message": "ReplicaSet \"prometheus-6cc95f8b9\" has successfully progressed.",
+              "reason": "NewReplicaSetAvailable",
+              "status": "True",
+              "type": "Progressing"
+            }
+          ],
+          "observedGeneration": 1,
+          "readyReplicas": 1,
+          "replicas": 1,
+          "updatedReplicas": 1
+        }
+      },
+      {
+        "apiVersion": "apps/v1",
+        "kind": "Deployment",
+        "metadata": {
+          "annotations": {
+            "deployment.kubernetes.io/revision": "2",
+            "meta.helm.sh/release-name": "hw11",
+            "meta.helm.sh/release-namespace": "hw11"
+          },
+          "creationTimestamp": "2026-11-16T16:00:13Z",
+          "generation": 2,
+          "labels": {
+            "app.kubernetes.io/managed-by": "Helm"
+          },
+          "name": "state",
+          "namespace": "hw11",
+          "resourceVersion": "1237",
+          "uid": "2c5ed424-c468-47d7-ab73-fba55fa2c990"
+        },
+        "spec": {
+          "progressDeadlineSeconds": 600,
+          "replicas": 1,
+          "revisionHistoryLimit": 10,
+          "selector": {
+            "matchLabels": {
+              "app": "state"
+            }
+          },
+          "strategy": {
+            "rollingUpdate": {
+              "maxSurge": "25%",
+              "maxUnavailable": "25%"
+            },
+            "type": "RollingUpdate"
+          },
+          "template": {
+            "metadata": {
+              "labels": {
+                "app": "state"
+              }
+            },
+            "spec": {
+              "containers": [
+                {
+                  "args": [
+                    "--resources=pods,deployments,horizontalpodautoscalers"
+                  ],
+                  "image": "registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.17.0",
+                  "imagePullPolicy": "IfNotPresent",
+                  "name": "state",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "protocol": "TCP"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "200m",
+                      "memory": "96Mi"
+                    },
+                    "requests": {
+                      "cpu": "50m",
+                      "memory": "32Mi"
+                    }
+                  },
+                  "terminationMessagePath": "/dev/termination-log",
+                  "terminationMessagePolicy": "File"
+                }
+              ],
+              "dnsPolicy": "ClusterFirst",
+              "restartPolicy": "Always",
+              "schedulerName": "default-scheduler",
+              "securityContext": {},
+              "serviceAccount": "monitoring",
+              "serviceAccountName": "monitoring",
+              "terminationGracePeriodSeconds": 30
+            }
+          }
+        },
+        "status": {
+          "availableReplicas": 1,
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-11-16T16:05:12Z",
+              "lastUpdateTime": "2026-11-16T16:05:12Z",
+              "message": "Deployment has minimum availability.",
+              "reason": "MinimumReplicasAvailable",
+              "status": "True",
+              "type": "Available"
+            },
+            {
+              "lastTransitionTime": "2026-11-16T16:00:13Z",
+              "lastUpdateTime": "2026-11-16T16:05:12Z",
+              "message": "ReplicaSet \"state-5fb5588b78\" has successfully progressed.",
+              "reason": "NewReplicaSetAvailable",
+              "status": "True",
+              "type": "Progressing"
+            }
+          ],
+          "observedGeneration": 2,
+          "readyReplicas": 1,
+          "replicas": 1,
+          "updatedReplicas": 1
+        }
+      }
+    ],
+    "kind": "List",
+    "metadata": {
+      "resourceVersion": ""
+    }
+  },
+  "services": {
+    "apiVersion": "v1",
+    "items": [
+      {
+        "apiVersion": "v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "meta.helm.sh/release-name": "hw11",
+            "meta.helm.sh/release-namespace": "hw11"
+          },
+          "creationTimestamp": "2026-11-16T16:00:13Z",
+          "labels": {
+            "app.kubernetes.io/managed-by": "Helm"
+          },
+          "name": "api",
+          "namespace": "hw11",
+          "resourceVersion": "560",
+          "uid": "e79c0483-c2c1-4920-91ca-e4253fa6c248"
+        },
+        "spec": {
+          "clusterIP": "10.96.48.52",
+          "clusterIPs": [
+            "10.96.48.52"
+          ],
+          "internalTrafficPolicy": "Cluster",
+          "ipFamilies": [
+            "IPv4"
+          ],
+          "ipFamilyPolicy": "SingleStack",
+          "ports": [
+            {
+              "name": "http",
+              "port": 8080,
+              "protocol": "TCP",
+              "targetPort": "http"
+            }
+          ],
+          "selector": {
+            "app": "api"
+          },
+          "sessionAffinity": "None",
+          "type": "ClusterIP"
+        },
+        "status": {
+          "loadBalancer": {}
+        }
+      },
+      {
+        "apiVersion": "v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "meta.helm.sh/release-name": "hw11",
+            "meta.helm.sh/release-namespace": "hw11"
+          },
+          "creationTimestamp": "2026-11-16T16:00:13Z",
+          "labels": {
+            "app.kubernetes.io/managed-by": "Helm"
+          },
+          "name": "api-headless",
+          "namespace": "hw11",
+          "resourceVersion": "550",
+          "uid": "9adad077-968a-457b-b08a-a510a27d7727"
+        },
+        "spec": {
+          "clusterIP": "None",
+          "clusterIPs": [
+            "None"
+          ],
+          "internalTrafficPolicy": "Cluster",
+          "ipFamilies": [
+            "IPv4"
+          ],
+          "ipFamilyPolicy": "SingleStack",
+          "ports": [
+            {
+              "name": "http",
+              "port": 8080,
+              "protocol": "TCP",
+              "targetPort": "http"
+            }
+          ],
+          "selector": {
+            "app": "api"
+          },
+          "sessionAffinity": "None",
+          "type": "ClusterIP"
+        },
+        "status": {
+          "loadBalancer": {}
+        }
+      },
+      {
+        "apiVersion": "v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "meta.helm.sh/release-name": "hw11",
+            "meta.helm.sh/release-namespace": "hw11"
+          },
+          "creationTimestamp": "2026-11-16T16:00:13Z",
+          "labels": {
+            "app.kubernetes.io/managed-by": "Helm"
+          },
+          "name": "api-sticky",
+          "namespace": "hw11",
+          "resourceVersion": "563",
+          "uid": "d4ae5075-d845-4d44-86c0-979edfe56a6b"
+        },
+        "spec": {
+          "clusterIP": "10.96.122.131",
+          "clusterIPs": [
+            "10.96.122.131"
+          ],
+          "internalTrafficPolicy": "Cluster",
+          "ipFamilies": [
+            "IPv4"
+          ],
+          "ipFamilyPolicy": "SingleStack",
+          "ports": [
+            {
+              "name": "http",
+              "port": 8080,
+              "protocol": "TCP",
+              "targetPort": "http"
+            }
+          ],
+          "selector": {
+            "app": "api"
+          },
+          "sessionAffinity": "ClientIP",
+          "sessionAffinityConfig": {
+            "clientIP": {
+              "timeoutSeconds": 10800
+            }
+          },
+          "type": "ClusterIP"
+        },
+        "status": {
+          "loadBalancer": {}
+        }
+      },
+      {
+        "apiVersion": "v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "meta.helm.sh/release-name": "hw11",
+            "meta.helm.sh/release-namespace": "hw11"
+          },
+          "creationTimestamp": "2026-11-16T16:00:13Z",
+          "labels": {
+            "app.kubernetes.io/managed-by": "Helm"
+          },
+          "name": "grafana",
+          "namespace": "hw11",
+          "resourceVersion": "568",
+          "uid": "b48b9725-88af-4822-a176-8108c4dbf7eb"
+        },
+        "spec": {
+          "clusterIP": "10.96.136.66",
+          "clusterIPs": [
+            "10.96.136.66"
+          ],
+          "internalTrafficPolicy": "Cluster",
+          "ipFamilies": [
+            "IPv4"
+          ],
+          "ipFamilyPolicy": "SingleStack",
+          "ports": [
+            {
+              "port": 3000,
+              "protocol": "TCP",
+              "targetPort": 3000
+            }
+          ],
+          "selector": {
+            "app": "grafana"
+          },
+          "sessionAffinity": "None",
+          "type": "ClusterIP"
+        },
+        "status": {
+          "loadBalancer": {}
+        }
+      },
+      {
+        "apiVersion": "v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "meta.helm.sh/release-name": "hw11",
+            "meta.helm.sh/release-namespace": "hw11"
+          },
+          "creationTimestamp": "2026-11-16T16:00:13Z",
+          "labels": {
+            "app.kubernetes.io/managed-by": "Helm"
+          },
+          "name": "prometheus",
+          "namespace": "hw11",
+          "resourceVersion": "551",
+          "uid": "ed0a680f-3623-4e3b-a262-c9cc9c98d6f5"
+        },
+        "spec": {
+          "clusterIP": "10.96.187.104",
+          "clusterIPs": [
+            "10.96.187.104"
+          ],
+          "internalTrafficPolicy": "Cluster",
+          "ipFamilies": [
+            "IPv4"
+          ],
+          "ipFamilyPolicy": "SingleStack",
+          "ports": [
+            {
+              "port": 9090,
+              "protocol": "TCP",
+              "targetPort": 9090
+            }
+          ],
+          "selector": {
+            "app": "prometheus"
+          },
+          "sessionAffinity": "None",
+          "type": "ClusterIP"
+        },
+        "status": {
+          "loadBalancer": {}
+        }
+      },
+      {
+        "apiVersion": "v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "meta.helm.sh/release-name": "hw11",
+            "meta.helm.sh/release-namespace": "hw11"
+          },
+          "creationTimestamp": "2026-11-16T16:00:13Z",
+          "labels": {
+            "app.kubernetes.io/managed-by": "Helm"
+          },
+          "name": "state",
+          "namespace": "hw11",
+          "resourceVersion": "557",
+          "uid": "c36e24a2-4895-4def-aa8b-126f01f05644"
+        },
+        "spec": {
+          "clusterIP": "10.96.253.164",
+          "clusterIPs": [
+            "10.96.253.164"
+          ],
+          "internalTrafficPolicy": "Cluster",
+          "ipFamilies": [
+            "IPv4"
+          ],
+          "ipFamilyPolicy": "SingleStack",
+          "ports": [
+            {
+              "port": 8080,
+              "protocol": "TCP",
+              "targetPort": 8080
+            }
+          ],
+          "selector": {
+            "app": "state"
+          },
+          "sessionAffinity": "None",
+          "type": "ClusterIP"
+        },
+        "status": {
+          "loadBalancer": {}
+        }
+      }
+    ],
+    "kind": "List",
+    "metadata": {
+      "resourceVersion": ""
+    }
+  },
+  "configmaps": {
+    "apiVersion": "v1",
+    "items": [
+      {
+        "apiVersion": "v1",
+        "data": {
+          "ARTIFACT_SHA256": "c796351f90813595066a352358f9ba79e85673189b18af54c83416bbb6223788",
+          "CACHE_CAPACITY": "16",
+          "CHUNK_CPU_SECONDS": "0.01",
+          "FAIL_LOAD": "false",
+          "HIT_CPU_SECONDS": "0.04",
+          "MAX_RUNNING": "1",
+          "MAX_WAITING": "8",
+          "MISS_CPU_SECONDS": "0.24",
+          "MODEL_VERSION": "A",
+          "WARMUP_SECONDS": "20"
+        },
+        "kind": "ConfigMap",
+        "metadata": {
+          "annotations": {
+            "meta.helm.sh/release-name": "hw11",
+            "meta.helm.sh/release-namespace": "hw11"
+          },
+          "creationTimestamp": "2026-11-16T16:00:13Z",
+          "labels": {
+            "app.kubernetes.io/managed-by": "Helm"
+          },
+          "name": "api-config",
+          "namespace": "hw11",
+          "resourceVersion": "2883",
+          "uid": "6aa825b1-3cac-4f87-af74-761666de9bbd"
+        }
+      },
+      {
+        "apiVersion": "v1",
+        "data": {
+          "hw11.json": "{\r\n  \"uid\": \"hw11\",\r\n  \"title\": \"HW11 — CPU simulated backend\",\r\n  \"schemaVersion\": 41,\r\n  \"version\": 1,\r\n  \"refresh\": \"5s\",\r\n  \"time\": {\r\n    \"from\": \"now-1h\",\r\n    \"to\": \"now\"\r\n  },\r\n  \"panels\": [\r\n    {\r\n      \"id\": 1,\r\n      \"title\": \"p95 TTFC, s\",\r\n      \"type\": \"timeseries\",\r\n      \"datasource\": {\r\n        \"type\": \"prometheus\",\r\n        \"uid\": \"prometheus\"\r\n      },\r\n      \"gridPos\": {\r\n        \"x\": 0,\r\n        \"y\": 0,\r\n        \"w\": 12,\r\n        \"h\": 8\r\n      },\r\n      \"targets\": [\r\n        {\r\n          \"refId\": \"A\",\r\n          \"expr\": \"histogram_quantile(0.95, sum by (le,pod) (rate(api_ttfc_seconds_bucket[30s])))\",\r\n          \"legendFormat\": \"{{pod}} {{outcome}}\"\r\n        }\r\n      ],\r\n      \"fieldConfig\": {\r\n        \"defaults\": {\r\n          \"unit\": \"s\"\r\n        },\r\n        \"overrides\": []\r\n      }\r\n    },\r\n    {\r\n      \"id\": 2,\r\n      \"title\": \"p95 full response, s\",\r\n      \"type\": \"timeseries\",\r\n      \"datasource\": {\r\n        \"type\": \"prometheus\",\r\n        \"uid\": \"prometheus\"\r\n      },\r\n      \"gridPos\": {\r\n        \"x\": 12,\r\n        \"y\": 0,\r\n        \"w\": 12,\r\n        \"h\": 8\r\n      },\r\n      \"targets\": [\r\n        {\r\n          \"refId\": \"A\",\r\n          \"expr\": \"histogram_quantile(0.95, sum by (le,pod) (rate(api_duration_seconds_bucket[30s])))\",\r\n          \"legendFormat\": \"{{pod}} {{outcome}}\"\r\n        }\r\n      ],\r\n      \"fieldConfig\": {\r\n        \"defaults\": {\r\n          \"unit\": \"s\"\r\n        },\r\n        \"overrides\": []\r\n      }\r\n    },\r\n    {\r\n      \"id\": 3,\r\n      \"title\": \"running / Pod\",\r\n      \"type\": \"timeseries\",\r\n      \"datasource\": {\r\n        \"type\": \"prometheus\",\r\n        \"uid\": \"prometheus\"\r\n      },\r\n      \"gridPos\": {\r\n        \"x\": 0,\r\n        \"y\": 8,\r\n        \"w\": 12,\r\n        \"h\": 8\r\n      },\r\n      \"targets\": [\r\n        {\r\n          \"refId\": \"A\",\r\n          \"expr\": \"api_running\",\r\n          \"legendFormat\": \"{{pod}} {{outcome}}\"\r\n        }\r\n      ],\r\n      \"fieldConfig\": {\r\n        \"defaults\": {\r\n          \"unit\": \"short\"\r\n        },\r\n        \"overrides\": []\r\n      }\r\n    },\r\n    {\r\n      \"id\": 4,\r\n      \"title\": \"waiting / Pod\",\r\n      \"type\": \"timeseries\",\r\n      \"datasource\": {\r\n        \"type\": \"prometheus\",\r\n        \"uid\": \"prometheus\"\r\n      },\r\n      \"gridPos\": {\r\n        \"x\": 12,\r\n        \"y\": 8,\r\n        \"w\": 12,\r\n        \"h\": 8\r\n      },\r\n      \"targets\": [\r\n        {\r\n          \"refId\": \"A\",\r\n          \"expr\": \"api_waiting\",\r\n          \"legendFormat\": \"{{pod}} {{outcome}}\"\r\n        }\r\n      ],\r\n      \"fieldConfig\": {\r\n        \"defaults\": {\r\n          \"unit\": \"short\"\r\n        },\r\n        \"overrides\": []\r\n      }\r\n    },\r\n    {\r\n      \"id\": 5,\r\n      \"title\": \"completed requests/s\",\r\n      \"type\": \"timeseries\",\r\n      \"datasource\": {\r\n        \"type\": \"prometheus\",\r\n        \"uid\": \"prometheus\"\r\n      },\r\n      \"gridPos\": {\r\n        \"x\": 0,\r\n        \"y\": 16,\r\n        \"w\": 12,\r\n        \"h\": 8\r\n      },\r\n      \"targets\": [\r\n        {\r\n          \"refId\": \"A\",\r\n          \"expr\": \"sum by(pod) (rate(api_requests_total{outcome=\\\"completed\\\"}[30s]))\",\r\n          \"legendFormat\": \"{{pod}} {{outcome}}\"\r\n        }\r\n      ],\r\n      \"fieldConfig\": {\r\n        \"defaults\": {\r\n          \"unit\": \"short\"\r\n        },\r\n        \"overrides\": []\r\n      }\r\n    },\r\n    {\r\n      \"id\": 6,\r\n      \"title\": \"errors and rejections/s\",\r\n      \"type\": \"timeseries\",\r\n      \"datasource\": {\r\n        \"type\": \"prometheus\",\r\n        \"uid\": \"prometheus\"\r\n      },\r\n      \"gridPos\": {\r\n        \"x\": 12,\r\n        \"y\": 16,\r\n        \"w\": 12,\r\n        \"h\": 8\r\n      },\r\n      \"targets\": [\r\n        {\r\n          \"refId\": \"A\",\r\n          \"expr\": \"sum by(pod,outcome) (rate(api_requests_total{outcome!=\\\"completed\\\"}[30s]))\",\r\n          \"legendFormat\": \"{{pod}} {{outcome}}\"\r\n        }\r\n      ],\r\n      \"fieldConfig\": {\r\n        \"defaults\": {\r\n          \"unit\": \"short\"\r\n        },\r\n        \"overrides\": []\r\n      }\r\n    },\r\n    {\r\n      \"id\": 7,\r\n      \"title\": \"CPU cores / Pod\",\r\n      \"type\": \"timeseries\",\r\n      \"datasource\": {\r\n        \"type\": \"prometheus\",\r\n        \"uid\": \"prometheus\"\r\n      },\r\n      \"gridPos\": {\r\n        \"x\": 0,\r\n        \"y\": 24,\r\n        \"w\": 12,\r\n        \"h\": 8\r\n      },\r\n      \"targets\": [\r\n        {\r\n          \"refId\": \"A\",\r\n          \"expr\": \"sum by(pod) (rate(container_cpu_usage_seconds_total{namespace=\\\"hw11\\\",container=\\\"api\\\"}[30s]))\",\r\n          \"legendFormat\": \"{{pod}} {{outcome}}\"\r\n        }\r\n      ],\r\n      \"fieldConfig\": {\r\n        \"defaults\": {\r\n          \"unit\": \"short\"\r\n        },\r\n        \"overrides\": []\r\n      }\r\n    },\r\n    {\r\n      \"id\": 8,\r\n      \"title\": \"RAM bytes / Pod\",\r\n      \"type\": \"timeseries\",\r\n      \"datasource\": {\r\n        \"type\": \"prometheus\",\r\n        \"uid\": \"prometheus\"\r\n      },\r\n      \"gridPos\": {\r\n        \"x\": 12,\r\n        \"y\": 24,\r\n        \"w\": 12,\r\n        \"h\": 8\r\n      },\r\n      \"targets\": [\r\n        {\r\n          \"refId\": \"A\",\r\n          \"expr\": \"sum by(pod) (container_memory_working_set_bytes{namespace=\\\"hw11\\\",container=\\\"api\\\"})\",\r\n          \"legendFormat\": \"{{pod}} {{outcome}}\"\r\n        }\r\n      ],\r\n      \"fieldConfig\": {\r\n        \"defaults\": {\r\n          \"unit\": \"short\"\r\n        },\r\n        \"overrides\": []\r\n      }\r\n    },\r\n    {\r\n      \"id\": 9,\r\n      \"title\": \"Ready replicas\",\r\n      \"type\": \"timeseries\",\r\n      \"datasource\": {\r\n        \"type\": \"prometheus\",\r\n        \"uid\": \"prometheus\"\r\n      },\r\n      \"gridPos\": {\r\n        \"x\": 0,\r\n        \"y\": 32,\r\n        \"w\": 12,\r\n        \"h\": 8\r\n      },\r\n      \"targets\": [\r\n        {\r\n          \"refId\": \"A\",\r\n          \"expr\": \"sum(kube_pod_status_ready{namespace=\\\"hw11\\\",condition=\\\"true\\\",pod=~\\\"api-.*\\\"})\",\r\n          \"legendFormat\": \"{{pod}} {{outcome}}\"\r\n        }\r\n      ],\r\n      \"fieldConfig\": {\r\n        \"defaults\": {\r\n          \"unit\": \"short\"\r\n        },\r\n        \"overrides\": []\r\n      }\r\n    },\r\n    {\r\n      \"id\": 10,\r\n      \"title\": \"p95 queue, s\",\r\n      \"type\": \"timeseries\",\r\n      \"datasource\": {\r\n        \"type\": \"prometheus\",\r\n        \"uid\": \"prometheus\"\r\n      },\r\n      \"gridPos\": {\r\n        \"x\": 12,\r\n        \"y\": 32,\r\n        \"w\": 12,\r\n        \"h\": 8\r\n      },\r\n      \"targets\": [\r\n        {\r\n          \"refId\": \"A\",\r\n          \"expr\": \"histogram_quantile(0.95, sum by(le,pod) (rate(api_queue_seconds_bucket[30s])))\",\r\n          \"legendFormat\": \"{{pod}} {{outcome}}\"\r\n        }\r\n      ],\r\n      \"fieldConfig\": {\r\n        \"defaults\": {\r\n          \"unit\": \"s\"\r\n        },\r\n        \"overrides\": []\r\n      }\r\n    }\r\n  ],\r\n  \"tags\": [\r\n    \"hw11\",\r\n    \"simulated\"\r\n  ]\r\n}"
+        },
+        "kind": "ConfigMap",
+        "metadata": {
+          "annotations": {
+            "meta.helm.sh/release-name": "hw11",
+            "meta.helm.sh/release-namespace": "hw11"
+          },
+          "creationTimestamp": "2026-11-16T16:00:13Z",
+          "labels": {
+            "app.kubernetes.io/managed-by": "Helm"
+          },
+          "name": "grafana-dashboard",
+          "namespace": "hw11",
+          "resourceVersion": "546",
+          "uid": "24b122d8-d05b-4e53-9ba6-4ffa3bd9a613"
+        }
+      },
+      {
+        "apiVersion": "v1",
+        "data": {
+          "dashboards.yaml": "apiVersion: 1\nproviders:\n  - name: hw11\n    type: file\n    options: {path: /dashboards}\n",
+          "datasource.yaml": "apiVersion: 1\ndatasources:\n  - name: Prometheus\n    uid: prometheus\n    type: prometheus\n    url: http://prometheus:9090\n    access: proxy\n    isDefault: true\n"
+        },
+        "kind": "ConfigMap",
+        "metadata": {
+          "annotations": {
+            "meta.helm.sh/release-name": "hw11",
+            "meta.helm.sh/release-namespace": "hw11"
+          },
+          "creationTimestamp": "2026-11-16T16:00:13Z",
+          "labels": {
+            "app.kubernetes.io/managed-by": "Helm"
+          },
+          "name": "grafana-provisioning",
+          "namespace": "hw11",
+          "resourceVersion": "545",
+          "uid": "1afe6051-e851-4406-b8d5-92e6433699eb"
+        }
+      },
+      {
+        "apiVersion": "v1",
+        "data": {
+          "ca.crt": "-----BEGIN CERTIFICATE-----\nMIIDBTCCAe2gAwIBAgIILG7ELVsPf7UwDQYJKoZIhvcNAQELBQAwFTETMBEGA1UE\nAxMKa3ViZXJuZXRlczAeFw0yNjExMTYxNTU0MjZaFw0zNjExMTMxNTU5MjZaMBUx\nEzARBgNVBAMTCmt1YmVybmV0ZXMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK\nAoIBAQDLICUr/BxEsJFqFAqloHFyez0pR/1m/Aw3+fiTMammHr1NUHYBcLBNkjoI\nLDbQ0uNK2lS1EVFVq3ZlC47JFGfLLKDGkwZK2dioxrK3zJF5xKge0uInHpn6J9or\nY062h+UEogektURyOhAz0gIvKOuBO71bnskq7/OEBQmMBZ0+Uzqt3LUcqc87feww\nPGK1ZmI3sW+S4AfzESgwiMjbVAzJCU48z0opybG9+TIi9BHFmlCYcWWXYSuLFuG4\nDy2GkVAR2vEqUhncdW5UmBMWNtDgxdmaR4JUx/gXpF3r+rongRBHBSxDE9aC7giz\nbvp8rDokBrWtgWAm6JsjOVisjzH1AgMBAAGjWTBXMA4GA1UdDwEB/wQEAwICpDAP\nBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBRQYEbyeUvuc8UyWxRrL46GlVmJYzAV\nBgNVHREEDjAMggprdWJlcm5ldGVzMA0GCSqGSIb3DQEBCwUAA4IBAQAcljnbtT1k\n8PpVbGS2tp6eaN002CvP9FzdSUIzzv4pazakj8ZgOB7GzoOD1JSn48oU1ux1DAQf\nwNja9z8Qquzf0SL8P0eRWTZp4XNKB/K7S/fFBhlXtHf2XKlpbkq0zPDcUSoLL4vk\nMdVJISUBXPNUCkWRrIUAJfBh1a91cRdk3Gmm0k/FvhMOpG5lB5LeAG+N6MsJqJI4\n/Jhwwad96m+LjrnlzVATHP7EtmQjJcHQtPDwIVM04ZLt/4gQv8L/JPYUWdAxfI/Y\n3pCI3Q1QQD6dlYltLSaOtvyDq1SxAcNQukT/GKTe7TumJeaPMmen8uCajJRR2mzy\n8PsHd4i2SZJz\n-----END CERTIFICATE-----\n"
+        },
+        "kind": "ConfigMap",
+        "metadata": {
+          "annotations": {
+            "kubernetes.io/description": "Contains a CA bundle that can be used to verify the kube-apiserver when using internal endpoints such as the internal service IP or kubernetes.default.svc. No other usage is guaranteed across distributions of Kubernetes clusters."
+          },
+          "creationTimestamp": "2026-11-16T16:00:13Z",
+          "name": "kube-root-ca.crt",
+          "namespace": "hw11",
+          "resourceVersion": "538",
+          "uid": "67c427c2-4a4b-4112-85de-6f05e836d54e"
+        }
+      },
+      {
+        "apiVersion": "v1",
+        "data": {
+          "model.json": "{\"backend_mode\":\"simulated\",\"version\":\"A\",\"seed\":42}"
+        },
+        "kind": "ConfigMap",
+        "metadata": {
+          "annotations": {
+            "meta.helm.sh/release-name": "hw11",
+            "meta.helm.sh/release-namespace": "hw11"
+          },
+          "creationTimestamp": "2026-11-16T16:12:59Z",
+          "labels": {
+            "app.kubernetes.io/managed-by": "Helm"
+          },
+          "name": "model-a",
+          "namespace": "hw11",
+          "resourceVersion": "2882",
+          "uid": "15002a16-078a-4688-9171-c2e3357d81bd"
+        }
+      },
+      {
+        "apiVersion": "v1",
+        "data": {
+          "alerts.yml": "groups:\n  - name: hw11\n    rules:\n      - alert: HighTTFC\n        expr: histogram_quantile(0.95, sum by(le) (rate(api_ttfc_seconds_bucket[30s]))) > 0.8 and sum(increase(api_ttfc_seconds_count[30s])) >= 20\n        for: 15s\n        labels: {severity: warning}\n        annotations: {summary: 'p95 TTFC > 0.8 s; минимум 20 наблюдений за 30 s'}\n      - alert: HighRejectionRatio\n        expr: sum(rate(api_requests_total{outcome=\"rejected\"}[30s])) / sum(rate(api_requests_total[30s])) > 0.1 and sum(increase(api_requests_total[30s])) >= 20\n        for: 15s\n        labels: {severity: warning}\n        annotations: {summary: 'Отказов > 10%; минимум 20 исходов за 30 s'}\n",
+          "prometheus.yml": "global:\n  scrape_interval: 2s\n  evaluation_interval: 5s\nrule_files: [/etc/prometheus/alerts.yml]\nscrape_configs:\n  - job_name: api\n    kubernetes_sd_configs:\n      - role: pod\n        namespaces: {names: [hw11]}\n    relabel_configs:\n      - {source_labels: [__meta_kubernetes_pod_label_app], regex: api, action: keep}\n      - {source_labels: [__meta_kubernetes_pod_container_port_number], regex: '8080', action: keep}\n      - {source_labels: [__meta_kubernetes_pod_name], target_label: pod}\n  - job_name: state\n    static_configs: [{targets: ['state:8080']}]\n  - job_name: cadvisor\n    scheme: https\n    bearer_token_file: /var/run/secrets/kubernetes.io/serviceaccount/token\n    tls_config: {insecure_skip_verify: true}\n    kubernetes_sd_configs: [{role: node}]\n    relabel_configs:\n      - {target_label: __address__, replacement: 'kubernetes.default.svc:443'}\n      - source_labels: [__meta_kubernetes_node_name]\n        target_label: __metrics_path__\n        replacement: /api/v1/nodes/${1}/proxy/metrics/cadvisor\n"
+        },
+        "kind": "ConfigMap",
+        "metadata": {
+          "annotations": {
+            "meta.helm.sh/release-name": "hw11",
+            "meta.helm.sh/release-namespace": "hw11"
+          },
+          "creationTimestamp": "2026-11-16T16:00:13Z",
+          "labels": {
+            "app.kubernetes.io/managed-by": "Helm"
+          },
+          "name": "prometheus-config",
+          "namespace": "hw11",
+          "resourceVersion": "543",
+          "uid": "b6b8058a-f074-40e9-a0a9-86f24e545741"
+        }
+      }
+    ],
+    "kind": "List",
+    "metadata": {
+      "resourceVersion": ""
+    }
+  },
+  "hpa": {
+    "apiVersion": "v1",
+    "items": [],
+    "kind": "List",
+    "metadata": {
+      "resourceVersion": ""
+    }
+  }
+}

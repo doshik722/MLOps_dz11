@@ -1,0 +1,112 @@
+{
+  "alpha": [
+    {
+      "request_id": "4222f298-c604-474e-a971-8378ac0f5d7e",
+      "session_id": "alpha",
+      "pod": "api-8f779df47-fhsqv",
+      "model_version": "A",
+      "artifact_sha256": "c796351f90813595066a352358f9ba79e85673189b18af54c83416bbb6223788",
+      "backend_mode": "simulated",
+      "client_ip": "127.0.0.1",
+      "index": 0,
+      "content": "A:Сохранённая история|ALPHA-ONLY-7391:0",
+      "history_sha256": "07ca5995fb7edeead3f4e95acfac2626f5535982b894d9632cfec5fe1725a517",
+      "queue_seconds": 0.010073772999930952,
+      "cache_hit": false
+    },
+    {
+      "request_id": "4222f298-c604-474e-a971-8378ac0f5d7e",
+      "session_id": "alpha",
+      "pod": "api-8f779df47-fhsqv",
+      "model_version": "A",
+      "artifact_sha256": "c796351f90813595066a352358f9ba79e85673189b18af54c83416bbb6223788",
+      "backend_mode": "simulated",
+      "client_ip": "127.0.0.1",
+      "index": 1,
+      "content": "A:Сохранённая история|ALPHA-ONLY-7391:1",
+      "history_sha256": "07ca5995fb7edeead3f4e95acfac2626f5535982b894d9632cfec5fe1725a517",
+      "queue_seconds": 0.010073772999930952,
+      "cache_hit": false
+    },
+    {
+      "request_id": "4222f298-c604-474e-a971-8378ac0f5d7e",
+      "session_id": "alpha",
+      "pod": "api-8f779df47-fhsqv",
+      "model_version": "A",
+      "artifact_sha256": "c796351f90813595066a352358f9ba79e85673189b18af54c83416bbb6223788",
+      "backend_mode": "simulated",
+      "client_ip": "127.0.0.1",
+      "index": 2,
+      "content": "A:Сохранённая история|ALPHA-ONLY-7391:2",
+      "history_sha256": "07ca5995fb7edeead3f4e95acfac2626f5535982b894d9632cfec5fe1725a517",
+      "queue_seconds": 0.010073772999930952,
+      "cache_hit": false
+    },
+    {
+      "request_id": "4222f298-c604-474e-a971-8378ac0f5d7e",
+      "session_id": "alpha",
+      "pod": "api-8f779df47-fhsqv",
+      "model_version": "A",
+      "artifact_sha256": "c796351f90813595066a352358f9ba79e85673189b18af54c83416bbb6223788",
+      "backend_mode": "simulated",
+      "client_ip": "127.0.0.1",
+      "done": true,
+      "parts": 3
+    }
+  ],
+  "beta": [
+    {
+      "request_id": "9f25212c-5ead-4a55-9a00-49bdf2cbc227",
+      "session_id": "beta",
+      "pod": "api-8f779df47-fhsqv",
+      "model_version": "A",
+      "artifact_sha256": "c796351f90813595066a352358f9ba79e85673189b18af54c83416bbb6223788",
+      "backend_mode": "simulated",
+      "client_ip": "127.0.0.1",
+      "index": 0,
+      "content": "A:Сохранённая история|BETA-ONLY-2846:0",
+      "history_sha256": "4b279b5cbc74c9f62a3a9410454b78ccab463f2ad79648f716a910a5cd3f0ece",
+      "queue_seconds": 0.00036821699995925883,
+      "cache_hit": true
+    },
+    {
+      "request_id": "9f25212c-5ead-4a55-9a00-49bdf2cbc227",
+      "session_id": "beta",
+      "pod": "api-8f779df47-fhsqv",
+      "model_version": "A",
+      "artifact_sha256": "c796351f90813595066a352358f9ba79e85673189b18af54c83416bbb6223788",
+      "backend_mode": "simulated",
+      "client_ip": "127.0.0.1",
+      "index": 1,
+      "content": "A:Сохранённая история|BETA-ONLY-2846:1",
+      "history_sha256": "4b279b5cbc74c9f62a3a9410454b78ccab463f2ad79648f716a910a5cd3f0ece",
+      "queue_seconds": 0.00036821699995925883,
+      "cache_hit": true
+    },
+    {
+      "request_id": "9f25212c-5ead-4a55-9a00-49bdf2cbc227",
+      "session_id": "beta",
+      "pod": "api-8f779df47-fhsqv",
+      "model_version": "A",
+      "artifact_sha256": "c796351f90813595066a352358f9ba79e85673189b18af54c83416bbb6223788",
+      "backend_mode": "simulated",
+      "client_ip": "127.0.0.1",
+      "index": 2,
+      "content": "A:Сохранённая история|BETA-ONLY-2846:2",
+      "history_sha256": "4b279b5cbc74c9f62a3a9410454b78ccab463f2ad79648f716a910a5cd3f0ece",
+      "queue_seconds": 0.00036821699995925883,
+      "cache_hit": true
+    },
+    {
+      "request_id": "9f25212c-5ead-4a55-9a00-49bdf2cbc227",
+      "session_id": "beta",
+      "pod": "api-8f779df47-fhsqv",
+      "model_version": "A",
+      "artifact_sha256": "c796351f90813595066a352358f9ba79e85673189b18af54c83416bbb6223788",
+      "backend_mode": "simulated",
+      "client_ip": "127.0.0.1",
+      "done": true,
+      "parts": 3
+    }
+  ]
+}

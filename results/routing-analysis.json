@@ -1,0 +1,1808 @@
+{
+  "b-api-skew-1": {
+    "client_ip_to_pod": {
+      "10.244.0.6": {
+        "api-8f779df47-9d5ql": 229,
+        "api-8f779df47-pq92f": 251
+      },
+      "10.244.0.8": {
+        "api-8f779df47-pq92f": 24,
+        "api-8f779df47-9d5ql": 16
+      },
+      "10.244.0.9": {
+        "api-8f779df47-9d5ql": 23,
+        "api-8f779df47-pq92f": 17
+      },
+      "10.244.0.7": {
+        "api-8f779df47-pq92f": 20,
+        "api-8f779df47-9d5ql": 20
+      }
+    },
+    "runtime_samples": 63,
+    "hot_and_idle_samples": 3,
+    "examples": [
+      {
+        "unix": 1794846070.59,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794846104.59,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794846108.59,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      }
+    ]
+  },
+  "b-api-skew-2": {
+    "client_ip_to_pod": {
+      "10.244.0.6": {
+        "api-8f779df47-pq92f": 224,
+        "api-8f779df47-9d5ql": 256
+      },
+      "10.244.0.8": {
+        "api-8f779df47-9d5ql": 9,
+        "api-8f779df47-pq92f": 31
+      },
+      "10.244.0.9": {
+        "api-8f779df47-9d5ql": 20,
+        "api-8f779df47-pq92f": 20
+      },
+      "10.244.0.7": {
+        "api-8f779df47-9d5ql": 17,
+        "api-8f779df47-pq92f": 23
+      }
+    },
+    "runtime_samples": 63,
+    "hot_and_idle_samples": 3,
+    "examples": [
+      {
+        "unix": 1794846575.441,
+        "hot": [
+          "api-8f779df47-9d5ql"
+        ],
+        "idle": [
+          "api-8f779df47-pq92f"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          }
+        }
+      },
+      {
+        "unix": 1794846605.441,
+        "hot": [
+          "api-8f779df47-9d5ql"
+        ],
+        "idle": [
+          "api-8f779df47-pq92f"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          }
+        }
+      },
+      {
+        "unix": 1794846675.441,
+        "hot": [
+          "api-8f779df47-9d5ql"
+        ],
+        "idle": [
+          "api-8f779df47-pq92f"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          }
+        }
+      }
+    ]
+  },
+  "b-api-skew-3": {
+    "client_ip_to_pod": {
+      "10.244.0.6": {
+        "api-8f779df47-pq92f": 231,
+        "api-8f779df47-9d5ql": 249
+      },
+      "10.244.0.8": {
+        "api-8f779df47-pq92f": 21,
+        "api-8f779df47-9d5ql": 19
+      },
+      "10.244.0.9": {
+        "api-8f779df47-9d5ql": 13,
+        "api-8f779df47-pq92f": 27
+      },
+      "10.244.0.7": {
+        "api-8f779df47-9d5ql": 21,
+        "api-8f779df47-pq92f": 19
+      }
+    },
+    "runtime_samples": 63,
+    "hot_and_idle_samples": 9,
+    "examples": [
+      {
+        "unix": 1794847085.605,
+        "hot": [
+          "api-8f779df47-9d5ql"
+        ],
+        "idle": [
+          "api-8f779df47-pq92f"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 2.0
+          }
+        }
+      },
+      {
+        "unix": 1794847093.605,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794847097.605,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794847099.605,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794847127.605,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      }
+    ]
+  },
+  "b-api-sticky-skew-1": {
+    "client_ip_to_pod": {
+      "10.244.0.6": {
+        "api-8f779df47-pq92f": 398
+      },
+      "10.244.0.8": {
+        "api-8f779df47-pq92f": 26
+      },
+      "10.244.0.9": {
+        "api-8f779df47-pq92f": 29
+      },
+      "10.244.0.7": {
+        "api-8f779df47-pq92f": 28
+      }
+    },
+    "runtime_samples": 64,
+    "hot_and_idle_samples": 61,
+    "examples": [
+      {
+        "unix": 1794845923.953,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 4.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794845925.953,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 8.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794845927.953,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 8.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794845929.953,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 8.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794845931.953,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 8.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      }
+    ]
+  },
+  "b-api-sticky-skew-2": {
+    "client_ip_to_pod": {
+      "10.244.0.6": {
+        "api-8f779df47-pq92f": 415
+      },
+      "10.244.0.8": {
+        "api-8f779df47-pq92f": 22
+      },
+      "10.244.0.9": {
+        "api-8f779df47-pq92f": 23
+      },
+      "10.244.0.7": {
+        "api-8f779df47-pq92f": 21
+      }
+    },
+    "runtime_samples": 65,
+    "hot_and_idle_samples": 60,
+    "examples": [
+      {
+        "unix": 1794846441.204,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 7.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794846443.204,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 8.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794846445.204,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 8.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794846447.204,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 8.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794846449.204,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 8.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      }
+    ]
+  },
+  "b-api-sticky-skew-3": {
+    "client_ip_to_pod": {
+      "10.244.0.6": {
+        "api-8f779df47-pq92f": 421
+      },
+      "10.244.0.8": {
+        "api-8f779df47-pq92f": 21
+      },
+      "10.244.0.9": {
+        "api-8f779df47-pq92f": 19
+      },
+      "10.244.0.7": {
+        "api-8f779df47-pq92f": 21
+      }
+    },
+    "runtime_samples": 64,
+    "hot_and_idle_samples": 61,
+    "examples": [
+      {
+        "unix": 1794846954.404,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 3.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794846956.404,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 8.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794846958.404,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 8.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794846960.404,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 8.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794846962.404,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 8.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      }
+    ]
+  },
+  "b-api-sticky-uniform-1": {
+    "client_ip_to_pod": {
+      "10.244.0.6": {
+        "api-8f779df47-pq92f": 112
+      },
+      "10.244.0.8": {
+        "api-8f779df47-pq92f": 103
+      },
+      "10.244.0.9": {
+        "api-8f779df47-pq92f": 113
+      },
+      "10.244.0.7": {
+        "api-8f779df47-pq92f": 109
+      }
+    },
+    "runtime_samples": 65,
+    "hot_and_idle_samples": 61,
+    "examples": [
+      {
+        "unix": 1794845665.614,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 6.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794845667.614,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 7.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794845669.614,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 7.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794845671.614,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 7.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794845673.614,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 7.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      }
+    ]
+  },
+  "b-api-sticky-uniform-2": {
+    "client_ip_to_pod": {
+      "10.244.0.6": {
+        "api-8f779df47-pq92f": 121
+      },
+      "10.244.0.8": {
+        "api-8f779df47-pq92f": 120
+      },
+      "10.244.0.9": {
+        "api-8f779df47-pq92f": 115
+      },
+      "10.244.0.7": {
+        "api-8f779df47-pq92f": 126
+      }
+    },
+    "runtime_samples": 65,
+    "hot_and_idle_samples": 61,
+    "examples": [
+      {
+        "unix": 1794846179.742,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 5.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794846181.742,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 8.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794846183.742,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 8.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794846185.742,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 8.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794846187.742,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 8.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      }
+    ]
+  },
+  "b-api-sticky-uniform-3": {
+    "client_ip_to_pod": {
+      "10.244.0.6": {
+        "api-8f779df47-pq92f": 121
+      },
+      "10.244.0.8": {
+        "api-8f779df47-pq92f": 121
+      },
+      "10.244.0.9": {
+        "api-8f779df47-pq92f": 120
+      },
+      "10.244.0.7": {
+        "api-8f779df47-pq92f": 120
+      }
+    },
+    "runtime_samples": 64,
+    "hot_and_idle_samples": 61,
+    "examples": [
+      {
+        "unix": 1794846698.219,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 4.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794846700.219,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 8.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794846702.219,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 8.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794846704.219,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 8.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794846706.219,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 8.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      }
+    ]
+  },
+  "b-api-uniform-1": {
+    "client_ip_to_pod": {
+      "10.244.0.6": {
+        "api-8f779df47-pq92f": 75,
+        "api-8f779df47-9d5ql": 75
+      },
+      "10.244.0.8": {
+        "api-8f779df47-9d5ql": 76,
+        "api-8f779df47-pq92f": 74
+      },
+      "10.244.0.9": {
+        "api-8f779df47-9d5ql": 81,
+        "api-8f779df47-pq92f": 69
+      },
+      "10.244.0.7": {
+        "api-8f779df47-pq92f": 78,
+        "api-8f779df47-9d5ql": 72
+      }
+    },
+    "runtime_samples": 63,
+    "hot_and_idle_samples": 9,
+    "examples": [
+      {
+        "unix": 1794845810.671,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794845814.671,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794845816.671,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794845834.671,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794845846.671,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      }
+    ]
+  },
+  "b-api-uniform-2": {
+    "client_ip_to_pod": {
+      "10.244.0.6": {
+        "api-8f779df47-pq92f": 84,
+        "api-8f779df47-9d5ql": 66
+      },
+      "10.244.0.8": {
+        "api-8f779df47-pq92f": 81,
+        "api-8f779df47-9d5ql": 69
+      },
+      "10.244.0.9": {
+        "api-8f779df47-9d5ql": 74,
+        "api-8f779df47-pq92f": 76
+      },
+      "10.244.0.7": {
+        "api-8f779df47-pq92f": 69,
+        "api-8f779df47-9d5ql": 81
+      }
+    },
+    "runtime_samples": 64,
+    "hot_and_idle_samples": 6,
+    "examples": [
+      {
+        "unix": 1794846312.541,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 2.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794846314.541,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794846338.541,
+        "hot": [
+          "api-8f779df47-9d5ql"
+        ],
+        "idle": [
+          "api-8f779df47-pq92f"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          }
+        }
+      },
+      {
+        "unix": 1794846376.541,
+        "hot": [
+          "api-8f779df47-9d5ql"
+        ],
+        "idle": [
+          "api-8f779df47-pq92f"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          }
+        }
+      },
+      {
+        "unix": 1794846396.541,
+        "hot": [
+          "api-8f779df47-9d5ql"
+        ],
+        "idle": [
+          "api-8f779df47-pq92f"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          }
+        }
+      }
+    ]
+  },
+  "b-api-uniform-3": {
+    "client_ip_to_pod": {
+      "10.244.0.6": {
+        "api-8f779df47-pq92f": 72,
+        "api-8f779df47-9d5ql": 78
+      },
+      "10.244.0.8": {
+        "api-8f779df47-9d5ql": 76,
+        "api-8f779df47-pq92f": 74
+      },
+      "10.244.0.9": {
+        "api-8f779df47-9d5ql": 70,
+        "api-8f779df47-pq92f": 80
+      },
+      "10.244.0.7": {
+        "api-8f779df47-9d5ql": 66,
+        "api-8f779df47-pq92f": 84
+      }
+    },
+    "runtime_samples": 62,
+    "hot_and_idle_samples": 9,
+    "examples": [
+      {
+        "unix": 1794846847.816,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794846851.816,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794846855.816,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794846867.816,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794846889.816,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      }
+    ]
+  },
+  "b-fixed-none-skew-1": {
+    "client_ip_to_pod": {
+      "10.244.0.6": {
+        "api-8f779df47-pq92f": 248,
+        "api-8f779df47-9d5ql": 232
+      },
+      "10.244.0.8": {
+        "api-8f779df47-pq92f": 21,
+        "api-8f779df47-9d5ql": 19
+      },
+      "10.244.0.9": {
+        "api-8f779df47-9d5ql": 19,
+        "api-8f779df47-pq92f": 21
+      },
+      "10.244.0.7": {
+        "api-8f779df47-pq92f": 20,
+        "api-8f779df47-9d5ql": 20
+      }
+    },
+    "runtime_samples": 65,
+    "hot_and_idle_samples": 5,
+    "examples": [
+      {
+        "unix": 1794847212.919,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794847288.919,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 2.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794847312.919,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794847316.919,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794847330.919,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      }
+    ]
+  },
+  "b-fixed-none-skew-2": {
+    "client_ip_to_pod": {
+      "10.244.0.6": {
+        "api-8f779df47-9d5ql": 260,
+        "api-8f779df47-pq92f": 220
+      },
+      "10.244.0.8": {
+        "api-8f779df47-pq92f": 19,
+        "api-8f779df47-9d5ql": 21
+      },
+      "10.244.0.9": {
+        "api-8f779df47-pq92f": 16,
+        "api-8f779df47-9d5ql": 24
+      },
+      "10.244.0.7": {
+        "api-8f779df47-9d5ql": 25,
+        "api-8f779df47-pq92f": 15
+      }
+    },
+    "runtime_samples": 62,
+    "hot_and_idle_samples": 9,
+    "examples": [
+      {
+        "unix": 1794847342.802,
+        "hot": [
+          "api-8f779df47-9d5ql"
+        ],
+        "idle": [
+          "api-8f779df47-pq92f"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 3.0
+          }
+        }
+      },
+      {
+        "unix": 1794847348.802,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794847358.802,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794847388.802,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      },
+      {
+        "unix": 1794847390.802,
+        "hot": [
+          "api-8f779df47-pq92f"
+        ],
+        "idle": [
+          "api-8f779df47-9d5ql"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          }
+        }
+      }
+    ]
+  },
+  "b-fixed-none-skew-3": {
+    "client_ip_to_pod": {
+      "10.244.0.6": {
+        "api-8f779df47-9d5ql": 251,
+        "api-8f779df47-pq92f": 229
+      },
+      "10.244.0.8": {
+        "api-8f779df47-pq92f": 15,
+        "api-8f779df47-9d5ql": 25
+      },
+      "10.244.0.9": {
+        "api-8f779df47-9d5ql": 17,
+        "api-8f779df47-pq92f": 23
+      },
+      "10.244.0.7": {
+        "api-8f779df47-pq92f": 24,
+        "api-8f779df47-9d5ql": 16
+      }
+    },
+    "runtime_samples": 63,
+    "hot_and_idle_samples": 4,
+    "examples": [
+      {
+        "unix": 1794847471.996,
+        "hot": [
+          "api-8f779df47-9d5ql"
+        ],
+        "idle": [
+          "api-8f779df47-pq92f"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 3.0
+          }
+        }
+      },
+      {
+        "unix": 1794847473.996,
+        "hot": [
+          "api-8f779df47-9d5ql"
+        ],
+        "idle": [
+          "api-8f779df47-pq92f"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          }
+        }
+      },
+      {
+        "unix": 1794847519.996,
+        "hot": [
+          "api-8f779df47-9d5ql"
+        ],
+        "idle": [
+          "api-8f779df47-pq92f"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          }
+        }
+      },
+      {
+        "unix": 1794847557.996,
+        "hot": [
+          "api-8f779df47-9d5ql"
+        ],
+        "idle": [
+          "api-8f779df47-pq92f"
+        ],
+        "gauges": {
+          "api-8f779df47-pq92f": {
+            "api_ready": 1.0,
+            "api_running": 0.0,
+            "api_waiting": 0.0
+          },
+          "api-8f779df47-9d5ql": {
+            "api_ready": 1.0,
+            "api_running": 1.0,
+            "api_waiting": 1.0
+          }
+        }
+      }
+    ]
+  }
+}

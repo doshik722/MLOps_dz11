@@ -1,0 +1,8 @@
+{
+  "app.py": "be5b350b2ebe8c7dbb1ee29228bd94eb3aaccb2dd98bb3e233435489d9f14d86",
+  "legacy/service.py": "313872bf74d7e9c7ec66ebba17c652b0eb72b2a9d4e3010e4414130453f2e3f9",
+  "legacy/release.py": "4d354d70434d6d2f20028c35a5af71944812eb70945ede79f9db60ec222143ae",
+  "pyproject.toml": "42e5db99e3de5b7861a5463a5a57893bd1aa98555b802e5a4dc35a09e07ddd85",
+  "uv.lock": "35949183181385e8fcda776332136a9f20cc0a8f7ba20b6710ed25e8382570a6",
+  "monitoring/metrics-server.yaml": "f11406fcd1be660c5f618604ee43e341ad74d7be30aa7f5d14195ea713492854"
+}

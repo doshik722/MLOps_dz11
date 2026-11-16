@@ -1,0 +1,14 @@
+[
+  {
+    "Path": "D:\\downloads_programs\\Git_hub_progr\\Labs_MLops\\hw11\\tools\\kind.exe",
+    "Hash": "A75FED2B6964D877461CC145B37E997AC0F59A63BD02A750134AC25378F78CE7"
+  },
+  {
+    "Path": "D:\\downloads_programs\\Git_hub_progr\\Labs_MLops\\hw11\\tools\\windows-amd64\\helm.exe",
+    "Hash": "2BB5C4E862A71B16B4E819C241640D744899CB9D710548C9737C1007F56F442B"
+  },
+  {
+    "Path": "D:\\downloads_programs\\Git_hub_progr\\Labs_MLops\\hw11\\tools\\kubectl.exe",
+    "Hash": "856B6A92556452E249DB940E7FDB8D8F8F622805D25F67DE09A4D4D2DA6F6132"
+  }
+]

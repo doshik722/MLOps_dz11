@@ -1,0 +1,716 @@
+{
+  "before_unix": 1794848888.3527644,
+  "after_unix": 1794848908.0217013,
+  "successful_n": 16,
+  "promql": "histogram_quantile(0.95, sum by(le) (api_ttfc_seconds_bucket - api_ttfc_seconds_bucket @ 1794848888.353))",
+  "client_p95_seconds": 0.6108662362501036,
+  "histogram_p95_seconds": 0.7542857142857142,
+  "histogram_count_delta": {
+    "status": "success",
+    "data": {
+      "resultType": "vector",
+      "result": [
+        {
+          "metric": {},
+          "value": [
+            1794848908.022,
+            "16"
+          ]
+        }
+      ]
+    }
+  },
+  "buckets_before": {
+    "status": "success",
+    "data": {
+      "resultType": "vector",
+      "result": [
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.33:8080",
+            "job": "api",
+            "le": "0.025",
+            "pod": "api-8f779df47-fhsqv"
+          },
+          "value": [
+            1794848888.353,
+            "0"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.33:8080",
+            "job": "api",
+            "le": "0.05",
+            "pod": "api-8f779df47-fhsqv"
+          },
+          "value": [
+            1794848888.353,
+            "0"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.33:8080",
+            "job": "api",
+            "le": "0.1",
+            "pod": "api-8f779df47-fhsqv"
+          },
+          "value": [
+            1794848888.353,
+            "18"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.33:8080",
+            "job": "api",
+            "le": "0.2",
+            "pod": "api-8f779df47-fhsqv"
+          },
+          "value": [
+            1794848888.353,
+            "31"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.33:8080",
+            "job": "api",
+            "le": "0.4",
+            "pod": "api-8f779df47-fhsqv"
+          },
+          "value": [
+            1794848888.353,
+            "64"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.33:8080",
+            "job": "api",
+            "le": "0.8",
+            "pod": "api-8f779df47-fhsqv"
+          },
+          "value": [
+            1794848888.353,
+            "124"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.33:8080",
+            "job": "api",
+            "le": "1.6",
+            "pod": "api-8f779df47-fhsqv"
+          },
+          "value": [
+            1794848888.353,
+            "243"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.33:8080",
+            "job": "api",
+            "le": "3.2",
+            "pod": "api-8f779df47-fhsqv"
+          },
+          "value": [
+            1794848888.353,
+            "468"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.33:8080",
+            "job": "api",
+            "le": "6.4",
+            "pod": "api-8f779df47-fhsqv"
+          },
+          "value": [
+            1794848888.353,
+            "468"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.33:8080",
+            "job": "api",
+            "le": "12.8",
+            "pod": "api-8f779df47-fhsqv"
+          },
+          "value": [
+            1794848888.353,
+            "468"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.33:8080",
+            "job": "api",
+            "le": "25.6",
+            "pod": "api-8f779df47-fhsqv"
+          },
+          "value": [
+            1794848888.353,
+            "468"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.33:8080",
+            "job": "api",
+            "le": "51.2",
+            "pod": "api-8f779df47-fhsqv"
+          },
+          "value": [
+            1794848888.353,
+            "468"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.33:8080",
+            "job": "api",
+            "le": "+Inf",
+            "pod": "api-8f779df47-fhsqv"
+          },
+          "value": [
+            1794848888.353,
+            "468"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.35:8080",
+            "job": "api",
+            "le": "0.025",
+            "pod": "api-8f779df47-t7hf5"
+          },
+          "value": [
+            1794848888.353,
+            "0"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.35:8080",
+            "job": "api",
+            "le": "0.05",
+            "pod": "api-8f779df47-t7hf5"
+          },
+          "value": [
+            1794848888.353,
+            "0"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.35:8080",
+            "job": "api",
+            "le": "0.1",
+            "pod": "api-8f779df47-t7hf5"
+          },
+          "value": [
+            1794848888.353,
+            "10"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.35:8080",
+            "job": "api",
+            "le": "0.2",
+            "pod": "api-8f779df47-t7hf5"
+          },
+          "value": [
+            1794848888.353,
+            "14"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.35:8080",
+            "job": "api",
+            "le": "0.4",
+            "pod": "api-8f779df47-t7hf5"
+          },
+          "value": [
+            1794848888.353,
+            "27"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.35:8080",
+            "job": "api",
+            "le": "0.8",
+            "pod": "api-8f779df47-t7hf5"
+          },
+          "value": [
+            1794848888.353,
+            "56"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.35:8080",
+            "job": "api",
+            "le": "1.6",
+            "pod": "api-8f779df47-t7hf5"
+          },
+          "value": [
+            1794848888.353,
+            "163"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.35:8080",
+            "job": "api",
+            "le": "3.2",
+            "pod": "api-8f779df47-t7hf5"
+          },
+          "value": [
+            1794848888.353,
+            "471"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.35:8080",
+            "job": "api",
+            "le": "6.4",
+            "pod": "api-8f779df47-t7hf5"
+          },
+          "value": [
+            1794848888.353,
+            "471"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.35:8080",
+            "job": "api",
+            "le": "12.8",
+            "pod": "api-8f779df47-t7hf5"
+          },
+          "value": [
+            1794848888.353,
+            "471"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.35:8080",
+            "job": "api",
+            "le": "25.6",
+            "pod": "api-8f779df47-t7hf5"
+          },
+          "value": [
+            1794848888.353,
+            "471"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.35:8080",
+            "job": "api",
+            "le": "51.2",
+            "pod": "api-8f779df47-t7hf5"
+          },
+          "value": [
+            1794848888.353,
+            "471"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.35:8080",
+            "job": "api",
+            "le": "+Inf",
+            "pod": "api-8f779df47-t7hf5"
+          },
+          "value": [
+            1794848888.353,
+            "471"
+          ]
+        }
+      ]
+    }
+  },
+  "buckets_after": {
+    "status": "success",
+    "data": {
+      "resultType": "vector",
+      "result": [
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.33:8080",
+            "job": "api",
+            "le": "0.025",
+            "pod": "api-8f779df47-fhsqv"
+          },
+          "value": [
+            1794848908.022,
+            "0"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.33:8080",
+            "job": "api",
+            "le": "0.05",
+            "pod": "api-8f779df47-fhsqv"
+          },
+          "value": [
+            1794848908.022,
+            "0"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.33:8080",
+            "job": "api",
+            "le": "0.1",
+            "pod": "api-8f779df47-fhsqv"
+          },
+          "value": [
+            1794848908.022,
+            "21"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.33:8080",
+            "job": "api",
+            "le": "0.2",
+            "pod": "api-8f779df47-fhsqv"
+          },
+          "value": [
+            1794848908.022,
+            "35"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.33:8080",
+            "job": "api",
+            "le": "0.4",
+            "pod": "api-8f779df47-fhsqv"
+          },
+          "value": [
+            1794848908.022,
+            "68"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.33:8080",
+            "job": "api",
+            "le": "0.8",
+            "pod": "api-8f779df47-fhsqv"
+          },
+          "value": [
+            1794848908.022,
+            "132"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.33:8080",
+            "job": "api",
+            "le": "1.6",
+            "pod": "api-8f779df47-fhsqv"
+          },
+          "value": [
+            1794848908.022,
+            "251"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.33:8080",
+            "job": "api",
+            "le": "3.2",
+            "pod": "api-8f779df47-fhsqv"
+          },
+          "value": [
+            1794848908.022,
+            "476"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.33:8080",
+            "job": "api",
+            "le": "6.4",
+            "pod": "api-8f779df47-fhsqv"
+          },
+          "value": [
+            1794848908.022,
+            "476"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.33:8080",
+            "job": "api",
+            "le": "12.8",
+            "pod": "api-8f779df47-fhsqv"
+          },
+          "value": [
+            1794848908.022,
+            "476"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.33:8080",
+            "job": "api",
+            "le": "25.6",
+            "pod": "api-8f779df47-fhsqv"
+          },
+          "value": [
+            1794848908.022,
+            "476"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.33:8080",
+            "job": "api",
+            "le": "51.2",
+            "pod": "api-8f779df47-fhsqv"
+          },
+          "value": [
+            1794848908.022,
+            "476"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.33:8080",
+            "job": "api",
+            "le": "+Inf",
+            "pod": "api-8f779df47-fhsqv"
+          },
+          "value": [
+            1794848908.022,
+            "476"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.35:8080",
+            "job": "api",
+            "le": "0.025",
+            "pod": "api-8f779df47-t7hf5"
+          },
+          "value": [
+            1794848908.022,
+            "0"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.35:8080",
+            "job": "api",
+            "le": "0.05",
+            "pod": "api-8f779df47-t7hf5"
+          },
+          "value": [
+            1794848908.022,
+            "0"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.35:8080",
+            "job": "api",
+            "le": "0.1",
+            "pod": "api-8f779df47-t7hf5"
+          },
+          "value": [
+            1794848908.022,
+            "15"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.35:8080",
+            "job": "api",
+            "le": "0.2",
+            "pod": "api-8f779df47-t7hf5"
+          },
+          "value": [
+            1794848908.022,
+            "19"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.35:8080",
+            "job": "api",
+            "le": "0.4",
+            "pod": "api-8f779df47-t7hf5"
+          },
+          "value": [
+            1794848908.022,
+            "32"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.35:8080",
+            "job": "api",
+            "le": "0.8",
+            "pod": "api-8f779df47-t7hf5"
+          },
+          "value": [
+            1794848908.022,
+            "64"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.35:8080",
+            "job": "api",
+            "le": "1.6",
+            "pod": "api-8f779df47-t7hf5"
+          },
+          "value": [
+            1794848908.022,
+            "171"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.35:8080",
+            "job": "api",
+            "le": "3.2",
+            "pod": "api-8f779df47-t7hf5"
+          },
+          "value": [
+            1794848908.022,
+            "479"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.35:8080",
+            "job": "api",
+            "le": "6.4",
+            "pod": "api-8f779df47-t7hf5"
+          },
+          "value": [
+            1794848908.022,
+            "479"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.35:8080",
+            "job": "api",
+            "le": "12.8",
+            "pod": "api-8f779df47-t7hf5"
+          },
+          "value": [
+            1794848908.022,
+            "479"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.35:8080",
+            "job": "api",
+            "le": "25.6",
+            "pod": "api-8f779df47-t7hf5"
+          },
+          "value": [
+            1794848908.022,
+            "479"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.35:8080",
+            "job": "api",
+            "le": "51.2",
+            "pod": "api-8f779df47-t7hf5"
+          },
+          "value": [
+            1794848908.022,
+            "479"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "api_ttfc_seconds_bucket",
+            "instance": "10.244.0.35:8080",
+            "job": "api",
+            "le": "+Inf",
+            "pod": "api-8f779df47-t7hf5"
+          },
+          "value": [
+            1794848908.022,
+            "479"
+          ]
+        }
+      ]
+    }
+  },
+  "note": "Серверный Histogram и клиент имеют разные границы измерения; квантиль Histogram интерполируется внутри bucket."
+}

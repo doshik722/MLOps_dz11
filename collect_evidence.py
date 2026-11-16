@@ -75,6 +75,8 @@ def main():
         lab.save('images-lock.json',json.loads(cri_images))
         size=lab.command(['docker','inspect','--size','hw11-control-plane'])
         lab.save('kind-size.json',json.loads(size))
+        volume=lab.command(['docker','exec','hw11-control-plane','du','-s','-B1','/var'])
+        lab.save('kind-volume-size.json',{'path':'/var','bytes':int(volume.split()[0]),'stdout':volume})
         disk=lab.command(['docker','system','df','-v']);(lab.RESULTS/'docker-disk-after.txt').write_text(disk,encoding='utf-8')
         pod=lab.ready_pods()[0]['metadata']['name']
         loaded=lab.kub('exec',pod,'--','python','-c',"import hashlib,json; from pathlib import Path; print(json.dumps({name:hashlib.sha256(Path(name).read_bytes()).hexdigest() for name in ['app.py','loadgen.py']}))")

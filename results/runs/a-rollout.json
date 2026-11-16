@@ -1,0 +1,1673 @@
+[
+  {
+    "running": false,
+    "result": {
+      "config": {
+        "run_id": "a-rollout",
+        "client": 0,
+        "traffic": "uniform",
+        "url": "http://api:8080",
+        "duration": 70,
+        "rate": 0.5,
+        "start_unix": 1794845434.614308,
+        "chunks": 4,
+        "interval": 0.05
+      },
+      "planned": 9,
+      "rows": [
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-0",
+          "client": 0,
+          "planned_mono": 1547.6468770503998,
+          "sent_mono": 1547.648392825,
+          "sent_unix": 1794845434.6158266,
+          "send_lag_seconds": 0.0015157746001932537,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1548.041175662,
+          "end_mono": 1548.226835344,
+          "pod": "api-8f779df47-nrq2f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061102855000171985,
+            0.06186009299995021,
+            0.06208480400005101
+          ],
+          "queue_seconds": 0.010034301999894524,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845435.194266,
+          "ttfc_seconds": 0.39278283699991334,
+          "total_seconds": 0.5784425189999638
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-4",
+          "client": 0,
+          "planned_mono": 1555.6468770503998,
+          "sent_mono": 1555.648383893,
+          "sent_unix": 1794845442.6158164,
+          "send_lag_seconds": 0.0015068426002926572,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1582.317383251,
+          "end_mono": 1582.502381741,
+          "pod": "api-8f779df47-h6g75",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061143701999981204,
+            0.061832839000089734,
+            0.061548925000124655
+          ],
+          "queue_seconds": 26.27997137600005,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845469.4681284,
+          "ttfc_seconds": 26.668999357999837,
+          "total_seconds": 26.853997847999835
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-8",
+          "client": 0,
+          "planned_mono": 1563.6468770503998,
+          "sent_mono": 1563.648797061,
+          "sent_unix": 1794845450.6162305,
+          "send_lag_seconds": 0.001920010600315436,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1563.706543184,
+          "end_mono": 1563.890361125,
+          "pod": "api-8f779df47-nrq2f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06104590199993254,
+            0.061352817999932086,
+            0.06081908900000599
+          ],
+          "queue_seconds": 0.00046502500003953173,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845450.8577917,
+          "ttfc_seconds": 0.05774612300001536,
+          "total_seconds": 0.24156406399993102
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-12",
+          "client": 0,
+          "planned_mono": 1571.6468770503998,
+          "sent_mono": 1571.650486082,
+          "sent_unix": 1794845458.6179183,
+          "send_lag_seconds": 0.003609031600262824,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1583.151699155,
+          "end_mono": 1583.335001957,
+          "pod": "api-8f779df47-h6g75",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06078498400006538,
+            0.06097789399996145,
+            0.06111770200004685
+          ],
+          "queue_seconds": 11.446524811000018,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845470.3007488,
+          "ttfc_seconds": 11.501213072999917,
+          "total_seconds": 11.684515874999988
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-16",
+          "client": 0,
+          "planned_mono": 1579.6468770503998,
+          "sent_mono": 1579.65507019,
+          "sent_unix": 1794845466.6208184,
+          "send_lag_seconds": 0.00819313960028012,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1580.028639359,
+          "end_mono": 1580.214093674,
+          "pod": "api-766477f485-4zq2n",
+          "model_version": "B",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06263598100008494,
+            0.06099229500000547,
+            0.06119440499992379
+          ],
+          "queue_seconds": 0.000261012999999366,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845467.1798406,
+          "ttfc_seconds": 0.373569168999893,
+          "total_seconds": 0.5590234839999084
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-20",
+          "client": 0,
+          "planned_mono": 1587.6468770503998,
+          "sent_mono": 1587.651264158,
+          "sent_unix": 1794845474.6170125,
+          "send_lag_seconds": 0.004387107600223317,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1587.706237379,
+          "end_mono": 1587.892466373,
+          "pod": "api-8f779df47-h6g75",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.0610539429999335,
+            0.06292434300007699,
+            0.061376660999940214
+          ],
+          "queue_seconds": 0.0002874150000025111,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845474.8582134,
+          "ttfc_seconds": 0.05497322099995472,
+          "total_seconds": 0.24120221499993022
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-24",
+          "client": 0,
+          "planned_mono": 1595.6468770503998,
+          "sent_mono": 1595.654828638,
+          "sent_unix": 1794845482.6205776,
+          "send_lag_seconds": 0.007951587600246057,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1595.710251379,
+          "end_mono": 1595.895929333,
+          "pod": "api-766477f485-4zq2n",
+          "model_version": "B",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06315105099997709,
+            0.061044439999932365,
+            0.06106624099993496
+          ],
+          "queue_seconds": 0.0002996150001308706,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845482.8616765,
+          "ttfc_seconds": 0.05542274100002942,
+          "total_seconds": 0.2411006949998864
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-28",
+          "client": 0,
+          "planned_mono": 1603.6468770503998,
+          "sent_mono": 1603.652137793,
+          "sent_unix": 1794845490.616239,
+          "send_lag_seconds": 0.005260742600285084,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1604.06857038,
+          "end_mono": 1604.253703332,
+          "pod": "api-766477f485-cjxtq",
+          "model_version": "B",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06147607200000493,
+            0.061615479000010964,
+            0.06147107199990387
+          ],
+          "queue_seconds": 0.00028861499981758243,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845491.217803,
+          "ttfc_seconds": 0.4164325869999175,
+          "total_seconds": 0.601565538999921
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-32",
+          "client": 0,
+          "planned_mono": 1611.6468770503998,
+          "sent_mono": 1611.655165351,
+          "sent_unix": 1794845498.6192672,
+          "send_lag_seconds": 0.008288300600270304,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1611.714651617,
+          "end_mono": 1611.898585307,
+          "pod": "api-766477f485-4zq2n",
+          "model_version": "B",
+          "parts": 4,
+          "intervals_seconds": [
+            0.060994446999984575,
+            0.061224757999980284,
+            0.06106995100003587
+          ],
+          "queue_seconds": 0.0007598409999900468,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845498.862685,
+          "ttfc_seconds": 0.059486266000021715,
+          "total_seconds": 0.2434199560000252
+        }
+      ],
+      "schedule": [
+        {
+          "request_id": "a-rollout-0",
+          "offset_seconds": 0.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-0",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-4",
+          "offset_seconds": 8.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-4",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-8",
+          "offset_seconds": 16.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-8",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-12",
+          "offset_seconds": 24.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-12",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-16",
+          "offset_seconds": 32.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-0",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-20",
+          "offset_seconds": 40.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-4",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-24",
+          "offset_seconds": 48.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-8",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-28",
+          "offset_seconds": 56.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-12",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-32",
+          "offset_seconds": 64.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-0",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        }
+      ],
+      "finished_unix": 1794845498.8627715,
+      "phase_seconds": 70
+    },
+    "error": null
+  },
+  {
+    "running": false,
+    "result": {
+      "config": {
+        "run_id": "a-rollout",
+        "client": 1,
+        "traffic": "uniform",
+        "url": "http://api:8080",
+        "duration": 70,
+        "rate": 0.5,
+        "start_unix": 1794845434.614308,
+        "chunks": 4,
+        "interval": 0.05
+      },
+      "planned": 9,
+      "rows": [
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-1",
+          "client": 1,
+          "planned_mono": 1549.6468770503998,
+          "sent_mono": 1549.652424516,
+          "sent_unix": 1794845436.6198583,
+          "send_lag_seconds": 0.005547465600329815,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1550.031828984,
+          "end_mono": 1550.217577971,
+          "pod": "api-8f779df47-nrq2f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06123116200001277,
+            0.062147007000021404,
+            0.06172268599993913
+          ],
+          "queue_seconds": 0.00045572299995910726,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845437.185009,
+          "ttfc_seconds": 0.37940446799984784,
+          "total_seconds": 0.5651534549999724
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-5",
+          "client": 1,
+          "planned_mono": 1557.6468770503998,
+          "sent_mono": 1557.652234019,
+          "sent_unix": 1794845444.619666,
+          "send_lag_seconds": 0.0053569686001537775,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1557.707120161,
+          "end_mono": 1557.891439242,
+          "pod": "api-8f779df47-nrq2f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.060804860000189365,
+            0.06144879399994352,
+            0.061499496999886105
+          ],
+          "queue_seconds": 0.0003316170000289276,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845444.85887,
+          "ttfc_seconds": 0.05488614199998665,
+          "total_seconds": 0.23920522299999902
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-9",
+          "client": 1,
+          "planned_mono": 1565.6468770503998,
+          "sent_mono": 1565.653834293,
+          "sent_unix": 1794845452.6212668,
+          "send_lag_seconds": 0.00695724260026509,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1565.707740508,
+          "end_mono": 1565.891720057,
+          "pod": "api-8f779df47-nrq2f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06102320000013606,
+            0.061231311000028654,
+            0.06114860699995006
+          ],
+          "queue_seconds": 0.0002553140000145504,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845452.8591511,
+          "ttfc_seconds": 0.05390621499986992,
+          "total_seconds": 0.23788576399988415
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-13",
+          "client": 1,
+          "planned_mono": 1573.6468770503998,
+          "sent_mono": 1573.653424091,
+          "sent_unix": 1794845460.6191726,
+          "send_lag_seconds": 0.00654704060025324,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1574.028701616,
+          "end_mono": 1574.214259622,
+          "pod": "api-766477f485-4zq2n",
+          "model_version": "B",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06120623499987232,
+            0.06269351200012352,
+            0.06122933699998612
+          ],
+          "queue_seconds": 0.0003436179999880551,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845461.1800065,
+          "ttfc_seconds": 0.37527752500000133,
+          "total_seconds": 0.5608355310000661
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-17",
+          "client": 1,
+          "planned_mono": 1581.6468770503998,
+          "sent_mono": 1581.65493705,
+          "sent_unix": 1794845468.6206863,
+          "send_lag_seconds": 0.008059999600163792,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1583.966720548,
+          "end_mono": 1584.152547982,
+          "pod": "api-8f779df47-h6g75",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06164322900008301,
+            0.06160652699986713,
+            0.06192854400001124
+          ],
+          "queue_seconds": 1.9247750259999066,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845471.118295,
+          "ttfc_seconds": 2.311783498000068,
+          "total_seconds": 2.4976109320000432
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-21",
+          "client": 1,
+          "planned_mono": 1589.6468770503998,
+          "sent_mono": 1589.65251418,
+          "sent_unix": 1794845476.6182632,
+          "send_lag_seconds": 0.005637129600245316,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1589.708699365,
+          "end_mono": 1589.892922452,
+          "pod": "api-8f779df47-h6g75",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061027341999988494,
+            0.06134755900006894,
+            0.06122995299983813
+          ],
+          "queue_seconds": 0.0003541189998941263,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845476.8586695,
+          "ttfc_seconds": 0.05618518500000391,
+          "total_seconds": 0.24040827199996784
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-25",
+          "client": 1,
+          "planned_mono": 1597.6468770503998,
+          "sent_mono": 1597.653880028,
+          "sent_unix": 1794845484.61963,
+          "send_lag_seconds": 0.007002977600222948,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1598.071409986,
+          "end_mono": 1598.257069339,
+          "pod": "api-766477f485-cjxtq",
+          "model_version": "B",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06154676699998163,
+            0.06094293400019524,
+            0.06256711999981235
+          ],
+          "queue_seconds": 0.0004262219999873196,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845485.2228162,
+          "ttfc_seconds": 0.41752995799993187,
+          "total_seconds": 0.603189311000051
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-29",
+          "client": 1,
+          "planned_mono": 1605.6468770503998,
+          "sent_mono": 1605.655000934,
+          "sent_unix": 1794845492.6191018,
+          "send_lag_seconds": 0.00812388360031946,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1605.709132427,
+          "end_mono": 1605.894716403,
+          "pod": "api-766477f485-4zq2n",
+          "model_version": "B",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06135816599999089,
+            0.06139106799992078,
+            0.06231601500007855
+          ],
+          "queue_seconds": 0.0002350120000755851,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845492.8588166,
+          "ttfc_seconds": 0.05413149299988618,
+          "total_seconds": 0.2397154689999752
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-33",
+          "client": 1,
+          "planned_mono": 1613.6468770503998,
+          "sent_mono": 1613.65539521,
+          "sent_unix": 1794845500.6194978,
+          "send_lag_seconds": 0.008518159600271247,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1613.713699714,
+          "end_mono": 1613.8975778,
+          "pod": "api-766477f485-cjxtq",
+          "model_version": "B",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06093934299997272,
+            0.06144386999994822,
+            0.06095654499995362
+          ],
+          "queue_seconds": 0.0004440239999894402,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845500.8616776,
+          "ttfc_seconds": 0.058304504000034285,
+          "total_seconds": 0.24218258999985665
+        }
+      ],
+      "schedule": [
+        {
+          "request_id": "a-rollout-1",
+          "offset_seconds": 2.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-1",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-5",
+          "offset_seconds": 10.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-5",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-9",
+          "offset_seconds": 18.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-9",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-13",
+          "offset_seconds": 26.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-13",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-17",
+          "offset_seconds": 34.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-1",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-21",
+          "offset_seconds": 42.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-5",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-25",
+          "offset_seconds": 50.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-9",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-29",
+          "offset_seconds": 58.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-13",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-33",
+          "offset_seconds": 66.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-1",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        }
+      ],
+      "finished_unix": 1794845500.861756,
+      "phase_seconds": 70
+    },
+    "error": null
+  },
+  {
+    "running": false,
+    "result": {
+      "config": {
+        "run_id": "a-rollout",
+        "client": 2,
+        "traffic": "uniform",
+        "url": "http://api:8080",
+        "duration": 70,
+        "rate": 0.5,
+        "start_unix": 1794845434.614308,
+        "chunks": 4,
+        "interval": 0.05
+      },
+      "planned": 9,
+      "rows": [
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-2",
+          "client": 2,
+          "planned_mono": 1551.6468768119812,
+          "sent_mono": 1551.654691919,
+          "sent_unix": 1794845438.622124,
+          "send_lag_seconds": 0.00781510701881416,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1552.028707718,
+          "end_mono": 1552.213671565,
+          "pod": "api-8f779df47-nrq2f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061321865999843794,
+            0.061578678000159925,
+            0.061547176999965814
+          ],
+          "queue_seconds": 0.00028991500016672944,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845439.1811023,
+          "ttfc_seconds": 0.37401579900006254,
+          "total_seconds": 0.5589796459998979
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-6",
+          "client": 2,
+          "planned_mono": 1559.6468768119812,
+          "sent_mono": 1559.653366099,
+          "sent_unix": 1794845446.6207983,
+          "send_lag_seconds": 0.006489287018894174,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1559.709426504,
+          "end_mono": 1559.895367072,
+          "pod": "api-8f779df47-nrq2f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061159479000025385,
+            0.061670205999917016,
+            0.06242724699995961
+          ],
+          "queue_seconds": 0.0003128169998944941,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845446.8627977,
+          "ttfc_seconds": 0.056060404999925595,
+          "total_seconds": 0.24200097299990375
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-10",
+          "client": 2,
+          "planned_mono": 1567.6468768119812,
+          "sent_mono": 1567.654897209,
+          "sent_unix": 1794845454.6223288,
+          "send_lag_seconds": 0.00802039701875401,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1567.81672986,
+          "end_mono": 1568.002305096,
+          "pod": "api-8f779df47-nrq2f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061351618000117014,
+            0.06210965900004339,
+            0.06147152499988806
+          ],
+          "queue_seconds": 0.00029031600001871993,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845454.9697359,
+          "ttfc_seconds": 0.1618326509999406,
+          "total_seconds": 0.3474078870001449
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-14",
+          "client": 2,
+          "planned_mono": 1575.6468768119812,
+          "sent_mono": 1575.654783619,
+          "sent_unix": 1794845462.620534,
+          "send_lag_seconds": 0.007906807018798645,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1576.028774878,
+          "end_mono": 1576.212683299,
+          "pod": "api-766477f485-4zq2n",
+          "model_version": "B",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061290940000162664,
+            0.06108312899982593,
+            0.06099702500000603
+          ],
+          "queue_seconds": 0.00036941899998055305,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845463.1784306,
+          "ttfc_seconds": 0.37399125899992214,
+          "total_seconds": 0.5578996799999913
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-18",
+          "client": 2,
+          "planned_mono": 1583.6468768119812,
+          "sent_mono": 1583.656219183,
+          "sent_unix": 1794845470.6219673,
+          "send_lag_seconds": 0.009342371018874474,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1583.71076494,
+          "end_mono": 1583.89458927,
+          "pod": "api-766477f485-4zq2n",
+          "model_version": "B",
+          "parts": 4,
+          "intervals_seconds": [
+            0.060909290999916266,
+            0.06108680000011191,
+            0.06129080999994585
+          ],
+          "queue_seconds": 0.00026601400008985365,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845470.8603363,
+          "ttfc_seconds": 0.054545756999914374,
+          "total_seconds": 0.23837008700002116
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-22",
+          "client": 2,
+          "planned_mono": 1591.6468768119812,
+          "sent_mono": 1591.653642695,
+          "sent_unix": 1794845478.619392,
+          "send_lag_seconds": 0.006765883018715613,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1592.081724038,
+          "end_mono": 1592.266310644,
+          "pod": "api-766477f485-cjxtq",
+          "model_version": "B",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061406462000149986,
+            0.0614784659999259,
+            0.061012542000071335
+          ],
+          "queue_seconds": 0.008735363999903711,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845479.2320576,
+          "ttfc_seconds": 0.42808134300003076,
+          "total_seconds": 0.6126679490000697
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-26",
+          "client": 2,
+          "planned_mono": 1599.6468768119812,
+          "sent_mono": 1599.654460599,
+          "sent_unix": 1794845486.62021,
+          "send_lag_seconds": 0.007583787018802468,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1599.709707931,
+          "end_mono": 1599.895139572,
+          "pod": "api-766477f485-4zq2n",
+          "model_version": "B",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06120074800014663,
+            0.06215879899991705,
+            0.06142346000001453
+          ],
+          "queue_seconds": 0.0003991209998730483,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845486.8608866,
+          "ttfc_seconds": 0.055247331999908056,
+          "total_seconds": 0.24067897300005825
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-30",
+          "client": 2,
+          "planned_mono": 1607.6468768119812,
+          "sent_mono": 1607.652303088,
+          "sent_unix": 1794845494.6164038,
+          "send_lag_seconds": 0.00542627601885215,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1607.707270325,
+          "end_mono": 1607.890638586,
+          "pod": "api-766477f485-cjxtq",
+          "model_version": "B",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06102404799980832,
+            0.06082683900012853,
+            0.06091134200005399
+          ],
+          "queue_seconds": 0.00023371200018118543,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845494.8547382,
+          "ttfc_seconds": 0.054967237000028035,
+          "total_seconds": 0.23833549799996945
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-34",
+          "client": 2,
+          "planned_mono": 1615.6468768119812,
+          "sent_mono": 1615.656816033,
+          "sent_unix": 1794845502.6209173,
+          "send_lag_seconds": 0.009939221018839817,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1615.714154685,
+          "end_mono": 1615.898124476,
+          "pod": "api-766477f485-4zq2n",
+          "model_version": "B",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061111651999908645,
+            0.06109965199993894,
+            0.06122675900019203
+          ],
+          "queue_seconds": 0.00029711599995607685,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845502.862224,
+          "ttfc_seconds": 0.05733865199999855,
+          "total_seconds": 0.2413084429999799
+        }
+      ],
+      "schedule": [
+        {
+          "request_id": "a-rollout-2",
+          "offset_seconds": 4.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-2",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-6",
+          "offset_seconds": 12.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-6",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-10",
+          "offset_seconds": 20.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-10",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-14",
+          "offset_seconds": 28.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-14",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-18",
+          "offset_seconds": 36.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-2",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-22",
+          "offset_seconds": 44.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-6",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-26",
+          "offset_seconds": 52.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-10",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-30",
+          "offset_seconds": 60.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-14",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-34",
+          "offset_seconds": 68.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-2",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        }
+      ],
+      "finished_unix": 1794845502.862306,
+      "phase_seconds": 70
+    },
+    "error": null
+  },
+  {
+    "running": false,
+    "result": {
+      "config": {
+        "run_id": "a-rollout",
+        "client": 3,
+        "traffic": "uniform",
+        "url": "http://api:8080",
+        "duration": 70,
+        "rate": 0.5,
+        "start_unix": 1794845434.614308,
+        "chunks": 4,
+        "interval": 0.05
+      },
+      "planned": 8,
+      "rows": [
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-3",
+          "client": 3,
+          "planned_mono": 1553.6468768119812,
+          "sent_mono": 1553.65631149,
+          "sent_unix": 1794845440.6237445,
+          "send_lag_seconds": 0.009434678018806153,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1554.028435494,
+          "end_mono": 1554.213121427,
+          "pod": "api-8f779df47-nrq2f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06160128000010445,
+            0.0612716629998431,
+            0.061202860000094006
+          ],
+          "queue_seconds": 0.00039631999993616773,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845441.1805525,
+          "ttfc_seconds": 0.37212400399994294,
+          "total_seconds": 0.5568099370000255
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-7",
+          "client": 3,
+          "planned_mono": 1561.6468768119812,
+          "sent_mono": 1561.654561982,
+          "sent_unix": 1794845448.621994,
+          "send_lag_seconds": 0.007685170018703502,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1582.912759338,
+          "end_mono": 1583.100204457,
+          "pod": "api-8f779df47-h6g75",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.0621660570000131,
+            0.06203434899998683,
+            0.0626052800000707
+          ],
+          "queue_seconds": 20.84465119000015,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845470.0659513,
+          "ttfc_seconds": 21.258197355999982,
+          "total_seconds": 21.445642475000113
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-11",
+          "client": 3,
+          "planned_mono": 1569.6468768119812,
+          "sent_mono": 1569.652212822,
+          "sent_unix": 1794845456.6196456,
+          "send_lag_seconds": 0.005336010018709203,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1570.036141285,
+          "end_mono": 1570.220583359,
+          "pod": "api-766477f485-4zq2n",
+          "model_version": "B",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06096109700001762,
+            0.061275612999907025,
+            0.06161383200014825
+          ],
+          "queue_seconds": 0.010336959000142087,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845457.188014,
+          "ttfc_seconds": 0.38392846300007477,
+          "total_seconds": 0.5683705370001917
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-15",
+          "client": 3,
+          "planned_mono": 1577.6468768119812,
+          "sent_mono": 1577.655089892,
+          "sent_unix": 1794845464.6208386,
+          "send_lag_seconds": 0.008213080018776964,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1583.398926605,
+          "end_mono": 1583.583132555,
+          "pod": "api-8f779df47-h6g75",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061058998999897085,
+            0.060823486000117555,
+            0.0616277279998485
+          ],
+          "queue_seconds": 5.676470287000029,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845470.5488796,
+          "ttfc_seconds": 5.743836713000064,
+          "total_seconds": 5.928042663000042
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-19",
+          "client": 3,
+          "planned_mono": 1585.6468768119812,
+          "sent_mono": 1585.648703656,
+          "sent_unix": 1794845472.6144536,
+          "send_lag_seconds": 0.001826844018751217,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1585.707160718,
+          "end_mono": 1585.891379168,
+          "pod": "api-766477f485-4zq2n",
+          "model_version": "B",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06127190999995946,
+            0.061372013999971387,
+            0.06105829900002391
+          ],
+          "queue_seconds": 0.0005514290000974142,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845472.8571262,
+          "ttfc_seconds": 0.05845706200011591,
+          "total_seconds": 0.24267551200000526
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-23",
+          "client": 3,
+          "planned_mono": 1593.6468768119812,
+          "sent_mono": 1593.652216374,
+          "sent_unix": 1794845480.617965,
+          "send_lag_seconds": 0.00533956201888941,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1594.027908234,
+          "end_mono": 1594.212608746,
+          "pod": "api-766477f485-cjxtq",
+          "model_version": "B",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06118975100002899,
+            0.06138986099995236,
+            0.061731679999866174
+          ],
+          "queue_seconds": 0.00032891799992285087,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845481.1783555,
+          "ttfc_seconds": 0.3756918599999608,
+          "total_seconds": 0.5603923719997965
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-27",
+          "client": 3,
+          "planned_mono": 1601.6468768119812,
+          "sent_mono": 1601.656201933,
+          "sent_unix": 1794845488.6219516,
+          "send_lag_seconds": 0.009325121018719074,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1601.713046149,
+          "end_mono": 1601.899715656,
+          "pod": "api-766477f485-cjxtq",
+          "model_version": "B",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06158306799989077,
+            0.06224740400011797,
+            0.06190918599986617
+          ],
+          "queue_seconds": 0.00044012300008944294,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845488.8654625,
+          "ttfc_seconds": 0.05684421600017231,
+          "total_seconds": 0.2435137229999782
+        },
+        {
+          "run_id": "a-rollout",
+          "request_id": "a-rollout-31",
+          "client": 3,
+          "planned_mono": 1609.6468768119812,
+          "sent_mono": 1609.654166778,
+          "sent_unix": 1794845496.6182692,
+          "send_lag_seconds": 0.007289966018788618,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1609.708847999,
+          "end_mono": 1609.893071104,
+          "pod": "api-766477f485-4zq2n",
+          "model_version": "B",
+          "parts": 4,
+          "intervals_seconds": [
+            0.060890642000003936,
+            0.0614320699999098,
+            0.06133826400014186
+          ],
+          "queue_seconds": 0.00027941500002270914,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845496.8571706,
+          "ttfc_seconds": 0.05468122100000983,
+          "total_seconds": 0.23890432600001077
+        }
+      ],
+      "schedule": [
+        {
+          "request_id": "a-rollout-3",
+          "offset_seconds": 6.0,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-3",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-7",
+          "offset_seconds": 14.0,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-7",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-11",
+          "offset_seconds": 22.0,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-11",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-15",
+          "offset_seconds": 30.0,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-15",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-19",
+          "offset_seconds": 38.0,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-3",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-23",
+          "offset_seconds": 46.0,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-7",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-27",
+          "offset_seconds": 54.0,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-11",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-rollout-31",
+          "offset_seconds": 62.0,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-15",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        }
+      ],
+      "finished_unix": 1794845496.857251,
+      "phase_seconds": 70
+    },
+    "error": null
+  }
+]

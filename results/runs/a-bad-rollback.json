@@ -1,0 +1,3248 @@
+[
+  {
+    "running": false,
+    "result": {
+      "config": {
+        "run_id": "a-bad-rollback",
+        "client": 0,
+        "traffic": "uniform",
+        "url": "http://api:8080",
+        "duration": 70,
+        "rate": 1,
+        "start_unix": 1794845553.1827953,
+        "chunks": 4,
+        "interval": 0.05
+      },
+      "planned": 18,
+      "rows": [
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-0",
+          "client": 0,
+          "planned_mono": 1666.2203254699707,
+          "sent_mono": 1666.224202702,
+          "sent_unix": 1794845553.1852057,
+          "send_lag_seconds": 0.003877232029253719,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1666.631607822,
+          "end_mono": 1666.816919501,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061359771000070396,
+            0.06253653399994619,
+            0.06087214500007576
+          ],
+          "queue_seconds": 0.011730725000006714,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845553.7779202,
+          "ttfc_seconds": 0.40740512000002127,
+          "total_seconds": 0.5927167990000726
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-4",
+          "client": 0,
+          "planned_mono": 1670.2203254699707,
+          "sent_mono": 1670.224365899,
+          "sent_unix": 1794845557.185368,
+          "send_lag_seconds": 0.004040429029373627,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1670.279769783,
+          "end_mono": 1670.4645121,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06134049400020558,
+            0.06128568999997697,
+            0.0614808999998786
+          ],
+          "queue_seconds": 0.0003031159999409283,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845557.425513,
+          "ttfc_seconds": 0.05540388399981566,
+          "total_seconds": 0.24014620100001594
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-8",
+          "client": 0,
+          "planned_mono": 1674.2203254699707,
+          "sent_mono": 1674.224127908,
+          "sent_unix": 1794845561.1851304,
+          "send_lag_seconds": 0.0038024380291972193,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1674.599295938,
+          "end_mono": 1674.784377972,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06200902799992036,
+            0.061131381999985024,
+            0.061443698999937624
+          ],
+          "queue_seconds": 0.00042352200011919194,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845561.7453785,
+          "ttfc_seconds": 0.3751680300001681,
+          "total_seconds": 0.5602500640000017
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-12",
+          "client": 0,
+          "planned_mono": 1678.2203254699707,
+          "sent_mono": 1678.223964179,
+          "sent_unix": 1794845565.1849663,
+          "send_lag_seconds": 0.0036387090292464563,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1678.278965026,
+          "end_mono": 1678.464178851,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06262095600004614,
+            0.0607414549999703,
+            0.06121438000013768
+          ],
+          "queue_seconds": 0.00029861600000913313,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845565.4251797,
+          "ttfc_seconds": 0.055000846999973874,
+          "total_seconds": 0.24021467200009283
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-16",
+          "client": 0,
+          "planned_mono": 1682.2203254699707,
+          "sent_mono": 1682.2254113,
+          "sent_unix": 1794845569.1864152,
+          "send_lag_seconds": 0.005085830029202043,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1682.283811729,
+          "end_mono": 1682.467658681,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061355088000027536,
+            0.060974267999881704,
+            0.0611035740000716
+          ],
+          "queue_seconds": 0.000414322000096945,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845569.4286594,
+          "ttfc_seconds": 0.058400429000130316,
+          "total_seconds": 0.2422473810001975
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-20",
+          "client": 0,
+          "planned_mono": 1686.2203254699707,
+          "sent_mono": 1686.224561958,
+          "sent_unix": 1794845573.1855648,
+          "send_lag_seconds": 0.004236488029391694,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1686.279055672,
+          "end_mono": 1686.463557838,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06138018199999351,
+            0.06115417000000889,
+            0.0614056829999754
+          ],
+          "queue_seconds": 0.0002848149999863381,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845573.4245586,
+          "ttfc_seconds": 0.05449371399981828,
+          "total_seconds": 0.23899587999994765
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-24",
+          "client": 0,
+          "planned_mono": 1690.2203254699707,
+          "sent_mono": 1690.224786754,
+          "sent_unix": 1794845577.18579,
+          "send_lag_seconds": 0.004461284029275703,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1690.281629294,
+          "end_mono": 1690.466977505,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06110326700013502,
+            0.06245323999996799,
+            0.06101006199992298
+          ],
+          "queue_seconds": 0.00044882399993184663,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845577.4279788,
+          "ttfc_seconds": 0.05684253999993416,
+          "total_seconds": 0.2421907509999528
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-28",
+          "client": 0,
+          "planned_mono": 1694.2203254699707,
+          "sent_mono": 1694.224997902,
+          "sent_unix": 1794845581.1841943,
+          "send_lag_seconds": 0.00467243202933787,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1694.279471631,
+          "end_mono": 1694.4643906,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06139511300011691,
+            0.061881932999995115,
+            0.061178203999816105
+          ],
+          "queue_seconds": 0.0003404139999929612,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845581.4235857,
+          "ttfc_seconds": 0.05447372899993752,
+          "total_seconds": 0.23939269799984686
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-32",
+          "client": 0,
+          "planned_mono": 1698.2203254699707,
+          "sent_mono": 1698.224264392,
+          "sent_unix": 1794845585.183461,
+          "send_lag_seconds": 0.003938922029192327,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1698.278729122,
+          "end_mono": 1698.463751895,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061770128000034674,
+            0.061027998000099615,
+            0.06154031899995971
+          ],
+          "queue_seconds": 0.00031271300008484104,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845585.422947,
+          "ttfc_seconds": 0.054464730000063355,
+          "total_seconds": 0.23948750300019128
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-36",
+          "client": 0,
+          "planned_mono": 1702.2203254699707,
+          "sent_mono": 1702.224636831,
+          "sent_unix": 1794845589.183833,
+          "send_lag_seconds": 0.004311361029294858,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1702.278788536,
+          "end_mono": 1702.464148641,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061844804999964254,
+            0.061578691000022445,
+            0.061384679999946457
+          ],
+          "queue_seconds": 0.0003063160002056975,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845589.4233437,
+          "ttfc_seconds": 0.05415170500009481,
+          "total_seconds": 0.23951181000006727
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-40",
+          "client": 0,
+          "planned_mono": 1706.2203254699707,
+          "sent_mono": 1706.224255369,
+          "sent_unix": 1794845593.1834517,
+          "send_lag_seconds": 0.003929899029344597,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1706.27908301,
+          "end_mono": 1706.466697231,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06147698499989929,
+            0.06140368199999102,
+            0.06376760400007697
+          ],
+          "queue_seconds": 0.00045982400001776114,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845593.4258926,
+          "ttfc_seconds": 0.05482764099997439,
+          "total_seconds": 0.24244186199985052
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-44",
+          "client": 0,
+          "planned_mono": 1710.2203254699707,
+          "sent_mono": 1710.224801792,
+          "sent_unix": 1794845597.1839993,
+          "send_lag_seconds": 0.0044763220294044,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1710.280455226,
+          "end_mono": 1710.466996259,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06184815999995408,
+            0.06281381100006911,
+            0.06130923199998506
+          ],
+          "queue_seconds": 0.0005368280001221137,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845597.426191,
+          "ttfc_seconds": 0.05565343399985068,
+          "total_seconds": 0.24219446699999025
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-48",
+          "client": 0,
+          "planned_mono": 1714.2203254699707,
+          "sent_mono": 1714.224938757,
+          "sent_unix": 1794845601.184135,
+          "send_lag_seconds": 0.004613287029314961,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1714.28095461,
+          "end_mono": 1714.466612697,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06213947600008396,
+            0.06138693599996259,
+            0.0613216320000447
+          ],
+          "queue_seconds": 0.00029811600006723893,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845601.425808,
+          "ttfc_seconds": 0.05601585299996259,
+          "total_seconds": 0.24167394000005515
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-52",
+          "client": 0,
+          "planned_mono": 1718.2203254699707,
+          "sent_mono": 1718.224606255,
+          "sent_unix": 1794845605.183803,
+          "send_lag_seconds": 0.004280785029322942,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1718.280785014,
+          "end_mono": 1718.466839113,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061755451999943034,
+            0.0610942180001075,
+            0.062105170999984693
+          ],
+          "queue_seconds": 0.00044492300003184937,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845605.4260342,
+          "ttfc_seconds": 0.05617875899997671,
+          "total_seconds": 0.24223285800007943
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-56",
+          "client": 0,
+          "planned_mono": 1722.2203254699707,
+          "sent_mono": 1722.224707923,
+          "sent_unix": 1794845609.1839037,
+          "send_lag_seconds": 0.0043824530293932185,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1722.279490109,
+          "end_mono": 1722.464971377,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061787353999989136,
+            0.06160494400000971,
+            0.06130192899991016
+          ],
+          "queue_seconds": 0.00025041300000339106,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845609.4241662,
+          "ttfc_seconds": 0.05478218600001128,
+          "total_seconds": 0.24026345399988713
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-60",
+          "client": 0,
+          "planned_mono": 1726.2203254699707,
+          "sent_mono": 1726.224723353,
+          "sent_unix": 1794845613.1827128,
+          "send_lag_seconds": 0.0043978830292417115,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1726.279479133,
+          "end_mono": 1726.464469023,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06160902700003135,
+            0.06127611099987007,
+            0.06149182100011785
+          ],
+          "queue_seconds": 0.0002807150001444825,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845613.4224575,
+          "ttfc_seconds": 0.054755780000050436,
+          "total_seconds": 0.23974567000004754
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-64",
+          "client": 0,
+          "planned_mono": 1730.2203254699707,
+          "sent_mono": 1730.224157175,
+          "sent_unix": 1794845617.1821473,
+          "send_lag_seconds": 0.003831705029369914,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1730.280246022,
+          "end_mono": 1730.465148008,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06225715999994463,
+            0.06104349900010675,
+            0.06099569599996357
+          ],
+          "queue_seconds": 0.0002655129999311612,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845617.4231522,
+          "ttfc_seconds": 0.05608884699995542,
+          "total_seconds": 0.2409908329998416
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-68",
+          "client": 0,
+          "planned_mono": 1734.2203254699707,
+          "sent_mono": 1734.224965422,
+          "sent_unix": 1794845621.1829557,
+          "send_lag_seconds": 0.00463995202926526,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1734.281386591,
+          "end_mono": 1734.466795846,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06193975900009718,
+            0.06150313599982837,
+            0.06124042200008262
+          ],
+          "queue_seconds": 0.0003613190001487965,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845621.4247844,
+          "ttfc_seconds": 0.05642116900003202,
+          "total_seconds": 0.24183042399999977
+        }
+      ],
+      "schedule": [
+        {
+          "request_id": "a-bad-rollback-0",
+          "offset_seconds": 0.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-0",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-4",
+          "offset_seconds": 4.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-4",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-8",
+          "offset_seconds": 8.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-8",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-12",
+          "offset_seconds": 12.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-12",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-16",
+          "offset_seconds": 16.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-0",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-20",
+          "offset_seconds": 20.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-4",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-24",
+          "offset_seconds": 24.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-8",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-28",
+          "offset_seconds": 28.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-12",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-32",
+          "offset_seconds": 32.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-0",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-36",
+          "offset_seconds": 36.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-4",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-40",
+          "offset_seconds": 40.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-8",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-44",
+          "offset_seconds": 44.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-12",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-48",
+          "offset_seconds": 48.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-0",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-52",
+          "offset_seconds": 52.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-4",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-56",
+          "offset_seconds": 56.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-8",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-60",
+          "offset_seconds": 60.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-12",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-64",
+          "offset_seconds": 64.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-0",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-68",
+          "offset_seconds": 68.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-4",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        }
+      ],
+      "finished_unix": 1794845621.4248676,
+      "phase_seconds": 70
+    },
+    "error": null
+  },
+  {
+    "running": false,
+    "result": {
+      "config": {
+        "run_id": "a-bad-rollback",
+        "client": 1,
+        "traffic": "uniform",
+        "url": "http://api:8080",
+        "duration": 70,
+        "rate": 1,
+        "start_unix": 1794845553.1827953,
+        "chunks": 4,
+        "interval": 0.05
+      },
+      "planned": 18,
+      "rows": [
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-1",
+          "client": 1,
+          "planned_mono": 1667.2203252315521,
+          "sent_mono": 1667.225162766,
+          "sent_unix": 1794845554.1861656,
+          "send_lag_seconds": 0.004837534447915459,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1667.619843421,
+          "end_mono": 1667.804496033,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06196842600002128,
+            0.060829966000028435,
+            0.061224887999969724
+          ],
+          "queue_seconds": 0.00042452299999240495,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845554.7654967,
+          "ttfc_seconds": 0.39468065500000193,
+          "total_seconds": 0.5793332670000382
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-5",
+          "client": 1,
+          "planned_mono": 1671.2203252315521,
+          "sent_mono": 1671.224176245,
+          "sent_unix": 1794845558.1851795,
+          "send_lag_seconds": 0.003851013447956575,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1671.281977754,
+          "end_mono": 1671.466424955,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06135099299990543,
+            0.06127958999991279,
+            0.06120378600007825
+          ],
+          "queue_seconds": 0.00044642400007433025,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845558.4274259,
+          "ttfc_seconds": 0.057801509000000806,
+          "total_seconds": 0.24224871000001258
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-9",
+          "client": 1,
+          "planned_mono": 1675.2203252315521,
+          "sent_mono": 1675.224536885,
+          "sent_unix": 1794845562.1855392,
+          "send_lag_seconds": 0.004211653447782737,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1675.598871311,
+          "end_mono": 1675.784017432,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06199572199989234,
+            0.060925765000092724,
+            0.061804411999901276
+          ],
+          "queue_seconds": 0.00048482500005775364,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845562.745018,
+          "ttfc_seconds": 0.3743344260001322,
+          "total_seconds": 0.559480547000021
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-13",
+          "client": 1,
+          "planned_mono": 1679.2203252315521,
+          "sent_mono": 1679.225224932,
+          "sent_unix": 1794845566.1862268,
+          "send_lag_seconds": 0.004899700447822397,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1679.280275582,
+          "end_mono": 1679.465434804,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061574299999847426,
+            0.06165080300002046,
+            0.06135098800018568
+          ],
+          "queue_seconds": 0.00032431800013910106,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845566.4264355,
+          "ttfc_seconds": 0.055050650000112,
+          "total_seconds": 0.24020987200015043
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-17",
+          "client": 1,
+          "planned_mono": 1683.2203252315521,
+          "sent_mono": 1683.221295165,
+          "sent_unix": 1794845570.1822977,
+          "send_lag_seconds": 0.0009699334477772936,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1683.276647629,
+          "end_mono": 1683.460762174,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06161349499984681,
+            0.06084855300014169,
+            0.06107636599995203
+          ],
+          "queue_seconds": 0.0002771150000171474,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845570.4217632,
+          "ttfc_seconds": 0.05535246400017968,
+          "total_seconds": 0.23946700900000906
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-21",
+          "client": 1,
+          "planned_mono": 1687.2203252315521,
+          "sent_mono": 1687.224108405,
+          "sent_unix": 1794845574.1851103,
+          "send_lag_seconds": 0.0037831734478004364,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1687.28106015,
+          "end_mono": 1687.466311356,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061506288999908065,
+            0.06201631600015389,
+            0.06115036999995027
+          ],
+          "queue_seconds": 0.000370720000091751,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845574.4273121,
+          "ttfc_seconds": 0.0569517450001058,
+          "total_seconds": 0.24220295100008116
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-25",
+          "client": 1,
+          "planned_mono": 1691.2203252315521,
+          "sent_mono": 1691.224367303,
+          "sent_unix": 1794845578.18537,
+          "send_lag_seconds": 0.004042071447884155,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1691.281002204,
+          "end_mono": 1691.466031878,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06170852599984755,
+            0.06162822200008122,
+            0.06110590200000843
+          ],
+          "queue_seconds": 0.0004034210001009342,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845578.4270325,
+          "ttfc_seconds": 0.056634901000052196,
+          "total_seconds": 0.24166457499995886
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-29",
+          "client": 1,
+          "planned_mono": 1695.2203252315521,
+          "sent_mono": 1695.224250701,
+          "sent_unix": 1794845582.1834471,
+          "send_lag_seconds": 0.003925469447949581,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1695.278586525,
+          "end_mono": 1695.462946471,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06131041000003279,
+            0.061194504000013694,
+            0.06134271099995203
+          ],
+          "queue_seconds": 0.00027271100020698213,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845582.4221416,
+          "ttfc_seconds": 0.054335823999963395,
+          "total_seconds": 0.238695769999822
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-33",
+          "client": 1,
+          "planned_mono": 1699.2203252315521,
+          "sent_mono": 1699.225078156,
+          "sent_unix": 1794845586.1842763,
+          "send_lag_seconds": 0.004752924447984697,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1699.283309939,
+          "end_mono": 1699.468091101,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.0619885000000977,
+            0.06162359299992204,
+            0.060586039000099845
+          ],
+          "queue_seconds": 0.0006161260000681068,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845586.4272864,
+          "ttfc_seconds": 0.05823178299988285,
+          "total_seconds": 0.24301294499991855
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-37",
+          "client": 1,
+          "planned_mono": 1703.2203252315521,
+          "sent_mono": 1703.224285527,
+          "sent_unix": 1794845590.1834824,
+          "send_lag_seconds": 0.003960295447768658,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1703.279794803,
+          "end_mono": 1703.464852692,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06137727999998788,
+            0.06115966900006242,
+            0.06201631399994767
+          ],
+          "queue_seconds": 0.00039951999997356324,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845590.4240475,
+          "ttfc_seconds": 0.055509276000066166,
+          "total_seconds": 0.24056716500012953
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-41",
+          "client": 1,
+          "planned_mono": 1707.2203252315521,
+          "sent_mono": 1707.224512697,
+          "sent_unix": 1794845594.183709,
+          "send_lag_seconds": 0.004187465447785144,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1707.279234733,
+          "end_mono": 1707.463914753,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061292315999935454,
+            0.061538444000007075,
+            0.061301831000037055
+          ],
+          "queue_seconds": 0.00023471200006497384,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845594.4231095,
+          "ttfc_seconds": 0.05472203600015746,
+          "total_seconds": 0.23940205600001718
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-45",
+          "client": 1,
+          "planned_mono": 1711.2203252315521,
+          "sent_mono": 1711.224161373,
+          "sent_unix": 1794845598.183358,
+          "send_lag_seconds": 0.0038361414478913503,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1711.278478236,
+          "end_mono": 1711.464350234,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06166475100008029,
+            0.06183915899987369,
+            0.06182375900016268
+          ],
+          "queue_seconds": 0.0003140170001643128,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845598.4235451,
+          "ttfc_seconds": 0.054316862999939985,
+          "total_seconds": 0.24018886099997871
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-49",
+          "client": 1,
+          "planned_mono": 1715.2203252315521,
+          "sent_mono": 1715.223121376,
+          "sent_unix": 1794845602.1823177,
+          "send_lag_seconds": 0.002796144447984261,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1715.278225081,
+          "end_mono": 1715.462636294,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061366033000012976,
+            0.061739251999824774,
+            0.060748499000055745
+          ],
+          "queue_seconds": 0.00023281300013877626,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845602.4218311,
+          "ttfc_seconds": 0.055103704999964975,
+          "total_seconds": 0.23951491799994074
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-53",
+          "client": 1,
+          "planned_mono": 1719.2203252315521,
+          "sent_mono": 1719.224449113,
+          "sent_unix": 1794845606.1836452,
+          "send_lag_seconds": 0.004123881447867461,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1719.279484611,
+          "end_mono": 1719.464419051,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06171615099992778,
+            0.061234824999928605,
+            0.06136873200011905
+          ],
+          "queue_seconds": 0.0002760139998372324,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845606.423614,
+          "ttfc_seconds": 0.05503549800005203,
+          "total_seconds": 0.2399699380000584
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-57",
+          "client": 1,
+          "planned_mono": 1723.2203252315521,
+          "sent_mono": 1723.224142759,
+          "sent_unix": 1794845610.1833394,
+          "send_lag_seconds": 0.0038175274478362553,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1723.278685332,
+          "end_mono": 1723.463006062,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06112227600010556,
+            0.06090809200009062,
+            0.061804937999795584
+          ],
+          "queue_seconds": 0.00028921599982822954,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845610.422201,
+          "ttfc_seconds": 0.054542572999935146,
+          "total_seconds": 0.23886330300001646
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-61",
+          "client": 1,
+          "planned_mono": 1727.2203252315521,
+          "sent_mono": 1727.224170888,
+          "sent_unix": 1794845614.1821601,
+          "send_lag_seconds": 0.0038456564477655775,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1727.278888865,
+          "end_mono": 1727.463543139,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06115410500001417,
+            0.06158982600004492,
+            0.06108880099986891
+          ],
+          "queue_seconds": 0.00029151500007174036,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845614.4215314,
+          "ttfc_seconds": 0.054717977000109386,
+          "total_seconds": 0.23937225100007709
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-65",
+          "client": 1,
+          "planned_mono": 1731.2203252315521,
+          "sent_mono": 1731.22461646,
+          "sent_unix": 1794845618.182606,
+          "send_lag_seconds": 0.004291228447982576,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1731.280938819,
+          "end_mono": 1731.466152272,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06113292499981071,
+            0.061488635000159775,
+            0.06165114400005223
+          ],
+          "queue_seconds": 0.0003114159999313415,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845618.4241412,
+          "ttfc_seconds": 0.05632235899997795,
+          "total_seconds": 0.24153581199993823
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-69",
+          "client": 1,
+          "planned_mono": 1735.2203252315521,
+          "sent_mono": 1735.224881931,
+          "sent_unix": 1794845622.1828716,
+          "send_lag_seconds": 0.004556699447903156,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1735.278913074,
+          "end_mono": 1735.465163273,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061411830999986705,
+            0.06267289700008405,
+            0.06115271799990296
+          ],
+          "queue_seconds": 0.0002600129998882039,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845622.423152,
+          "ttfc_seconds": 0.05403114299997469,
+          "total_seconds": 0.24028134199988926
+        }
+      ],
+      "schedule": [
+        {
+          "request_id": "a-bad-rollback-1",
+          "offset_seconds": 1.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-1",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-5",
+          "offset_seconds": 5.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-5",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-9",
+          "offset_seconds": 9.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-9",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-13",
+          "offset_seconds": 13.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-13",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-17",
+          "offset_seconds": 17.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-1",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-21",
+          "offset_seconds": 21.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-5",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-25",
+          "offset_seconds": 25.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-9",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-29",
+          "offset_seconds": 29.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-13",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-33",
+          "offset_seconds": 33.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-1",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-37",
+          "offset_seconds": 37.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-5",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-41",
+          "offset_seconds": 41.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-9",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-45",
+          "offset_seconds": 45.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-13",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-49",
+          "offset_seconds": 49.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-1",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-53",
+          "offset_seconds": 53.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-5",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-57",
+          "offset_seconds": 57.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-9",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-61",
+          "offset_seconds": 61.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-13",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-65",
+          "offset_seconds": 65.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-1",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-69",
+          "offset_seconds": 69.0,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-5",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        }
+      ],
+      "finished_unix": 1794845622.4233203,
+      "phase_seconds": 70
+    },
+    "error": null
+  },
+  {
+    "running": false,
+    "result": {
+      "config": {
+        "run_id": "a-bad-rollback",
+        "client": 2,
+        "traffic": "uniform",
+        "url": "http://api:8080",
+        "duration": 70,
+        "rate": 1,
+        "start_unix": 1794845553.1827953,
+        "chunks": 4,
+        "interval": 0.05
+      },
+      "planned": 17,
+      "rows": [
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-2",
+          "client": 2,
+          "planned_mono": 1668.2203254699707,
+          "sent_mono": 1668.224501097,
+          "sent_unix": 1794845555.1855066,
+          "send_lag_seconds": 0.004175627029326279,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1668.609648945,
+          "end_mono": 1668.796791587,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06158780600003411,
+            0.06318358900011845,
+            0.061535004000006666
+          ],
+          "queue_seconds": 0.008962766999957239,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845555.7577922,
+          "ttfc_seconds": 0.38514784799986046,
+          "total_seconds": 0.5722904899998866
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-6",
+          "client": 2,
+          "planned_mono": 1672.2203254699707,
+          "sent_mono": 1672.224577621,
+          "sent_unix": 1794845559.185582,
+          "send_lag_seconds": 0.004252151029277229,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1672.617842893,
+          "end_mono": 1672.803016132,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06151950200001011,
+            0.06103377699992052,
+            0.06171061300005931
+          ],
+          "queue_seconds": 0.0005382280000958417,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845559.7640169,
+          "ttfc_seconds": 0.3932652720000078,
+          "total_seconds": 0.5784385110000585
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-10",
+          "client": 2,
+          "planned_mono": 1676.2203254699707,
+          "sent_mono": 1676.224672045,
+          "sent_unix": 1794845563.1856744,
+          "send_lag_seconds": 0.004346575029330779,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1676.27907406,
+          "end_mono": 1676.463119423,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061522396999862394,
+            0.06100696900011826,
+            0.06099756899993736
+          ],
+          "queue_seconds": 0.0002808149999964371,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845563.42412,
+          "ttfc_seconds": 0.054402015000050596,
+          "total_seconds": 0.23844737800004623
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-14",
+          "client": 2,
+          "planned_mono": 1680.2203254699707,
+          "sent_mono": 1680.225232419,
+          "sent_unix": 1794845567.1862361,
+          "send_lag_seconds": 0.00490694902919131,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1680.282262675,
+          "end_mono": 1680.466457745,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061154376999866145,
+            0.061322486000108256,
+            0.06133268600001429
+          ],
+          "queue_seconds": 0.0005079269999441749,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845567.4274583,
+          "ttfc_seconds": 0.05703025600018918,
+          "total_seconds": 0.2412253260001762
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-18",
+          "client": 2,
+          "planned_mono": 1684.2203254699707,
+          "sent_mono": 1684.224721124,
+          "sent_unix": 1794845571.1857257,
+          "send_lag_seconds": 0.004395654029394791,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1684.282383507,
+          "end_mono": 1684.466901174,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061222873999895455,
+            0.061726700999997774,
+            0.06099686099992141
+          ],
+          "queue_seconds": 0.0004014219998680346,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845571.427902,
+          "ttfc_seconds": 0.057662382999978945,
+          "total_seconds": 0.24218004999988807
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-22",
+          "client": 2,
+          "planned_mono": 1688.2203254699707,
+          "sent_mono": 1688.224595602,
+          "sent_unix": 1794845575.1855993,
+          "send_lag_seconds": 0.004270132029205342,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1688.285812475,
+          "end_mono": 1688.470595456,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061915010999882725,
+            0.0610271630000625,
+            0.06105406500000754
+          ],
+          "queue_seconds": 0.0005807309998999699,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845575.4315968,
+          "ttfc_seconds": 0.06121687300014855,
+          "total_seconds": 0.24599985400004698
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-26",
+          "client": 2,
+          "planned_mono": 1692.2203254699707,
+          "sent_mono": 1692.224272512,
+          "sent_unix": 1794845579.1852906,
+          "send_lag_seconds": 0.0039470420292673225,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1692.279149058,
+          "end_mono": 1692.464236334,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06207354100001794,
+            0.06103439799994703,
+            0.06131621000008636
+          ],
+          "queue_seconds": 0.0002874110000448127,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845579.425237,
+          "ttfc_seconds": 0.054876546000059534,
+          "total_seconds": 0.23996382199993604
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-30",
+          "client": 2,
+          "planned_mono": 1696.2203254699707,
+          "sent_mono": 1696.222200048,
+          "sent_unix": 1794845583.181396,
+          "send_lag_seconds": 0.0018745780294011638,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1696.277374406,
+          "end_mono": 1696.463215812,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06279446999997162,
+            0.0612663080000857,
+            0.06112440099991545
+          ],
+          "queue_seconds": 0.00033301400003438175,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845583.4224107,
+          "ttfc_seconds": 0.05517435799993109,
+          "total_seconds": 0.24101576399993974
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-34",
+          "client": 2,
+          "planned_mono": 1700.2203254699707,
+          "sent_mono": 1700.224147476,
+          "sent_unix": 1794845587.1833446,
+          "send_lag_seconds": 0.0038220060293951974,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1700.281008022,
+          "end_mono": 1700.465141363,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06099276000009013,
+            0.060966458999928363,
+            0.06168919700007791
+          ],
+          "queue_seconds": 0.00042922199986605847,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845587.4243362,
+          "ttfc_seconds": 0.05686054599982526,
+          "total_seconds": 0.24099388699983137
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-38",
+          "client": 2,
+          "planned_mono": 1704.2203254699707,
+          "sent_mono": 1704.224110232,
+          "sent_unix": 1794845591.1833067,
+          "send_lag_seconds": 0.0037847620292268402,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1704.278697961,
+          "end_mono": 1704.464370581,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06178680099992562,
+            0.06132907799997156,
+            0.06195091000017783
+          ],
+          "queue_seconds": 0.00037131999988559983,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845591.4235656,
+          "ttfc_seconds": 0.054587729000104446,
+          "total_seconds": 0.24026034899998194
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-42",
+          "client": 2,
+          "planned_mono": 1708.2203254699707,
+          "sent_mono": 1708.224229033,
+          "sent_unix": 1794845595.183425,
+          "send_lag_seconds": 0.0039035630293255963,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1708.279162628,
+          "end_mono": 1708.463478945,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06107461999999941,
+            0.061538544000086404,
+            0.061119621999978335
+          ],
+          "queue_seconds": 0.00027591499997470237,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845595.422674,
+          "ttfc_seconds": 0.05493359499996586,
+          "total_seconds": 0.23924991199987744
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-46",
+          "client": 2,
+          "planned_mono": 1712.2203254699707,
+          "sent_mono": 1712.224323596,
+          "sent_unix": 1794845599.1835206,
+          "send_lag_seconds": 0.003998126029273408,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1712.279181188,
+          "end_mono": 1712.464888677,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06164484900000389,
+            0.061566746000153216,
+            0.06129753099980917
+          ],
+          "queue_seconds": 0.00029301599988684757,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845599.4240835,
+          "ttfc_seconds": 0.054857591999962096,
+          "total_seconds": 0.24056508100011342
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-50",
+          "client": 2,
+          "planned_mono": 1716.2203254699707,
+          "sent_mono": 1716.224105798,
+          "sent_unix": 1794845603.1833024,
+          "send_lag_seconds": 0.0037803280292791896,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1716.279182498,
+          "end_mono": 1716.463892826,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06160584500003097,
+            0.061235225000018545,
+            0.061398332999942795
+          ],
+          "queue_seconds": 0.00028941499999746156,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845603.4230876,
+          "ttfc_seconds": 0.055076699999972334,
+          "total_seconds": 0.2397870279999097
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-54",
+          "client": 2,
+          "planned_mono": 1720.2203254699707,
+          "sent_mono": 1720.221544225,
+          "sent_unix": 1794845607.18074,
+          "send_lag_seconds": 0.0012187550291855587,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1720.276930042,
+          "end_mono": 1720.461597468,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06171055000004344,
+            0.061234524999917994,
+            0.06113632000005964
+          ],
+          "queue_seconds": 0.0002489129999503348,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845607.4207923,
+          "ttfc_seconds": 0.05538581700011491,
+          "total_seconds": 0.24005324300014763
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-58",
+          "client": 2,
+          "planned_mono": 1724.2203254699707,
+          "sent_mono": 1724.224506117,
+          "sent_unix": 1794845611.1824958,
+          "send_lag_seconds": 0.004180647029215834,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1724.279004684,
+          "end_mono": 1724.463760362,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06155522399990332,
+            0.061175906000016766,
+            0.06127201000003879
+          ],
+          "queue_seconds": 0.0002829140000812913,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845611.4217489,
+          "ttfc_seconds": 0.05449856700010969,
+          "total_seconds": 0.2392542449999837
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-62",
+          "client": 2,
+          "planned_mono": 1728.2203254699707,
+          "sent_mono": 1728.22456297,
+          "sent_unix": 1794845615.1825526,
+          "send_lag_seconds": 0.004237500029375951,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1728.279372452,
+          "end_mono": 1728.46587912,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06191554299994095,
+            0.06231936400013183,
+            0.061764134999975795
+          ],
+          "queue_seconds": 0.00027901500016014325,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845615.4238677,
+          "ttfc_seconds": 0.05480948199988234,
+          "total_seconds": 0.24131614999987505
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-66",
+          "client": 2,
+          "planned_mono": 1732.2203254699707,
+          "sent_mono": 1732.224567775,
+          "sent_unix": 1794845619.1825576,
+          "send_lag_seconds": 0.004242305029265481,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1732.27997729,
+          "end_mono": 1732.464881019,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06127892399990742,
+            0.06156203900013679,
+            0.06148483499987378
+          ],
+          "queue_seconds": 0.000323416999890469,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845619.4228697,
+          "ttfc_seconds": 0.05540951500006486,
+          "total_seconds": 0.24031324399993537
+        }
+      ],
+      "schedule": [
+        {
+          "request_id": "a-bad-rollback-2",
+          "offset_seconds": 2.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-2",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-6",
+          "offset_seconds": 6.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-6",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-10",
+          "offset_seconds": 10.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-10",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-14",
+          "offset_seconds": 14.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-14",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-18",
+          "offset_seconds": 18.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-2",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-22",
+          "offset_seconds": 22.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-6",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-26",
+          "offset_seconds": 26.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-10",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-30",
+          "offset_seconds": 30.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-14",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-34",
+          "offset_seconds": 34.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-2",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-38",
+          "offset_seconds": 38.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-6",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-42",
+          "offset_seconds": 42.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-10",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-46",
+          "offset_seconds": 46.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-14",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-50",
+          "offset_seconds": 50.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-2",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-54",
+          "offset_seconds": 54.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-6",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-58",
+          "offset_seconds": 58.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-10",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-62",
+          "offset_seconds": 62.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-14",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-66",
+          "offset_seconds": 66.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-2",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        }
+      ],
+      "finished_unix": 1794845619.423028,
+      "phase_seconds": 70
+    },
+    "error": null
+  },
+  {
+    "running": false,
+    "result": {
+      "config": {
+        "run_id": "a-bad-rollback",
+        "client": 3,
+        "traffic": "uniform",
+        "url": "http://api:8080",
+        "duration": 70,
+        "rate": 1,
+        "start_unix": 1794845553.1827953,
+        "chunks": 4,
+        "interval": 0.05
+      },
+      "planned": 17,
+      "rows": [
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-3",
+          "client": 3,
+          "planned_mono": 1669.2203257083893,
+          "sent_mono": 1669.225551506,
+          "sent_unix": 1794845556.186555,
+          "send_lag_seconds": 0.005225797610819427,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1669.619426709,
+          "end_mono": 1669.80424593,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061353794000069684,
+            0.06124248800006171,
+            0.06170831199983695
+          ],
+          "queue_seconds": 0.0004092219999165536,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845556.7652466,
+          "ttfc_seconds": 0.39387520299987955,
+          "total_seconds": 0.5786944239998775
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-7",
+          "client": 3,
+          "planned_mono": 1673.2203257083893,
+          "sent_mono": 1673.22522461,
+          "sent_unix": 1794845560.1862288,
+          "send_lag_seconds": 0.004898901610658868,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1673.598013316,
+          "end_mono": 1673.782431816,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06112868199988952,
+            0.061493100999996386,
+            0.06133219299999837
+          ],
+          "queue_seconds": 0.0005482290000600187,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845560.7434328,
+          "ttfc_seconds": 0.3727887060001649,
+          "total_seconds": 0.5572072060001574
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-11",
+          "client": 3,
+          "planned_mono": 1677.2203257083893,
+          "sent_mono": 1677.224327613,
+          "sent_unix": 1794845564.185331,
+          "send_lag_seconds": 0.004001904610731799,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1677.282789845,
+          "end_mono": 1677.46818398,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06167810500005544,
+            0.06202942400000211,
+            0.0611167749998458
+          ],
+          "queue_seconds": 0.0004904259999420901,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845564.4291847,
+          "ttfc_seconds": 0.05846223200001077,
+          "total_seconds": 0.24385636700003488
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-15",
+          "client": 3,
+          "planned_mono": 1681.2203257083893,
+          "sent_mono": 1681.224353957,
+          "sent_unix": 1794845568.1853564,
+          "send_lag_seconds": 0.004028248610666196,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1681.279678322,
+          "end_mono": 1681.464418722,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06152919699979975,
+            0.061361888000192266,
+            0.06118247899985363
+          ],
+          "queue_seconds": 0.0002724150001540693,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845568.4254198,
+          "ttfc_seconds": 0.05532436500016047,
+          "total_seconds": 0.24006476499994278
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-19",
+          "client": 3,
+          "planned_mono": 1685.2203257083893,
+          "sent_mono": 1685.220932493,
+          "sent_unix": 1794845572.1819353,
+          "send_lag_seconds": 0.0006067846106816432,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1685.278360964,
+          "end_mono": 1685.463148345,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06133887999999388,
+            0.061696698999867294,
+            0.06125267500010523
+          ],
+          "queue_seconds": 0.0005235279998032638,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845572.424149,
+          "ttfc_seconds": 0.05742847100009385,
+          "total_seconds": 0.24221585200007212
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-23",
+          "client": 3,
+          "planned_mono": 1689.2203257083893,
+          "sent_mono": 1689.224394962,
+          "sent_unix": 1794845576.185398,
+          "send_lag_seconds": 0.004069253610623491,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1689.282191453,
+          "end_mono": 1689.466684718,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06148738799993225,
+            0.061095667000017784,
+            0.061255475000052684
+          ],
+          "queue_seconds": 0.0005165269999451993,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845576.4276853,
+          "ttfc_seconds": 0.0577964910000901,
+          "total_seconds": 0.24228975599999103
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-27",
+          "client": 3,
+          "planned_mono": 1693.2203257083893,
+          "sent_mono": 1693.224139537,
+          "sent_unix": 1794845580.1851423,
+          "send_lag_seconds": 0.003813828610645942,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1693.280945562,
+          "end_mono": 1693.478838862,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06257286100003512,
+            0.062375752999969336,
+            0.0719874470000832
+          ],
+          "queue_seconds": 0.00035541500005820126,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845580.43984,
+          "ttfc_seconds": 0.056806025000014415,
+          "total_seconds": 0.2546993250000469
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-31",
+          "client": 3,
+          "planned_mono": 1697.2203257083893,
+          "sent_mono": 1697.224165958,
+          "sent_unix": 1794845584.1833627,
+          "send_lag_seconds": 0.003840249610675528,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1697.27943232,
+          "end_mono": 1697.46560384,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06166592399995352,
+            0.06195153599992409,
+            0.0619021340000927
+          ],
+          "queue_seconds": 0.00047071900007722434,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845584.4247987,
+          "ttfc_seconds": 0.05526636200011126,
+          "total_seconds": 0.2414378820001275
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-35",
+          "client": 3,
+          "planned_mono": 1701.2203257083893,
+          "sent_mono": 1701.22452031,
+          "sent_unix": 1794845588.1837165,
+          "send_lag_seconds": 0.004194601610606696,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1701.279657167,
+          "end_mono": 1701.467245687,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06256964199997128,
+            0.06136127900003885,
+            0.06295246199988469
+          ],
+          "queue_seconds": 0.00024091199998110824,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845588.426441,
+          "ttfc_seconds": 0.055136857000206874,
+          "total_seconds": 0.24272537700016983
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-39",
+          "client": 3,
+          "planned_mono": 1705.2203257083893,
+          "sent_mono": 1705.225372612,
+          "sent_unix": 1794845592.1845703,
+          "send_lag_seconds": 0.0050469036107188,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1705.283090703,
+          "end_mono": 1705.468239797,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061322878000055425,
+            0.06086495299996386,
+            0.06231362900007298
+          ],
+          "queue_seconds": 0.00048332500000469736,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845592.427435,
+          "ttfc_seconds": 0.05771809099996972,
+          "total_seconds": 0.2428671850000228
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-43",
+          "client": 3,
+          "planned_mono": 1709.2203257083893,
+          "sent_mono": 1709.224183945,
+          "sent_unix": 1794845596.1833816,
+          "send_lag_seconds": 0.0038582366107675625,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1709.28099494,
+          "end_mono": 1709.465307255,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06100431499999104,
+            0.06139973699987422,
+            0.061223827000048914
+          ],
+          "queue_seconds": 0.0005461289999857399,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845596.4245021,
+          "ttfc_seconds": 0.05681099499997799,
+          "total_seconds": 0.24112330999992082
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-47",
+          "client": 3,
+          "planned_mono": 1713.2203257083893,
+          "sent_mono": 1713.224137,
+          "sent_unix": 1794845600.1833339,
+          "send_lag_seconds": 0.0038112916106456396,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1713.279922141,
+          "end_mono": 1713.465600229,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06150054199997612,
+            0.06183895999993183,
+            0.06157684599997992
+          ],
+          "queue_seconds": 0.0002963160000035714,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845600.4247952,
+          "ttfc_seconds": 0.05578514100011489,
+          "total_seconds": 0.24146322900014638
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-51",
+          "client": 3,
+          "planned_mono": 1717.2203257083893,
+          "sent_mono": 1717.224520385,
+          "sent_unix": 1794845604.1837163,
+          "send_lag_seconds": 0.004194676610723036,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1717.280447431,
+          "end_mono": 1717.467856601,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06132932999980767,
+            0.06103271400002086,
+            0.06347464300006322
+          ],
+          "queue_seconds": 0.00036051899996891734,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845604.4270523,
+          "ttfc_seconds": 0.05592704600007892,
+          "total_seconds": 0.24333621599998878
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-55",
+          "client": 3,
+          "planned_mono": 1721.2203257083893,
+          "sent_mono": 1721.224120327,
+          "sent_unix": 1794845608.1833167,
+          "send_lag_seconds": 0.0037946186107546964,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1721.2805729,
+          "end_mono": 1721.466607898,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06233748299996478,
+            0.06157714300002226,
+            0.061561442000083844
+          ],
+          "queue_seconds": 0.00038762000008318864,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845608.4258032,
+          "ttfc_seconds": 0.05645257299988771,
+          "total_seconds": 0.24248757099985596
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-59",
+          "client": 3,
+          "planned_mono": 1725.2203257083893,
+          "sent_mono": 1725.224181563,
+          "sent_unix": 1794845612.182171,
+          "send_lag_seconds": 0.003855854610719689,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1725.278316111,
+          "end_mono": 1725.463352204,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061683330999812824,
+            0.061088701000016954,
+            0.06164942999998857
+          ],
+          "queue_seconds": 0.00027261399986855395,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845612.4213405,
+          "ttfc_seconds": 0.054134548000092764,
+          "total_seconds": 0.23917064100010066
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-63",
+          "client": 3,
+          "planned_mono": 1729.2203257083893,
+          "sent_mono": 1729.224133511,
+          "sent_unix": 1794845616.1821237,
+          "send_lag_seconds": 0.003807802610708677,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1729.278962294,
+          "end_mono": 1729.463172645,
+          "pod": "api-8f779df47-pq92f",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061443519000022206,
+            0.061203406999993604,
+            0.061031998000089516
+          ],
+          "queue_seconds": 0.00029601499977616186,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845616.4211612,
+          "ttfc_seconds": 0.05482878299994809,
+          "total_seconds": 0.2390391339999951
+        },
+        {
+          "run_id": "a-bad-rollback",
+          "request_id": "a-bad-rollback-67",
+          "client": 3,
+          "planned_mono": 1733.2203257083893,
+          "sent_mono": 1733.224168467,
+          "sent_unix": 1794845620.182158,
+          "send_lag_seconds": 0.0038427586107445677,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1733.279306468,
+          "end_mono": 1733.463291348,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06101091000004999,
+            0.06127822400003424,
+            0.061126715999989756
+          ],
+          "queue_seconds": 0.000283814999875176,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845620.4212797,
+          "ttfc_seconds": 0.055138000999932046,
+          "total_seconds": 0.2391228809999575
+        }
+      ],
+      "schedule": [
+        {
+          "request_id": "a-bad-rollback-3",
+          "offset_seconds": 3.0,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-3",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-7",
+          "offset_seconds": 7.0,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-7",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-11",
+          "offset_seconds": 11.0,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-11",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-15",
+          "offset_seconds": 15.0,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-15",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-19",
+          "offset_seconds": 19.0,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-3",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-23",
+          "offset_seconds": 23.0,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-7",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-27",
+          "offset_seconds": 27.0,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-11",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-31",
+          "offset_seconds": 31.0,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-15",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-35",
+          "offset_seconds": 35.0,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-3",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-39",
+          "offset_seconds": 39.0,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-7",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-43",
+          "offset_seconds": 43.0,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-11",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-47",
+          "offset_seconds": 47.0,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-15",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-51",
+          "offset_seconds": 51.0,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-3",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-55",
+          "offset_seconds": 55.0,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-7",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-59",
+          "offset_seconds": 59.0,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-11",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-63",
+          "offset_seconds": 63.0,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-15",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-bad-rollback-67",
+          "offset_seconds": 67.0,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-3",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        }
+      ],
+      "finished_unix": 1794845620.4213557,
+      "phase_seconds": 70
+    },
+    "error": null
+  }
+]

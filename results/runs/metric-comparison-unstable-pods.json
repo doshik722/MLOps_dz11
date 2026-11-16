@@ -1,0 +1,818 @@
+[
+  {
+    "running": false,
+    "result": {
+      "config": {
+        "run_id": "metric-comparison",
+        "client": 0,
+        "traffic": "uniform",
+        "url": "http://api:8080",
+        "duration": 8,
+        "rate": 2,
+        "start_unix": 1794848112.819346,
+        "chunks": 4,
+        "interval": 0.05
+      },
+      "planned": 4,
+      "rows": [
+        {
+          "run_id": "metric-comparison",
+          "request_id": "metric-comparison-0",
+          "client": 0,
+          "planned_mono": 4226.036550283432,
+          "sent_mono": 4226.040599421,
+          "sent_unix": 1794848112.8233972,
+          "send_lag_seconds": 0.004049137567562866,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 4226.457100047,
+          "end_mono": 4226.642907592,
+          "pod": "api-8f779df47-9q9mg",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06143122400044376,
+            0.06188944600035029,
+            0.06133021999994526
+          ],
+          "queue_seconds": 0.0003346150006109383,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794848113.4257033,
+          "ttfc_seconds": 0.4165006260000155,
+          "total_seconds": 0.6023081710000042
+        },
+        {
+          "run_id": "metric-comparison",
+          "request_id": "metric-comparison-4",
+          "client": 0,
+          "planned_mono": 4228.036550283432,
+          "sent_mono": 4228.03945857,
+          "sent_unix": 1794848114.8222558,
+          "send_lag_seconds": 0.002908286567617324,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 4228.417488465,
+          "end_mono": 4228.601715034,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06091839999953663,
+            0.06164703400008875,
+            0.06112301000030129
+          ],
+          "queue_seconds": 0.00034021600004052743,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794848115.3845105,
+          "ttfc_seconds": 0.378029895000509,
+          "total_seconds": 0.5622564640007113
+        },
+        {
+          "run_id": "metric-comparison",
+          "request_id": "metric-comparison-8",
+          "client": 0,
+          "planned_mono": 4230.036550283432,
+          "sent_mono": 4230.038320219,
+          "sent_unix": 1794848116.8211174,
+          "send_lag_seconds": 0.001769935567608627,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 4230.094537295,
+          "end_mono": 4230.280321839,
+          "pod": "api-8f779df47-9q9mg",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061350320000201464,
+            0.06273188599971036,
+            0.06115121099992393
+          ],
+          "queue_seconds": 0.00028931399992870865,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794848117.0631175,
+          "ttfc_seconds": 0.05621707600039372,
+          "total_seconds": 0.24200162000033743
+        },
+        {
+          "run_id": "metric-comparison",
+          "request_id": "metric-comparison-12",
+          "client": 0,
+          "planned_mono": 4232.036550283432,
+          "sent_mono": 4232.038174058,
+          "sent_unix": 1794848118.8209717,
+          "send_lag_seconds": 0.001623774567633518,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 4232.10111869,
+          "end_mono": 4232.289108047,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06525894400056131,
+            0.0612654520000433,
+            0.06091353400006483
+          ],
+          "queue_seconds": 0.0004306210003051092,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794848119.0719035,
+          "ttfc_seconds": 0.06294463199992606,
+          "total_seconds": 0.2509339890002593
+        }
+      ],
+      "schedule": [
+        {
+          "request_id": "metric-comparison-0",
+          "offset_seconds": 0.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-0",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "metric-comparison-4",
+          "offset_seconds": 2.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-4",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "metric-comparison-8",
+          "offset_seconds": 4.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-8",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "metric-comparison-12",
+          "offset_seconds": 6.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-12",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        }
+      ],
+      "finished_unix": 1794848119.071988,
+      "phase_seconds": 8
+    },
+    "error": null
+  },
+  {
+    "running": false,
+    "result": {
+      "config": {
+        "run_id": "metric-comparison",
+        "client": 1,
+        "traffic": "uniform",
+        "url": "http://api:8080",
+        "duration": 8,
+        "rate": 2,
+        "start_unix": 1794848112.819346,
+        "chunks": 4,
+        "interval": 0.05
+      },
+      "planned": 4,
+      "rows": [
+        {
+          "run_id": "metric-comparison",
+          "request_id": "metric-comparison-1",
+          "client": 1,
+          "planned_mono": 4226.536550283432,
+          "sent_mono": 4226.540910737,
+          "sent_unix": 1794848113.3237078,
+          "send_lag_seconds": 0.004360453567642253,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 4227.067269892,
+          "end_mono": 4227.256605205,
+          "pod": "api-8f779df47-9q9mg",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06496499300010328,
+            0.0618605440004103,
+            0.061722337999526644
+          ],
+          "queue_seconds": 0.09847438799988595,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794848114.0394008,
+          "ttfc_seconds": 0.5263591550001365,
+          "total_seconds": 0.7156944680000379
+        },
+        {
+          "run_id": "metric-comparison",
+          "request_id": "metric-comparison-5",
+          "client": 1,
+          "planned_mono": 4228.536550283432,
+          "sent_mono": 4228.538105206,
+          "sent_unix": 1794848115.3209016,
+          "send_lag_seconds": 0.0015549225681752432,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 4228.593466442,
+          "end_mono": 4228.784060414,
+          "pod": "api-8f779df47-9q9mg",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06114451000030385,
+            0.06755021599929023,
+            0.06136332100049913
+          ],
+          "queue_seconds": 0.0002742139995461912,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794848115.566856,
+          "ttfc_seconds": 0.05536123599995335,
+          "total_seconds": 0.2459552079999412
+        },
+        {
+          "run_id": "metric-comparison",
+          "request_id": "metric-comparison-9",
+          "client": 1,
+          "planned_mono": 4230.536550283432,
+          "sent_mono": 4230.539144159,
+          "sent_unix": 1794848117.3219423,
+          "send_lag_seconds": 0.0025938755679817405,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 4230.915889193,
+          "end_mono": 4231.103591428,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06151922800017928,
+            0.06420555600016087,
+            0.06133231999956479
+          ],
+          "queue_seconds": 0.000610428999607393,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794848117.8863869,
+          "ttfc_seconds": 0.37674503400012327,
+          "total_seconds": 0.5644472690000839
+        },
+        {
+          "run_id": "metric-comparison",
+          "request_id": "metric-comparison-13",
+          "client": 1,
+          "planned_mono": 4232.536550283432,
+          "sent_mono": 4232.538180745,
+          "sent_unix": 1794848119.3209777,
+          "send_lag_seconds": 0.0016304615683111479,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 4232.593026487,
+          "end_mono": 4232.77742277,
+          "pod": "api-8f779df47-9q9mg",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061607967999407265,
+            0.061227449999933015,
+            0.061060841000653454
+          ],
+          "queue_seconds": 0.00029611400077556027,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794848119.560218,
+          "ttfc_seconds": 0.0548457419999977,
+          "total_seconds": 0.2392420249998395
+        }
+      ],
+      "schedule": [
+        {
+          "request_id": "metric-comparison-1",
+          "offset_seconds": 0.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-1",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "metric-comparison-5",
+          "offset_seconds": 2.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-5",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "metric-comparison-9",
+          "offset_seconds": 4.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-9",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "metric-comparison-13",
+          "offset_seconds": 6.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-13",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        }
+      ],
+      "finished_unix": 1794848119.5602915,
+      "phase_seconds": 8
+    },
+    "error": null
+  },
+  {
+    "running": false,
+    "result": {
+      "config": {
+        "run_id": "metric-comparison",
+        "client": 2,
+        "traffic": "uniform",
+        "url": "http://api:8080",
+        "duration": 8,
+        "rate": 2,
+        "start_unix": 1794848112.819346,
+        "chunks": 4,
+        "interval": 0.05
+      },
+      "planned": 4,
+      "rows": [
+        {
+          "run_id": "metric-comparison",
+          "request_id": "metric-comparison-2",
+          "client": 2,
+          "planned_mono": 4227.036550283432,
+          "sent_mono": 4227.04180478,
+          "sent_unix": 1794848113.8246105,
+          "send_lag_seconds": 0.005254496568340983,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 4227.671046533,
+          "end_mono": 4227.863535896,
+          "pod": "api-8f779df47-9q9mg",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06128451699987636,
+            0.061475927000174124,
+            0.06882227599999169
+          ],
+          "queue_seconds": 0.185810245000539,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794848114.6463313,
+          "ttfc_seconds": 0.6292417529994054,
+          "total_seconds": 0.8217311159996825
+        },
+        {
+          "run_id": "metric-comparison",
+          "request_id": "metric-comparison-6",
+          "client": 2,
+          "planned_mono": 4229.036550283432,
+          "sent_mono": 4229.037885897,
+          "sent_unix": 1794848115.8206825,
+          "send_lag_seconds": 0.0013356135677895509,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 4229.420605915,
+          "end_mono": 4229.605660124,
+          "pod": "api-8f779df47-9d5ql",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061074606999682146,
+            0.06151072800003021,
+            0.06195564900008321
+          ],
+          "queue_seconds": 0.0003974190003646072,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794848116.3884559,
+          "ttfc_seconds": 0.3827200180003274,
+          "total_seconds": 0.5677742269999726
+        },
+        {
+          "run_id": "metric-comparison",
+          "request_id": "metric-comparison-10",
+          "client": 2,
+          "planned_mono": 4231.036550283432,
+          "sent_mono": 4231.036774647,
+          "sent_unix": 1794848117.819571,
+          "send_lag_seconds": 0.0002243635681224987,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 4231.093256336,
+          "end_mono": 4231.278439051,
+          "pod": "api-8f779df47-9q9mg",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06184934399971098,
+            0.06121361399982561,
+            0.061209612999846286
+          ],
+          "queue_seconds": 0.0002966150004795054,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794848118.0612347,
+          "ttfc_seconds": 0.05648168900006567,
+          "total_seconds": 0.24166440399949352
+        },
+        {
+          "run_id": "metric-comparison",
+          "request_id": "metric-comparison-14",
+          "client": 2,
+          "planned_mono": 4233.036550283432,
+          "sent_mono": 4233.039487695,
+          "sent_unix": 1794848119.8222854,
+          "send_lag_seconds": 0.002937411568382231,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 4233.096195527,
+          "end_mono": 4233.280763318,
+          "pod": "api-8f779df47-9q9mg",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06133985499945993,
+            0.06123405000016646,
+            0.061429358999703254
+          ],
+          "queue_seconds": 0.00044162199992570095,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794848120.0635586,
+          "ttfc_seconds": 0.05670783200002916,
+          "total_seconds": 0.24127562299963756
+        }
+      ],
+      "schedule": [
+        {
+          "request_id": "metric-comparison-2",
+          "offset_seconds": 1.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-2",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "metric-comparison-6",
+          "offset_seconds": 3.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-6",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "metric-comparison-10",
+          "offset_seconds": 5.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-10",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "metric-comparison-14",
+          "offset_seconds": 7.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-14",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        }
+      ],
+      "finished_unix": 1794848120.063636,
+      "phase_seconds": 8
+    },
+    "error": null
+  },
+  {
+    "running": false,
+    "result": {
+      "config": {
+        "run_id": "metric-comparison",
+        "client": 3,
+        "traffic": "uniform",
+        "url": "http://api:8080",
+        "duration": 8,
+        "rate": 2,
+        "start_unix": 1794848112.819346,
+        "chunks": 4,
+        "interval": 0.05
+      },
+      "planned": 4,
+      "rows": [
+        {
+          "run_id": "metric-comparison",
+          "request_id": "metric-comparison-3",
+          "client": 3,
+          "planned_mono": 4227.536549806595,
+          "sent_mono": 4227.541591671,
+          "sent_unix": 1794848114.3243883,
+          "send_lag_seconds": 0.005041864405029628,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 4228.274555861,
+          "end_mono": 4228.459101946,
+          "pod": "api-8f779df47-9q9mg",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061030904999825,
+            0.061639333999664814,
+            0.061359821000223747
+          ],
+          "queue_seconds": 0.3179626350001854,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794848115.2418976,
+          "ttfc_seconds": 0.7329641900005299,
+          "total_seconds": 0.9175102750004953
+        },
+        {
+          "run_id": "metric-comparison",
+          "request_id": "metric-comparison-7",
+          "client": 3,
+          "planned_mono": 4229.536549806595,
+          "sent_mono": 4229.538279016,
+          "sent_unix": 1794848116.3210757,
+          "send_lag_seconds": 0.001729209405311849,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 4229.593577849,
+          "end_mono": 4229.780223033,
+          "pod": "api-8f779df47-9q9mg",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06153142899984232,
+            0.06307440199998382,
+            0.06104000599952997
+          ],
+          "queue_seconds": 0.0003016139999090228,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794848116.5630188,
+          "ttfc_seconds": 0.05529883300005167,
+          "total_seconds": 0.24194401699969603
+        },
+        {
+          "run_id": "metric-comparison",
+          "request_id": "metric-comparison-11",
+          "client": 3,
+          "planned_mono": 4231.536549806595,
+          "sent_mono": 4231.53913946,
+          "sent_unix": 1794848118.3219366,
+          "send_lag_seconds": 0.00258965340526629,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 4231.593822263,
+          "end_mono": 4231.77936719,
+          "pod": "api-8f779df47-9q9mg",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06238279399985913,
+            0.06151636399954441,
+            0.061078142000042135
+          ],
+          "queue_seconds": 0.00025441199977649376,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794848118.5621626,
+          "ttfc_seconds": 0.054682803000105196,
+          "total_seconds": 0.2402277299997877
+        },
+        {
+          "run_id": "metric-comparison",
+          "request_id": "metric-comparison-15",
+          "client": 3,
+          "planned_mono": 4233.536549806595,
+          "sent_mono": 4233.539331474,
+          "sent_unix": 1794848120.3221295,
+          "send_lag_seconds": 0.0027816674055429758,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 4233.597640283,
+          "end_mono": 4233.784540787,
+          "pod": "api-8f779df47-9q9mg",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.062169294999876,
+            0.06180337800014968,
+            0.06219319599949813
+          ],
+          "queue_seconds": 0.0005079239999759011,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794848120.567336,
+          "ttfc_seconds": 0.05830880899975455,
+          "total_seconds": 0.24520931299957738
+        }
+      ],
+      "schedule": [
+        {
+          "request_id": "metric-comparison-3",
+          "offset_seconds": 1.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-3",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "metric-comparison-7",
+          "offset_seconds": 3.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-7",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "metric-comparison-11",
+          "offset_seconds": 5.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-11",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "metric-comparison-15",
+          "offset_seconds": 7.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-15",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        }
+      ],
+      "finished_unix": 1794848120.5674205,
+      "phase_seconds": 8
+    },
+    "error": null
+  }
+]

@@ -1,0 +1,5498 @@
+[
+  {
+    "running": false,
+    "result": {
+      "config": {
+        "run_id": "a-fixed-warmup",
+        "client": 0,
+        "traffic": "uniform",
+        "url": "http://api:8080",
+        "duration": 60,
+        "rate": 2,
+        "start_unix": 1794845158.8414981,
+        "chunks": 4,
+        "interval": 0.05
+      },
+      "planned": 30,
+      "rows": [
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-0",
+          "client": 0,
+          "planned_mono": 1271.8583989143372,
+          "sent_mono": 1271.86056373,
+          "sent_unix": 1794845158.8436642,
+          "send_lag_seconds": 0.0021648156628089055,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1271.916584564,
+          "end_mono": 1272.103608491,
+          "pod": "api-65875d89c9-skmb6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061652238000078796,
+            0.06244098199999826,
+            0.062461481999889656
+          ],
+          "queue_seconds": 0.0003176180000536988,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845159.0867078,
+          "ttfc_seconds": 0.05602083400003721,
+          "total_seconds": 0.24304476099996464
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-4",
+          "client": 0,
+          "planned_mono": 1273.8583989143372,
+          "sent_mono": 1273.860532331,
+          "sent_unix": 1794845160.842134,
+          "send_lag_seconds": 0.002133416662900345,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1273.91609264,
+          "end_mono": 1274.103297678,
+          "pod": "api-65875d89c9-skmb6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.0623161749999781,
+            0.06116731199995229,
+            0.06286240400004317
+          ],
+          "queue_seconds": 0.00026661400011107617,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845161.0848978,
+          "ttfc_seconds": 0.055560308999929475,
+          "total_seconds": 0.24276534699993135
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-8",
+          "client": 0,
+          "planned_mono": 1275.8583989143372,
+          "sent_mono": 1275.860237845,
+          "sent_unix": 1794845162.8418403,
+          "send_lag_seconds": 0.0018389306628705526,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1275.916225251,
+          "end_mono": 1276.101168149,
+          "pod": "api-65875d89c9-skmb6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061354484000048615,
+            0.06139298599987342,
+            0.061267879000070025
+          ],
+          "queue_seconds": 0.0003523179998410342,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845163.0827684,
+          "ttfc_seconds": 0.05598740599998564,
+          "total_seconds": 0.24093030399990312
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-12",
+          "client": 0,
+          "planned_mono": 1277.8583989143372,
+          "sent_mono": 1277.861021377,
+          "sent_unix": 1794845164.842623,
+          "send_lag_seconds": 0.0026224626628845726,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1277.917689218,
+          "end_mono": 1278.10406569,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06177570599993487,
+            0.061908713000093485,
+            0.06143218799979877
+          ],
+          "queue_seconds": 0.00031001599995761353,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845165.085667,
+          "ttfc_seconds": 0.05666784100003497,
+          "total_seconds": 0.24304431299992757
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-16",
+          "client": 0,
+          "planned_mono": 1279.8583989143372,
+          "sent_mono": 1279.860191526,
+          "sent_unix": 1794845166.8417933,
+          "send_lag_seconds": 0.0017926116629496391,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1279.917624506,
+          "end_mono": 1280.103378746,
+          "pod": "api-65875d89c9-skmb6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061149873999966076,
+            0.061983516000054806,
+            0.061805907999996634
+          ],
+          "queue_seconds": 0.0006786349999856611,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845167.084979,
+          "ttfc_seconds": 0.05743297999993047,
+          "total_seconds": 0.2431872199999816
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-20",
+          "client": 0,
+          "planned_mono": 1281.8583989143372,
+          "sent_mono": 1281.860323124,
+          "sent_unix": 1794845168.8419263,
+          "send_lag_seconds": 0.001924209662774956,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1281.919936317,
+          "end_mono": 1282.107525953,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061917214000004606,
+            0.06217812599993522,
+            0.062306433999992805
+          ],
+          "queue_seconds": 0.00036001900002702314,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845169.0891263,
+          "ttfc_seconds": 0.059613193000132014,
+          "total_seconds": 0.24720282900011625
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-24",
+          "client": 0,
+          "planned_mono": 1283.8583989143372,
+          "sent_mono": 1283.860218179,
+          "sent_unix": 1794845170.8418214,
+          "send_lag_seconds": 0.001819264662799469,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1283.917457236,
+          "end_mono": 1284.103257183,
+          "pod": "api-65875d89c9-skmb6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06153049399995325,
+            0.06183970999995836,
+            0.061615198000026794
+          ],
+          "queue_seconds": 0.0003848209998977836,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845171.0848572,
+          "ttfc_seconds": 0.05723905700006071,
+          "total_seconds": 0.24303900400013845
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-28",
+          "client": 0,
+          "planned_mono": 1285.8583989143372,
+          "sent_mono": 1285.860332092,
+          "sent_unix": 1794845172.8419333,
+          "send_lag_seconds": 0.0019331776627495856,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1285.917570549,
+          "end_mono": 1286.104742972,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.062394041000061407,
+            0.06175620599992726,
+            0.06181781000009323
+          ],
+          "queue_seconds": 0.0003342180000345252,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845173.0863438,
+          "ttfc_seconds": 0.05723845700003949,
+          "total_seconds": 0.2444108800000322
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-32",
+          "client": 0,
+          "planned_mono": 1287.8583989143372,
+          "sent_mono": 1287.858865118,
+          "sent_unix": 1794845174.840466,
+          "send_lag_seconds": 0.0004662036628815258,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1287.914221271,
+          "end_mono": 1288.100937269,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061244777999945654,
+            0.06198971799994979,
+            0.06291697100004967
+          ],
+          "queue_seconds": 0.00029191599992373085,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845175.0825374,
+          "ttfc_seconds": 0.055356153000047925,
+          "total_seconds": 0.24207215100000212
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-36",
+          "client": 0,
+          "planned_mono": 1289.8583989143372,
+          "sent_mono": 1289.860715526,
+          "sent_unix": 1794845176.8423169,
+          "send_lag_seconds": 0.0023166116627635347,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1289.915200231,
+          "end_mono": 1290.099827814,
+          "pod": "api-65875d89c9-skmb6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.0613514839999425,
+            0.06116907400019045,
+            0.06144948899986957
+          ],
+          "queue_seconds": 0.00028941599998688616,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845177.0814283,
+          "ttfc_seconds": 0.05448470500004987,
+          "total_seconds": 0.23911228800011486
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-40",
+          "client": 0,
+          "planned_mono": 1291.8583989143372,
+          "sent_mono": 1291.860105881,
+          "sent_unix": 1794845178.841707,
+          "send_lag_seconds": 0.0017069666628231062,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1291.914475779,
+          "end_mono": 1292.099358273,
+          "pod": "api-65875d89c9-skmb6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06170740300012767,
+            0.060826052999800595,
+            0.06198231799999121
+          ],
+          "queue_seconds": 0.0002626140001211752,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845179.0809581,
+          "ttfc_seconds": 0.05436989800000447,
+          "total_seconds": 0.2392523920000258
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-44",
+          "client": 0,
+          "planned_mono": 1293.8583989143372,
+          "sent_mono": 1293.860151561,
+          "sent_unix": 1794845180.841753,
+          "send_lag_seconds": 0.001752646662907864,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1293.92815361,
+          "end_mono": 1294.111415015,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.0602865240000483,
+            0.06094476099997337,
+            0.061405485000022964
+          ],
+          "queue_seconds": 0.0002906159998019575,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845181.0930147,
+          "ttfc_seconds": 0.06800204899991513,
+          "total_seconds": 0.2512634539998544
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-48",
+          "client": 0,
+          "planned_mono": 1295.8583989143372,
+          "sent_mono": 1295.860172039,
+          "sent_unix": 1794845182.8417733,
+          "send_lag_seconds": 0.0017731246628045483,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1296.260627919,
+          "end_mono": 1296.447023497,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06165750000013759,
+            0.06111036899983446,
+            0.06264015400006429
+          ],
+          "queue_seconds": 0.000323318000027939,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845183.428624,
+          "ttfc_seconds": 0.40045587999998133,
+          "total_seconds": 0.5868514579999555
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-52",
+          "client": 0,
+          "planned_mono": 1297.8583989143372,
+          "sent_mono": 1297.860226718,
+          "sent_unix": 1794845184.8418283,
+          "send_lag_seconds": 0.001827803662763472,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1297.998439339,
+          "end_mono": 1298.183095521,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06186341099987658,
+            0.06075975000021572,
+            0.06143858799987356
+          ],
+          "queue_seconds": 0.07980919999999969,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845185.1646953,
+          "ttfc_seconds": 0.13821262100009335,
+          "total_seconds": 0.32286880300011944
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-56",
+          "client": 0,
+          "planned_mono": 1299.8583989143372,
+          "sent_mono": 1299.861214249,
+          "sent_unix": 1794845186.842817,
+          "send_lag_seconds": 0.002815334662955138,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1299.919046145,
+          "end_mono": 1300.104212435,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06240413199998329,
+            0.06118776900007106,
+            0.061002559999906225
+          ],
+          "queue_seconds": 0.0003786190000028,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845187.0858126,
+          "ttfc_seconds": 0.05783189599992511,
+          "total_seconds": 0.24299818599979517
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-60",
+          "client": 0,
+          "planned_mono": 1301.8583989143372,
+          "sent_mono": 1301.861117734,
+          "sent_unix": 1794845188.8427186,
+          "send_lag_seconds": 0.0027188196627321304,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1301.915722562,
+          "end_mono": 1302.0998591,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06157599000016489,
+            0.060784547999901406,
+            0.06118686900003922
+          ],
+          "queue_seconds": 0.0003497179998248612,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845189.0814593,
+          "ttfc_seconds": 0.05460482800003774,
+          "total_seconds": 0.23874136600011298
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-64",
+          "client": 0,
+          "planned_mono": 1303.8583989143372,
+          "sent_mono": 1303.86083541,
+          "sent_unix": 1794845190.840861,
+          "send_lag_seconds": 0.0024364956627778156,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1303.915155023,
+          "end_mono": 1304.101083753,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06249793699998918,
+            0.06114366700012397,
+            0.06167849500002376
+          ],
+          "queue_seconds": 0.00041822200000751764,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845191.0811088,
+          "ttfc_seconds": 0.054319612999961464,
+          "total_seconds": 0.2402483430000757
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-68",
+          "client": 0,
+          "planned_mono": 1305.8583989143372,
+          "sent_mono": 1305.860118663,
+          "sent_unix": 1794845192.8401446,
+          "send_lag_seconds": 0.0017197486629356717,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1305.916105763,
+          "end_mono": 1306.101226251,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06115516700015178,
+            0.06137487899991356,
+            0.061963110000078814
+          ],
+          "queue_seconds": 0.0003270169997904304,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845193.0812507,
+          "ttfc_seconds": 0.05598709999981111,
+          "total_seconds": 0.2411075879999771
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-72",
+          "client": 0,
+          "planned_mono": 1307.8583989143372,
+          "sent_mono": 1307.860099101,
+          "sent_unix": 1794845194.8401246,
+          "send_lag_seconds": 0.001700186662901615,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1307.914689686,
+          "end_mono": 1308.099295943,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061067128000104276,
+            0.06100432399989586,
+            0.06190407100007178
+          ],
+          "queue_seconds": 0.0002744139999322215,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845195.07932,
+          "ttfc_seconds": 0.05459058499991443,
+          "total_seconds": 0.23919684199995572
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-76",
+          "client": 0,
+          "planned_mono": 1309.8583989143372,
+          "sent_mono": 1309.861299768,
+          "sent_unix": 1794845196.8413255,
+          "send_lag_seconds": 0.0029008536628225556,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1309.915216517,
+          "end_mono": 1310.099497557,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06118163399992227,
+            0.06124943700001495,
+            0.0612992399999257
+          ],
+          "queue_seconds": 0.00027431400008026685,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845197.0795221,
+          "ttfc_seconds": 0.05391674900010912,
+          "total_seconds": 0.2381977889999689
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-80",
+          "client": 0,
+          "planned_mono": 1311.8583989143372,
+          "sent_mono": 1311.860118208,
+          "sent_unix": 1794845198.8401437,
+          "send_lag_seconds": 0.0017192936627452582,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1311.914403777,
+          "end_mono": 1312.099641967,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.0613197410000339,
+            0.0616360579999764,
+            0.061575154000138355
+          ],
+          "queue_seconds": 0.0002766140000858286,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845199.0796664,
+          "ttfc_seconds": 0.054285569000057876,
+          "total_seconds": 0.23952375900012157
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-84",
+          "client": 0,
+          "planned_mono": 1313.8583989143372,
+          "sent_mono": 1313.860250618,
+          "sent_unix": 1794845200.840278,
+          "send_lag_seconds": 0.0018517036628509231,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1313.917258331,
+          "end_mono": 1314.103190358,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061375543999929505,
+            0.06261350899990248,
+            0.06135124200000064
+          ],
+          "queue_seconds": 0.0004670250000344822,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845201.0832148,
+          "ttfc_seconds": 0.057007713000075455,
+          "total_seconds": 0.2429397399998834
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-88",
+          "client": 0,
+          "planned_mono": 1315.8583989143372,
+          "sent_mono": 1315.860272357,
+          "sent_unix": 1794845202.8402984,
+          "send_lag_seconds": 0.001873442662827074,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1315.916414969,
+          "end_mono": 1316.101863718,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.0614894989998902,
+            0.0615704030001325,
+            0.061749412999915876
+          ],
+          "queue_seconds": 0.0003255179999541724,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845203.081888,
+          "ttfc_seconds": 0.05614261200003057,
+          "total_seconds": 0.24159136100001888
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-92",
+          "client": 0,
+          "planned_mono": 1317.8583989143372,
+          "sent_mono": 1317.860184951,
+          "sent_unix": 1794845204.8402104,
+          "send_lag_seconds": 0.0017860366629065538,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1318.243540618,
+          "end_mono": 1318.429864615,
+          "pod": "api-8f779df47-czfp6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06195782400004646,
+            0.06189872100003413,
+            0.0618409179999162
+          ],
+          "queue_seconds": 0.008347147999984372,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845205.409889,
+          "ttfc_seconds": 0.3833556669999325,
+          "total_seconds": 0.5696796639999775
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-96",
+          "client": 0,
+          "planned_mono": 1319.8583989143372,
+          "sent_mono": 1319.860139348,
+          "sent_unix": 1794845206.8401656,
+          "send_lag_seconds": 0.0017404336629169848,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1319.916870692,
+          "end_mono": 1320.102365144,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.062211036999997305,
+            0.061205384000004415,
+            0.06139189400005307
+          ],
+          "queue_seconds": 0.00044122400004198425,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845207.0823898,
+          "ttfc_seconds": 0.056731343999899764,
+          "total_seconds": 0.24222579599995697
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-100",
+          "client": 0,
+          "planned_mono": 1321.8583989143372,
+          "sent_mono": 1321.860361059,
+          "sent_unix": 1794845208.8403878,
+          "send_lag_seconds": 0.001962144662911669,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1321.917610531,
+          "end_mono": 1322.102226935,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.0609416689999307,
+            0.061367692999965584,
+            0.061731111999961286
+          ],
+          "queue_seconds": 0.0004149220001181675,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845209.0822513,
+          "ttfc_seconds": 0.05724947199996677,
+          "total_seconds": 0.24186587600001985
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-104",
+          "client": 0,
+          "planned_mono": 1323.8583989143372,
+          "sent_mono": 1323.860114136,
+          "sent_unix": 1794845210.8401396,
+          "send_lag_seconds": 0.001715221662834665,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1323.914902775,
+          "end_mono": 1324.099070455,
+          "pod": "api-8f779df47-czfp6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06116088099997796,
+            0.06115918099999362,
+            0.06125848600004247
+          ],
+          "queue_seconds": 0.00028461500005505513,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845211.0790951,
+          "ttfc_seconds": 0.05478863899998032,
+          "total_seconds": 0.2389563189999535
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-108",
+          "client": 0,
+          "planned_mono": 1325.8583989143372,
+          "sent_mono": 1325.861101174,
+          "sent_unix": 1794845212.8411276,
+          "send_lag_seconds": 0.0027022596627830353,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1325.916863765,
+          "end_mono": 1326.101173852,
+          "pod": "api-8f779df47-czfp6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06086316500000066,
+            0.06124668500001462,
+            0.061482198000021526
+          ],
+          "queue_seconds": 0.0009540510000078939,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845213.081198,
+          "ttfc_seconds": 0.05576259100007519,
+          "total_seconds": 0.24007267800016052
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-112",
+          "client": 0,
+          "planned_mono": 1327.8583989143372,
+          "sent_mono": 1327.860137406,
+          "sent_unix": 1794845214.8401632,
+          "send_lag_seconds": 0.0017384916627634084,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1327.915325967,
+          "end_mono": 1328.100121679,
+          "pod": "api-8f779df47-czfp6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06094286899997314,
+            0.061906120000003284,
+            0.061434196000163865
+          ],
+          "queue_seconds": 0.00027121500011162425,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845215.0801458,
+          "ttfc_seconds": 0.05518856100002267,
+          "total_seconds": 0.23998427300011826
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-116",
+          "client": 0,
+          "planned_mono": 1329.8583989143372,
+          "sent_mono": 1329.860673119,
+          "sent_unix": 1794845216.8406987,
+          "send_lag_seconds": 0.0022742046628536627,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1329.915839178,
+          "end_mono": 1330.099075208,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.060808862000158115,
+            0.06087786599982792,
+            0.060951168999963556
+          ],
+          "queue_seconds": 0.0002699140000004263,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.6",
+          "backend_mode": "simulated",
+          "end_unix": 1794845217.0790994,
+          "ttfc_seconds": 0.0551660589999301,
+          "total_seconds": 0.23840208899991921
+        }
+      ],
+      "schedule": [
+        {
+          "request_id": "a-fixed-warmup-0",
+          "offset_seconds": 0.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-0",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-4",
+          "offset_seconds": 2.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-4",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-8",
+          "offset_seconds": 4.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-8",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-12",
+          "offset_seconds": 6.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-12",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-16",
+          "offset_seconds": 8.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-0",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-20",
+          "offset_seconds": 10.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-4",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-24",
+          "offset_seconds": 12.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-8",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-28",
+          "offset_seconds": 14.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-12",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-32",
+          "offset_seconds": 16.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-0",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-36",
+          "offset_seconds": 18.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-4",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-40",
+          "offset_seconds": 20.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-8",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-44",
+          "offset_seconds": 22.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-12",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-48",
+          "offset_seconds": 24.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-0",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-52",
+          "offset_seconds": 26.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-4",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-56",
+          "offset_seconds": 28.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-8",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-60",
+          "offset_seconds": 30.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-12",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-64",
+          "offset_seconds": 32.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-0",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-68",
+          "offset_seconds": 34.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-4",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-72",
+          "offset_seconds": 36.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-8",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-76",
+          "offset_seconds": 38.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-12",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-80",
+          "offset_seconds": 40.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-0",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-84",
+          "offset_seconds": 42.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-4",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-88",
+          "offset_seconds": 44.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-8",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-92",
+          "offset_seconds": 46.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-12",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-96",
+          "offset_seconds": 48.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-0",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-100",
+          "offset_seconds": 50.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-4",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-104",
+          "offset_seconds": 52.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-8",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-108",
+          "offset_seconds": 54.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-12",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-112",
+          "offset_seconds": 56.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-0",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-116",
+          "offset_seconds": 58.0,
+          "client": 0,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-4",
+            "prefix": "prefix-0",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        }
+      ],
+      "finished_unix": 1794845217.0791943,
+      "phase_seconds": 60
+    },
+    "error": null
+  },
+  {
+    "running": false,
+    "result": {
+      "config": {
+        "run_id": "a-fixed-warmup",
+        "client": 1,
+        "traffic": "uniform",
+        "url": "http://api:8080",
+        "duration": 60,
+        "rate": 2,
+        "start_unix": 1794845158.8414981,
+        "chunks": 4,
+        "interval": 0.05
+      },
+      "planned": 30,
+      "rows": [
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-1",
+          "client": 1,
+          "planned_mono": 1272.3583981990814,
+          "sent_mono": 1272.360171585,
+          "sent_unix": 1794845159.3432724,
+          "send_lag_seconds": 0.0017733859185682377,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1272.416445432,
+          "end_mono": 1272.602144188,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06146592899995085,
+            0.06232157399995231,
+            0.061344422000047416
+          ],
+          "queue_seconds": 0.00043272299990348984,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845159.5852437,
+          "ttfc_seconds": 0.056273847000056776,
+          "total_seconds": 0.241972603000022
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-5",
+          "client": 1,
+          "planned_mono": 1274.3583981990814,
+          "sent_mono": 1274.360113085,
+          "sent_unix": 1794845161.3417141,
+          "send_lag_seconds": 0.0017148859185454057,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1274.415577988,
+          "end_mono": 1274.600810219,
+          "pod": "api-65875d89c9-skmb6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061651439000115715,
+            0.0612723179999648,
+            0.06160163599997759
+          ],
+          "queue_seconds": 0.0003643189998001617,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845161.5824106,
+          "ttfc_seconds": 0.05546490300002915,
+          "total_seconds": 0.24069713400012915
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-9",
+          "client": 1,
+          "planned_mono": 1276.3583981990814,
+          "sent_mono": 1276.360214992,
+          "sent_unix": 1794845163.3418174,
+          "send_lag_seconds": 0.0018167929185892717,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1276.416605918,
+          "end_mono": 1276.603081496,
+          "pod": "api-65875d89c9-skmb6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06175790500014955,
+            0.06175360499992166,
+            0.06216192600004433
+          ],
+          "queue_seconds": 0.000398921000169139,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845163.5846825,
+          "ttfc_seconds": 0.056390925999949104,
+          "total_seconds": 0.2428665039999487
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-13",
+          "client": 1,
+          "planned_mono": 1278.3583981990814,
+          "sent_mono": 1278.360234684,
+          "sent_unix": 1794845165.3418367,
+          "send_lag_seconds": 0.0018364849186127685,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1278.416867023,
+          "end_mono": 1278.602404852,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061624998000070264,
+            0.061683401999971466,
+            0.06112767200011149
+          ],
+          "queue_seconds": 0.0004648239998914505,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845165.584007,
+          "ttfc_seconds": 0.05663233899986153,
+          "total_seconds": 0.24217016800002966
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-17",
+          "client": 1,
+          "planned_mono": 1280.3583981990814,
+          "sent_mono": 1280.360243976,
+          "sent_unix": 1794845167.3418458,
+          "send_lag_seconds": 0.0018457769185715733,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1280.416898616,
+          "end_mono": 1280.60446285,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.062338935000070705,
+            0.06223933000001125,
+            0.06180860799986476
+          ],
+          "queue_seconds": 0.00032671700000719284,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845167.5860631,
+          "ttfc_seconds": 0.056654640000033396,
+          "total_seconds": 0.24421887399989828
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-21",
+          "client": 1,
+          "planned_mono": 1282.3583981990814,
+          "sent_mono": 1282.360196865,
+          "sent_unix": 1794845169.3417985,
+          "send_lag_seconds": 0.0017986659186135512,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1282.417534541,
+          "end_mono": 1282.604948267,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06218002700006764,
+            0.061673400000017864,
+            0.06202071899997463
+          ],
+          "queue_seconds": 0.0003603180000482098,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845169.5865483,
+          "ttfc_seconds": 0.05733767599986095,
+          "total_seconds": 0.24475140200001988
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-25",
+          "client": 1,
+          "planned_mono": 1284.3583981990814,
+          "sent_mono": 1284.360271159,
+          "sent_unix": 1794845171.3418744,
+          "send_lag_seconds": 0.0018729599185007828,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1284.41777683,
+          "end_mono": 1284.605039758,
+          "pod": "api-65875d89c9-skmb6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06159219699998175,
+            0.06216412899993884,
+            0.06157599599987407
+          ],
+          "queue_seconds": 0.0006093329998293484,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845171.5866404,
+          "ttfc_seconds": 0.05750567100017179,
+          "total_seconds": 0.24476859900005365
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-29",
+          "client": 1,
+          "planned_mono": 1286.3583981990814,
+          "sent_mono": 1286.360130057,
+          "sent_unix": 1794845173.3417313,
+          "send_lag_seconds": 0.0017318579186849092,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1286.415904234,
+          "end_mono": 1286.60113955,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061482289999958084,
+            0.06159909799998786,
+            0.06153729400011798
+          ],
+          "queue_seconds": 0.00032001799991121516,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845173.5827394,
+          "ttfc_seconds": 0.055774176999875635,
+          "total_seconds": 0.24100949299986496
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-33",
+          "client": 1,
+          "planned_mono": 1288.3583981990814,
+          "sent_mono": 1288.360160766,
+          "sent_unix": 1794845175.341762,
+          "send_lag_seconds": 0.0017625669186145387,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1288.414577867,
+          "end_mono": 1288.599595071,
+          "pod": "api-65875d89c9-skmb6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061225177000096664,
+            0.06132128199988074,
+            0.06186331200001405
+          ],
+          "queue_seconds": 0.0002734150000378577,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845175.5811954,
+          "ttfc_seconds": 0.05441710099989905,
+          "total_seconds": 0.2394343050000316
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-37",
+          "client": 1,
+          "planned_mono": 1290.3583981990814,
+          "sent_mono": 1290.360153372,
+          "sent_unix": 1794845177.3417552,
+          "send_lag_seconds": 0.001755172918592507,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1290.415221309,
+          "end_mono": 1290.599967798,
+          "pod": "api-65875d89c9-skmb6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06147589100010009,
+            0.06130808100010654,
+            0.061408986999822446
+          ],
+          "queue_seconds": 0.00028261600004952925,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845177.581568,
+          "ttfc_seconds": 0.05506793699987611,
+          "total_seconds": 0.2398144260000663
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-41",
+          "client": 1,
+          "planned_mono": 1292.3583981990814,
+          "sent_mono": 1292.36028726,
+          "sent_unix": 1794845179.3418887,
+          "send_lag_seconds": 0.0018890609185291396,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1292.415835723,
+          "end_mono": 1292.601024234,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06125737799993658,
+            0.06195141600005627,
+            0.06145798900001864
+          ],
+          "queue_seconds": 0.00030641699981970305,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845179.582624,
+          "ttfc_seconds": 0.05554846300015015,
+          "total_seconds": 0.2407369740001286
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-45",
+          "client": 1,
+          "planned_mono": 1294.3583981990814,
+          "sent_mono": 1294.36016143,
+          "sent_unix": 1794845181.341763,
+          "send_lag_seconds": 0.0017632309186410566,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1294.767299679,
+          "end_mono": 1294.95539185,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06186741200008328,
+            0.06297787199991944,
+            0.06247284500000205
+          ],
+          "queue_seconds": 0.009398717999829387,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845181.9369917,
+          "ttfc_seconds": 0.4071382489998996,
+          "total_seconds": 0.5952304200000071
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-49",
+          "client": 1,
+          "planned_mono": 1296.3583981990814,
+          "sent_mono": 1296.359945495,
+          "sent_unix": 1794845183.341547,
+          "send_lag_seconds": 0.0015472959184990032,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1296.416265701,
+          "end_mono": 1296.600481258,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061128770000095756,
+            0.06119167399992875,
+            0.061506592000114324
+          ],
+          "queue_seconds": 0.0003353189999870665,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845183.5820813,
+          "ttfc_seconds": 0.05632020600000942,
+          "total_seconds": 0.24053576300002533
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-53",
+          "client": 1,
+          "planned_mono": 1298.3583981990814,
+          "sent_mono": 1298.360141083,
+          "sent_unix": 1794845185.3417428,
+          "send_lag_seconds": 0.0017428839184958633,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1298.419075532,
+          "end_mono": 1298.60439115,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06102136499998778,
+            0.06175730499990095,
+            0.061573995000117066
+          ],
+          "queue_seconds": 0.0002687149999474059,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845185.5859911,
+          "ttfc_seconds": 0.0589344490001622,
+          "total_seconds": 0.24425006700016638
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-57",
+          "client": 1,
+          "planned_mono": 1300.3583981990814,
+          "sent_mono": 1300.360143791,
+          "sent_unix": 1794845187.3417454,
+          "send_lag_seconds": 0.0017455919185067614,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1300.415088437,
+          "end_mono": 1300.60067895,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06171789700010777,
+            0.06131407499992747,
+            0.061649493999993865
+          ],
+          "queue_seconds": 0.00027001399985238095,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845187.5822792,
+          "ttfc_seconds": 0.05494464599996718,
+          "total_seconds": 0.2405351590000464
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-61",
+          "client": 1,
+          "planned_mono": 1302.3583981990814,
+          "sent_mono": 1302.360174383,
+          "sent_unix": 1794845189.341776,
+          "send_lag_seconds": 0.0017761839185368444,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1302.41572176,
+          "end_mono": 1302.60106726,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.0611676680000528,
+            0.061635391999971034,
+            0.06186080399993443
+          ],
+          "queue_seconds": 0.0003104160000475531,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845189.5826674,
+          "ttfc_seconds": 0.05554737700003898,
+          "total_seconds": 0.24089287700007844
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-65",
+          "client": 1,
+          "planned_mono": 1304.3583981990814,
+          "sent_mono": 1304.360085968,
+          "sent_unix": 1794845191.3401113,
+          "send_lag_seconds": 0.0016877689186003408,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1304.415312029,
+          "end_mono": 1304.600909542,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06212381699992875,
+            0.0612505730000521,
+            0.06162169200001699
+          ],
+          "queue_seconds": 0.00027121400012219965,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845191.5809338,
+          "ttfc_seconds": 0.05522606099998484,
+          "total_seconds": 0.2408235739999327
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-69",
+          "client": 1,
+          "planned_mono": 1306.3583981990814,
+          "sent_mono": 1306.360228566,
+          "sent_unix": 1794845193.3402543,
+          "send_lag_seconds": 0.0018303669185115723,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1306.414720088,
+          "end_mono": 1306.6002862,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061183068999980605,
+            0.061338678000083746,
+            0.0624275329998909
+          ],
+          "queue_seconds": 0.0002625130000524223,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845193.5803106,
+          "ttfc_seconds": 0.05449152200003482,
+          "total_seconds": 0.24005763400009528
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-73",
+          "client": 1,
+          "planned_mono": 1308.3583981990814,
+          "sent_mono": 1308.360120828,
+          "sent_unix": 1794845195.3401465,
+          "send_lag_seconds": 0.0017226289185146015,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1308.415674164,
+          "end_mono": 1308.601487584,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.0613899439999841,
+            0.061925173000190625,
+            0.061639557999797034
+          ],
+          "queue_seconds": 0.00036321900006441865,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845195.5815122,
+          "ttfc_seconds": 0.05555333600000267,
+          "total_seconds": 0.24136675600016133
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-77",
+          "client": 1,
+          "planned_mono": 1310.3583981990814,
+          "sent_mono": 1310.360258038,
+          "sent_unix": 1794845197.3402836,
+          "send_lag_seconds": 0.001859838918562673,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1310.414748118,
+          "end_mono": 1310.599491282,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06169516099998873,
+            0.061312340000085896,
+            0.061199134999924354
+          ],
+          "queue_seconds": 0.00025961400001506263,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845197.579516,
+          "ttfc_seconds": 0.05449008000005051,
+          "total_seconds": 0.23923324399993362
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-81",
+          "client": 1,
+          "planned_mono": 1312.3583981990814,
+          "sent_mono": 1312.360162236,
+          "sent_unix": 1794845199.3401878,
+          "send_lag_seconds": 0.0017640369185301097,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1312.414803324,
+          "end_mono": 1312.60014662,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061828967999872475,
+            0.06148974999996426,
+            0.06142354600001454
+          ],
+          "queue_seconds": 0.0002834150000126101,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845199.580171,
+          "ttfc_seconds": 0.054641088000153104,
+          "total_seconds": 0.23998438400008126
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-85",
+          "client": 1,
+          "planned_mono": 1314.3583981990814,
+          "sent_mono": 1314.360354049,
+          "sent_unix": 1794845201.3403814,
+          "send_lag_seconds": 0.001955849918658714,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1314.416338508,
+          "end_mono": 1314.601915416,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06130663999988428,
+            0.06265031099997032,
+            0.06117163299995809
+          ],
+          "queue_seconds": 0.0003765199999179458,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845201.5819397,
+          "ttfc_seconds": 0.05598445900000115,
+          "total_seconds": 0.24156136700003117
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-89",
+          "client": 1,
+          "planned_mono": 1316.3583981990814,
+          "sent_mono": 1316.360128374,
+          "sent_unix": 1794845203.340154,
+          "send_lag_seconds": 0.0017301749185207882,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1316.414977917,
+          "end_mono": 1316.59938791,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061306788999900164,
+            0.06134799100004784,
+            0.06115638100004617
+          ],
+          "queue_seconds": 0.0002933159998974588,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845203.5794122,
+          "ttfc_seconds": 0.05484954300004574,
+          "total_seconds": 0.2392595359999632
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-93",
+          "client": 1,
+          "planned_mono": 1318.3583981990814,
+          "sent_mono": 1318.360101172,
+          "sent_unix": 1794845205.3401268,
+          "send_lag_seconds": 0.0017029729185651377,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1318.836573934,
+          "end_mono": 1319.023228348,
+          "pod": "api-8f779df47-czfp6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06197502500003793,
+            0.0626679619999777,
+            0.061390694000010626
+          ],
+          "queue_seconds": 0.06629425699998137,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845206.0032527,
+          "ttfc_seconds": 0.4764727619999576,
+          "total_seconds": 0.663127175999989
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-97",
+          "client": 1,
+          "planned_mono": 1320.3583981990814,
+          "sent_mono": 1320.360685102,
+          "sent_unix": 1794845207.3407106,
+          "send_lag_seconds": 0.0022869029185130785,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1320.415177226,
+          "end_mono": 1320.600556771,
+          "pod": "api-8f779df47-czfp6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06216803500001333,
+            0.06133929099996749,
+            0.061296489000142174
+          ],
+          "queue_seconds": 0.0002944160000879492,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845207.5805812,
+          "ttfc_seconds": 0.05449212400003489,
+          "total_seconds": 0.23987166899996737
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-101",
+          "client": 1,
+          "planned_mono": 1322.3583981990814,
+          "sent_mono": 1322.360177374,
+          "sent_unix": 1794845209.3402035,
+          "send_lag_seconds": 0.001779174918510762,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1322.415541744,
+          "end_mono": 1322.600137548,
+          "pod": "api-8f779df47-czfp6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.060750260000077105,
+            0.06167210800003886,
+            0.06149319899986949
+          ],
+          "queue_seconds": 0.00028851600018242607,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845209.580162,
+          "ttfc_seconds": 0.0553643700000066,
+          "total_seconds": 0.23996017400008895
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-105",
+          "client": 1,
+          "planned_mono": 1324.3583981990814,
+          "sent_mono": 1324.361149013,
+          "sent_unix": 1794845211.3411756,
+          "send_lag_seconds": 0.0027508139185101754,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1324.417530937,
+          "end_mono": 1324.602180642,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06146089699996082,
+            0.06134929099994224,
+            0.061332290000109424
+          ],
+          "queue_seconds": 0.00036871999986942683,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845211.5822048,
+          "ttfc_seconds": 0.056381924000106665,
+          "total_seconds": 0.24103162899996278
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-109",
+          "client": 1,
+          "planned_mono": 1326.3583981990814,
+          "sent_mono": 1326.36026455,
+          "sent_unix": 1794845213.34029,
+          "send_lag_seconds": 0.0018663509185898874,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1326.415624719,
+          "end_mono": 1326.601014764,
+          "pod": "api-8f779df47-czfp6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06104247499979465,
+            0.06228114100008497,
+            0.06116428099994664
+          ],
+          "queue_seconds": 0.00028241499990144803,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845213.5810394,
+          "ttfc_seconds": 0.05536016900009599,
+          "total_seconds": 0.24075021399994512
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-113",
+          "client": 1,
+          "planned_mono": 1328.3583981990814,
+          "sent_mono": 1328.360273835,
+          "sent_unix": 1794845215.3403,
+          "send_lag_seconds": 0.00187563591862272,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1328.414977669,
+          "end_mono": 1328.600170703,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06087746599996535,
+            0.06126238599995304,
+            0.062124432000018714
+          ],
+          "queue_seconds": 0.0002814150000176596,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845215.5801952,
+          "ttfc_seconds": 0.0547038340000654,
+          "total_seconds": 0.2398968679999598
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-117",
+          "client": 1,
+          "planned_mono": 1330.3583981990814,
+          "sent_mono": 1330.360188514,
+          "sent_unix": 1794845217.3402145,
+          "send_lag_seconds": 0.0017903149184803624,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1330.416564638,
+          "end_mono": 1330.601394053,
+          "pod": "api-8f779df47-czfp6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06111897899995711,
+            0.06162360600001193,
+            0.06143579500007945
+          ],
+          "queue_seconds": 0.0004022219998205401,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.8",
+          "backend_mode": "simulated",
+          "end_unix": 1794845217.5814183,
+          "ttfc_seconds": 0.056376124000053096,
+          "total_seconds": 0.2412055390000205
+        }
+      ],
+      "schedule": [
+        {
+          "request_id": "a-fixed-warmup-1",
+          "offset_seconds": 0.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-1",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-5",
+          "offset_seconds": 2.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-5",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-9",
+          "offset_seconds": 4.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-9",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-13",
+          "offset_seconds": 6.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-13",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-17",
+          "offset_seconds": 8.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-1",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-21",
+          "offset_seconds": 10.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-5",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-25",
+          "offset_seconds": 12.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-9",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-29",
+          "offset_seconds": 14.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-13",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-33",
+          "offset_seconds": 16.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-1",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-37",
+          "offset_seconds": 18.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-5",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-41",
+          "offset_seconds": 20.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-9",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-45",
+          "offset_seconds": 22.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-13",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-49",
+          "offset_seconds": 24.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-1",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-53",
+          "offset_seconds": 26.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-5",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-57",
+          "offset_seconds": 28.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-9",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-61",
+          "offset_seconds": 30.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-13",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-65",
+          "offset_seconds": 32.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-1",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-69",
+          "offset_seconds": 34.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-5",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-73",
+          "offset_seconds": 36.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-9",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-77",
+          "offset_seconds": 38.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-13",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-81",
+          "offset_seconds": 40.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-1",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-85",
+          "offset_seconds": 42.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-5",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-89",
+          "offset_seconds": 44.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-9",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-93",
+          "offset_seconds": 46.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-13",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-97",
+          "offset_seconds": 48.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-1",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-101",
+          "offset_seconds": 50.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-5",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-105",
+          "offset_seconds": 52.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-9",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-109",
+          "offset_seconds": 54.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-13",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-113",
+          "offset_seconds": 56.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-1",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-117",
+          "offset_seconds": 58.5,
+          "client": 1,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-5",
+            "prefix": "prefix-1",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        }
+      ],
+      "finished_unix": 1794845217.58152,
+      "phase_seconds": 60
+    },
+    "error": null
+  },
+  {
+    "running": false,
+    "result": {
+      "config": {
+        "run_id": "a-fixed-warmup",
+        "client": 2,
+        "traffic": "uniform",
+        "url": "http://api:8080",
+        "duration": 60,
+        "rate": 2,
+        "start_unix": 1794845158.8414981,
+        "chunks": 4,
+        "interval": 0.05
+      },
+      "planned": 30,
+      "rows": [
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-2",
+          "client": 2,
+          "planned_mono": 1272.8583977222443,
+          "sent_mono": 1272.864202279,
+          "sent_unix": 1794845159.8473027,
+          "send_lag_seconds": 0.005804556755720114,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1272.919266061,
+          "end_mono": 1273.104038467,
+          "pod": "api-65875d89c9-skmb6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06164933800005201,
+            0.06135772300012832,
+            0.06111740899996221
+          ],
+          "queue_seconds": 0.0003264179999860062,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845160.0871377,
+          "ttfc_seconds": 0.05506378199993378,
+          "total_seconds": 0.2398361880000266
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-6",
+          "client": 2,
+          "planned_mono": 1274.8583977222443,
+          "sent_mono": 1274.86062867,
+          "sent_unix": 1794845161.8422303,
+          "send_lag_seconds": 0.0022309477558337676,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1274.917515022,
+          "end_mono": 1275.10380629,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06195611499992992,
+            0.061942914999917775,
+            0.061247878000131095
+          ],
+          "queue_seconds": 0.0005071260000022448,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845162.0854065,
+          "ttfc_seconds": 0.05688635199999226,
+          "total_seconds": 0.24317761999986942
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-10",
+          "client": 2,
+          "planned_mono": 1276.8583977222443,
+          "sent_mono": 1276.860205339,
+          "sent_unix": 1794845163.8418074,
+          "send_lag_seconds": 0.0018076167557410372,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1276.915732021,
+          "end_mono": 1277.099979283,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061264179000090735,
+            0.06106896999995115,
+            0.06125917899998967
+          ],
+          "queue_seconds": 0.00031491699996877287,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845164.0815792,
+          "ttfc_seconds": 0.055526681999936045,
+          "total_seconds": 0.23977394400003504
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-14",
+          "client": 2,
+          "planned_mono": 1278.8583977222443,
+          "sent_mono": 1278.860215131,
+          "sent_unix": 1794845165.8418174,
+          "send_lag_seconds": 0.0018174087556417362,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1278.917350096,
+          "end_mono": 1279.102782419,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.060971563999828504,
+            0.06203992000018843,
+            0.061279379999859884
+          ],
+          "queue_seconds": 0.000418021999848861,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845166.0843828,
+          "ttfc_seconds": 0.057134965000159355,
+          "total_seconds": 0.2425672880001457
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-18",
+          "client": 2,
+          "planned_mono": 1280.8583977222443,
+          "sent_mono": 1280.860176821,
+          "sent_unix": 1794845167.8417783,
+          "send_lag_seconds": 0.0017790987558328197,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1280.916973168,
+          "end_mono": 1281.102914018,
+          "pod": "api-65875d89c9-skmb6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06153659400001743,
+            0.0624859419999666,
+            0.06108797000001687
+          ],
+          "queue_seconds": 0.0005521290001979651,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845168.0845141,
+          "ttfc_seconds": 0.056796346999817615,
+          "total_seconds": 0.24273719699999674
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-22",
+          "client": 2,
+          "planned_mono": 1282.8583977222443,
+          "sent_mono": 1282.86083126,
+          "sent_unix": 1794845169.8424332,
+          "send_lag_seconds": 0.002433537755678117,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1282.919563999,
+          "end_mono": 1283.104475597,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06132498199986003,
+            0.06138398600000983,
+            0.06147989000010057
+          ],
+          "queue_seconds": 0.00040832199988471984,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845170.0860755,
+          "ttfc_seconds": 0.05873273900010645,
+          "total_seconds": 0.2436443369999779
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-26",
+          "client": 2,
+          "planned_mono": 1284.8583977222443,
+          "sent_mono": 1284.860243834,
+          "sent_unix": 1794845171.841846,
+          "send_lag_seconds": 0.0018461117556398676,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1284.918512347,
+          "end_mono": 1285.105972386,
+          "pod": "api-65875d89c9-skmb6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06126317899997957,
+            0.06328349099999286,
+            0.06191001400020468
+          ],
+          "queue_seconds": 0.0003745210001397936,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845172.0875726,
+          "ttfc_seconds": 0.05826851300003,
+          "total_seconds": 0.2457285520001733
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-30",
+          "client": 2,
+          "planned_mono": 1286.8583977222443,
+          "sent_mono": 1286.860226839,
+          "sent_unix": 1794845173.8418279,
+          "send_lag_seconds": 0.0018291167557435983,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1286.915315278,
+          "end_mono": 1287.099162818,
+          "pod": "api-65875d89c9-skmb6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061040565999974206,
+            0.06093356099995617,
+            0.06106306800006678
+          ],
+          "queue_seconds": 0.0002797150000333204,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845174.0807629,
+          "ttfc_seconds": 0.05508843899997373,
+          "total_seconds": 0.23893597899996166
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-34",
+          "client": 2,
+          "planned_mono": 1288.8583977222443,
+          "sent_mono": 1288.860179643,
+          "sent_unix": 1794845175.841781,
+          "send_lag_seconds": 0.0017819207557749905,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1288.917679315,
+          "end_mono": 1289.109725507,
+          "pod": "api-65875d89c9-skmb6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06906210900001497,
+            0.06146998999997777,
+            0.06095176200005881
+          ],
+          "queue_seconds": 0.00029151700005058956,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845176.0913255,
+          "ttfc_seconds": 0.05749967199994899,
+          "total_seconds": 0.249545863999856
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-38",
+          "client": 2,
+          "planned_mono": 1290.8583977222443,
+          "sent_mono": 1290.860169446,
+          "sent_unix": 1794845177.8417706,
+          "send_lag_seconds": 0.001771723755837229,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1290.91464125,
+          "end_mono": 1291.100196981,
+          "pod": "api-65875d89c9-skmb6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.0622500320000654,
+            0.061574594999910914,
+            0.06109646900017651
+          ],
+          "queue_seconds": 0.0002630139999837411,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845178.081797,
+          "ttfc_seconds": 0.054471803999831536,
+          "total_seconds": 0.24002753499985374
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-42",
+          "client": 2,
+          "planned_mono": 1292.8583977222443,
+          "sent_mono": 1292.860092319,
+          "sent_unix": 1794845179.8416936,
+          "send_lag_seconds": 0.0016945967556694086,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1292.915855194,
+          "end_mono": 1293.100129654,
+          "pod": "api-65875d89c9-skmb6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06100456300009682,
+            0.061555893999866385,
+            0.06111886999997296
+          ],
+          "queue_seconds": 0.00026231399988319026,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845180.08173,
+          "ttfc_seconds": 0.055762875000027634,
+          "total_seconds": 0.24003733500012459
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-46",
+          "client": 2,
+          "planned_mono": 1294.8583977222443,
+          "sent_mono": 1294.860235004,
+          "sent_unix": 1794845181.8418367,
+          "send_lag_seconds": 0.0018372817557974486,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1294.921067458,
+          "end_mono": 1295.106599788,
+          "pod": "api-65875d89c9-skmb6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061616797000169754,
+            0.0612127749998308,
+            0.062049721999983376
+          ],
+          "queue_seconds": 0.00026911500003734545,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845182.0881996,
+          "ttfc_seconds": 0.06083245399986481,
+          "total_seconds": 0.2463647839999794
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-50",
+          "client": 2,
+          "planned_mono": 1296.8583977222443,
+          "sent_mono": 1296.860112274,
+          "sent_unix": 1794845183.8417132,
+          "send_lag_seconds": 0.0017145517556400591,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1296.91644968,
+          "end_mono": 1297.100244414,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06106916700014153,
+            0.06110356899989711,
+            0.06097286199997143
+          ],
+          "queue_seconds": 0.0002958159998343035,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845184.0818446,
+          "ttfc_seconds": 0.05633740600001147,
+          "total_seconds": 0.24013214000001426
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-54",
+          "client": 2,
+          "planned_mono": 1298.8583977222443,
+          "sent_mono": 1298.860397612,
+          "sent_unix": 1794845185.8419998,
+          "send_lag_seconds": 0.0019998897557798045,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1299.257013855,
+          "end_mono": 1299.442254949,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061140865999959715,
+            0.061439782999968884,
+            0.0615781890001017
+          ],
+          "queue_seconds": 0.0002756149999640911,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845186.423855,
+          "ttfc_seconds": 0.3966162429999258,
+          "total_seconds": 0.581857336999974
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-58",
+          "client": 2,
+          "planned_mono": 1300.8583977222443,
+          "sent_mono": 1300.86093743,
+          "sent_unix": 1794845187.8425403,
+          "send_lag_seconds": 0.0025397077556590375,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1300.919491863,
+          "end_mono": 1301.103589598,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061614690999931554,
+            0.060749245999886625,
+            0.06134667800006355
+          ],
+          "queue_seconds": 0.000445022999883804,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845188.0851893,
+          "ttfc_seconds": 0.05855443300015395,
+          "total_seconds": 0.24265216800017697
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-62",
+          "client": 2,
+          "planned_mono": 1302.8583977222443,
+          "sent_mono": 1302.860122177,
+          "sent_unix": 1794845189.8417237,
+          "send_lag_seconds": 0.0017244547557311307,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1302.914725706,
+          "end_mono": 1303.100445025,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06200171099999352,
+            0.06077014800007419,
+            0.062251724000134345
+          ],
+          "queue_seconds": 0.00023131200009629538,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845190.0820448,
+          "ttfc_seconds": 0.05460352899990539,
+          "total_seconds": 0.24032284800000525
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-66",
+          "client": 2,
+          "planned_mono": 1304.8583977222443,
+          "sent_mono": 1304.860127068,
+          "sent_unix": 1794845191.8401523,
+          "send_lag_seconds": 0.001729345755848044,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1304.915085015,
+          "end_mono": 1305.099806482,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06101155999999719,
+            0.06100886000012906,
+            0.06183780299988939
+          ],
+          "queue_seconds": 0.0004685239998707402,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845192.0798314,
+          "ttfc_seconds": 0.054957946999820706,
+          "total_seconds": 0.23967941399996562
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-70",
+          "client": 2,
+          "planned_mono": 1306.8583977222443,
+          "sent_mono": 1306.860404065,
+          "sent_unix": 1794845193.8404312,
+          "send_lag_seconds": 0.0020063427557488467,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1306.917977308,
+          "end_mono": 1307.102003234,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06106402699992941,
+            0.06113793200006512,
+            0.061269338000101925
+          ],
+          "queue_seconds": 0.0005068259999916336,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845194.0820274,
+          "ttfc_seconds": 0.0575732429999789,
+          "total_seconds": 0.2415991689999828
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-74",
+          "client": 2,
+          "planned_mono": 1308.8583977222443,
+          "sent_mono": 1308.860118753,
+          "sent_unix": 1794845195.8401442,
+          "send_lag_seconds": 0.0017210307557888882,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1308.914407123,
+          "end_mono": 1309.09864876,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06091941899990161,
+            0.061191334000113784,
+            0.0616214570000011
+          ],
+          "queue_seconds": 0.0002499129998341232,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845196.0786734,
+          "ttfc_seconds": 0.05428836999999476,
+          "total_seconds": 0.23853000700000848
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-78",
+          "client": 2,
+          "planned_mono": 1310.8583977222443,
+          "sent_mono": 1310.860137658,
+          "sent_unix": 1794845197.8401632,
+          "send_lag_seconds": 0.0017399357557223993,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1310.915283972,
+          "end_mono": 1311.099612614,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061207234999983484,
+            0.06141574599996602,
+            0.06115213199996106
+          ],
+          "queue_seconds": 0.0002834150000126101,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845198.079637,
+          "ttfc_seconds": 0.05514631400001235,
+          "total_seconds": 0.2394749560000946
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-82",
+          "client": 2,
+          "planned_mono": 1312.8583977222443,
+          "sent_mono": 1312.860679589,
+          "sent_unix": 1794845199.8407054,
+          "send_lag_seconds": 0.0022818667557658046,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1312.917658601,
+          "end_mono": 1313.103373916,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061853068999880634,
+            0.06188957099993786,
+            0.06126953800003321
+          ],
+          "queue_seconds": 0.0004978270001174678,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845200.0833983,
+          "ttfc_seconds": 0.05697901200005617,
+          "total_seconds": 0.24269432699998106
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-86",
+          "client": 2,
+          "planned_mono": 1314.8583977222443,
+          "sent_mono": 1314.861290362,
+          "sent_unix": 1794845201.841317,
+          "send_lag_seconds": 0.002892639755827986,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1314.917524479,
+          "end_mono": 1315.101911571,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061560402000168324,
+            0.06112247999999454,
+            0.061148479999928895
+          ],
+          "queue_seconds": 0.0003753209998649254,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845202.081936,
+          "ttfc_seconds": 0.05623411699980352,
+          "total_seconds": 0.24062120899998263
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-90",
+          "client": 2,
+          "planned_mono": 1316.8583977222443,
+          "sent_mono": 1316.860253905,
+          "sent_unix": 1794845203.8402803,
+          "send_lag_seconds": 0.0018561827557732613,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1316.918907552,
+          "end_mono": 1317.102760816,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.0610311749999255,
+            0.061083376999931716,
+            0.06108637700003783
+          ],
+          "queue_seconds": 0.0005503299998963485,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845204.0827854,
+          "ttfc_seconds": 0.058653647000028286,
+          "total_seconds": 0.24250691099996402
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-94",
+          "client": 2,
+          "planned_mono": 1318.8583977222443,
+          "sent_mono": 1318.860178001,
+          "sent_unix": 1794845205.8402054,
+          "send_lag_seconds": 0.0017802787556320254,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1319.435682576,
+          "end_mono": 1319.619792654,
+          "pod": "api-8f779df47-czfp6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06128948799982936,
+            0.06081426300011117,
+            0.06141049500001827
+          ],
+          "queue_seconds": 0.15763715699995373,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845206.5998175,
+          "ttfc_seconds": 0.5755045750001955,
+          "total_seconds": 0.7596146530001988
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-98",
+          "client": 2,
+          "planned_mono": 1320.8583977222443,
+          "sent_mono": 1320.8601764,
+          "sent_unix": 1794845207.840202,
+          "send_lag_seconds": 0.00177867775573759,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1320.914760028,
+          "end_mono": 1321.098431982,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06122458499999084,
+            0.06074045900004421,
+            0.06116738099990471
+          ],
+          "queue_seconds": 0.00028671600011875853,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845208.0784564,
+          "ttfc_seconds": 0.05458362800004579,
+          "total_seconds": 0.23825558199996522
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-102",
+          "client": 2,
+          "planned_mono": 1322.8583977222443,
+          "sent_mono": 1322.8602216,
+          "sent_unix": 1794845209.8402476,
+          "send_lag_seconds": 0.0018238777556689456,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1322.916358811,
+          "end_mono": 1323.100546592,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06118228199989062,
+            0.06083526400016126,
+            0.06173241099986626
+          ],
+          "queue_seconds": 0.0004872270001214929,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845210.0805712,
+          "ttfc_seconds": 0.056137211000077514,
+          "total_seconds": 0.24032499200006896
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-106",
+          "client": 2,
+          "planned_mono": 1324.8583977222443,
+          "sent_mono": 1324.860280787,
+          "sent_unix": 1794845211.8403075,
+          "send_lag_seconds": 0.001883064755702435,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1324.916885524,
+          "end_mono": 1325.101758141,
+          "pod": "api-8f779df47-czfp6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061689609000040946,
+            0.06125558600001568,
+            0.06145169599994915
+          ],
+          "queue_seconds": 0.000420621999865034,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845212.0817826,
+          "ttfc_seconds": 0.056604737000043315,
+          "total_seconds": 0.24147735399992598
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-110",
+          "client": 2,
+          "planned_mono": 1326.8583977222443,
+          "sent_mono": 1326.860131964,
+          "sent_unix": 1794845213.840158,
+          "send_lag_seconds": 0.0017342417556847067,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1326.914583285,
+          "end_mono": 1327.100327948,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06103557400001591,
+            0.061641706000045815,
+            0.062480651999976544
+          ],
+          "queue_seconds": 0.00026441399995746906,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845214.0803523,
+          "ttfc_seconds": 0.05445132099998773,
+          "total_seconds": 0.2401959840001382
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-114",
+          "client": 2,
+          "planned_mono": 1328.8583977222443,
+          "sent_mono": 1328.860193751,
+          "sent_unix": 1794845215.8402195,
+          "send_lag_seconds": 0.001796028755734369,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1328.916964897,
+          "end_mono": 1329.103326894,
+          "pod": "api-8f779df47-czfp6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06173551099982433,
+            0.0626557610000873,
+            0.0613608920000388
+          ],
+          "queue_seconds": 0.0005644300001677038,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845216.0833514,
+          "ttfc_seconds": 0.05677114600007371,
+          "total_seconds": 0.24313314300002276
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-118",
+          "client": 2,
+          "planned_mono": 1330.8583977222443,
+          "sent_mono": 1330.860229677,
+          "sent_unix": 1794845217.840256,
+          "send_lag_seconds": 0.0018319547557439364,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1330.916366228,
+          "end_mono": 1331.103092743,
+          "pod": "api-8f779df47-czfp6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06174024500000996,
+            0.06262009200008833,
+            0.0617073429998527
+          ],
+          "queue_seconds": 0.00048262499990414653,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.9",
+          "backend_mode": "simulated",
+          "end_unix": 1794845218.083117,
+          "ttfc_seconds": 0.056136551000008694,
+          "total_seconds": 0.24286306599992713
+        }
+      ],
+      "schedule": [
+        {
+          "request_id": "a-fixed-warmup-2",
+          "offset_seconds": 1.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-2",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-6",
+          "offset_seconds": 3.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-6",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-10",
+          "offset_seconds": 5.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-10",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-14",
+          "offset_seconds": 7.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-14",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-18",
+          "offset_seconds": 9.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-2",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-22",
+          "offset_seconds": 11.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-6",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-26",
+          "offset_seconds": 13.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-10",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-30",
+          "offset_seconds": 15.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-14",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-34",
+          "offset_seconds": 17.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-2",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-38",
+          "offset_seconds": 19.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-6",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-42",
+          "offset_seconds": 21.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-10",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-46",
+          "offset_seconds": 23.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-14",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-50",
+          "offset_seconds": 25.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-2",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-54",
+          "offset_seconds": 27.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-6",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-58",
+          "offset_seconds": 29.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-10",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-62",
+          "offset_seconds": 31.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-14",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-66",
+          "offset_seconds": 33.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-2",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-70",
+          "offset_seconds": 35.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-6",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-74",
+          "offset_seconds": 37.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-10",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-78",
+          "offset_seconds": 39.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-14",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-82",
+          "offset_seconds": 41.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-2",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-86",
+          "offset_seconds": 43.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-6",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-90",
+          "offset_seconds": 45.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-10",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-94",
+          "offset_seconds": 47.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-14",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-98",
+          "offset_seconds": 49.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-2",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-102",
+          "offset_seconds": 51.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-6",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-106",
+          "offset_seconds": 53.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-10",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-110",
+          "offset_seconds": 55.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-14",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-114",
+          "offset_seconds": 57.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-2",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-118",
+          "offset_seconds": 59.0,
+          "client": 2,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-6",
+            "prefix": "prefix-2",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        }
+      ],
+      "finished_unix": 1794845218.0832262,
+      "phase_seconds": 60
+    },
+    "error": null
+  },
+  {
+    "running": false,
+    "result": {
+      "config": {
+        "run_id": "a-fixed-warmup",
+        "client": 3,
+        "traffic": "uniform",
+        "url": "http://api:8080",
+        "duration": 60,
+        "rate": 2,
+        "start_unix": 1794845158.8414981,
+        "chunks": 4,
+        "interval": 0.05
+      },
+      "planned": 30,
+      "rows": [
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-3",
+          "client": 3,
+          "planned_mono": 1273.3583977222443,
+          "sent_mono": 1273.363728929,
+          "sent_unix": 1794845160.3468297,
+          "send_lag_seconds": 0.00533120675572718,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1273.420056479,
+          "end_mono": 1273.604610673,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06123761599997124,
+            0.061672339999859105,
+            0.060954300000048534
+          ],
+          "queue_seconds": 0.0007916429999568209,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845160.5862105,
+          "ttfc_seconds": 0.056327550000105475,
+          "total_seconds": 0.24088174400003481
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-7",
+          "client": 3,
+          "planned_mono": 1275.3583977222443,
+          "sent_mono": 1275.360575815,
+          "sent_unix": 1794845162.3421774,
+          "send_lag_seconds": 0.002178092755684702,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1275.416820734,
+          "end_mono": 1275.602049046,
+          "pod": "api-65875d89c9-skmb6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061858009999923524,
+            0.06174150399988321,
+            0.06106186900001376
+          ],
+          "queue_seconds": 0.0004305219999878318,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845162.583649,
+          "ttfc_seconds": 0.05624491900016437,
+          "total_seconds": 0.24147323100009999
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-11",
+          "client": 3,
+          "planned_mono": 1277.3583977222443,
+          "sent_mono": 1277.360219188,
+          "sent_unix": 1794845164.3418217,
+          "send_lag_seconds": 0.0018214657557109604,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1277.416321399,
+          "end_mono": 1277.602367754,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06108376999986831,
+            0.061997418000146354,
+            0.061776605999966705
+          ],
+          "queue_seconds": 0.00046102300007078156,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845164.5839696,
+          "ttfc_seconds": 0.05610221100005219,
+          "total_seconds": 0.24214856599996892
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-15",
+          "client": 3,
+          "planned_mono": 1279.3583977222443,
+          "sent_mono": 1279.36024288,
+          "sent_unix": 1794845166.3418446,
+          "send_lag_seconds": 0.0018451577557243581,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1279.418008178,
+          "end_mono": 1279.604941379,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061546894000002794,
+            0.06210522299988952,
+            0.06201151799996296
+          ],
+          "queue_seconds": 0.00045322300002226257,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845166.5865421,
+          "ttfc_seconds": 0.05776529800004937,
+          "total_seconds": 0.24469849899992369
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-19",
+          "client": 3,
+          "planned_mono": 1281.3583977222443,
+          "sent_mono": 1281.36020767,
+          "sent_unix": 1794845168.341809,
+          "send_lag_seconds": 0.0018099477556461352,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1281.416827208,
+          "end_mono": 1281.604050924,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06211272399991685,
+            0.06203161899998122,
+            0.062230928999952084
+          ],
+          "queue_seconds": 0.00044802300021729025,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845168.5856512,
+          "ttfc_seconds": 0.05661953800017727,
+          "total_seconds": 0.24384325400001217
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-23",
+          "client": 3,
+          "planned_mono": 1283.3583977222443,
+          "sent_mono": 1283.360304507,
+          "sent_unix": 1794845170.341907,
+          "send_lag_seconds": 0.0019067847556470952,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1283.419165954,
+          "end_mono": 1283.607738154,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06209802400007902,
+            0.06337029599990274,
+            0.06227473400008421
+          ],
+          "queue_seconds": 0.0008559469999909197,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845170.5893383,
+          "ttfc_seconds": 0.0588614470000266,
+          "total_seconds": 0.24743364699997983
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-27",
+          "client": 3,
+          "planned_mono": 1285.3583977222443,
+          "sent_mono": 1285.360210909,
+          "sent_unix": 1794845172.341812,
+          "send_lag_seconds": 0.0018131867557258374,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1285.41770858,
+          "end_mono": 1285.604365274,
+          "pod": "api-65875d89c9-skmb6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06168770199997198,
+            0.062094425000168485,
+            0.06217012899992369
+          ],
+          "queue_seconds": 0.000660735999872486,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845172.5859652,
+          "ttfc_seconds": 0.05749767099996461,
+          "total_seconds": 0.24415436499998577
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-31",
+          "client": 3,
+          "planned_mono": 1287.3583977222443,
+          "sent_mono": 1287.36011471,
+          "sent_unix": 1794845174.341716,
+          "send_lag_seconds": 0.001716987755798982,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1287.414930633,
+          "end_mono": 1287.600738981,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06135528400000112,
+            0.061413887000071554,
+            0.06219773099996928
+          ],
+          "queue_seconds": 0.0003212169999642356,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845174.5823393,
+          "ttfc_seconds": 0.054815922999978284,
+          "total_seconds": 0.2406242709998878
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-35",
+          "client": 3,
+          "planned_mono": 1289.3583977222443,
+          "sent_mono": 1289.360266425,
+          "sent_unix": 1794845176.3418674,
+          "send_lag_seconds": 0.001868702755700724,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1289.415134751,
+          "end_mono": 1289.600130454,
+          "pod": "api-65875d89c9-skmb6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06145068899991202,
+            0.061315381999975216,
+            0.06155839500002003
+          ],
+          "queue_seconds": 0.00025251400006709446,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845176.5817306,
+          "ttfc_seconds": 0.05486832600013258,
+          "total_seconds": 0.23986402900004578
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-39",
+          "client": 3,
+          "planned_mono": 1291.3583977222443,
+          "sent_mono": 1291.360091811,
+          "sent_unix": 1794845178.341693,
+          "send_lag_seconds": 0.0016940887558121176,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1291.415094944,
+          "end_mono": 1291.599898534,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06149749099995461,
+            0.0616133969999737,
+            0.061113370000157374
+          ],
+          "queue_seconds": 0.00026351500014243356,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845178.5814986,
+          "ttfc_seconds": 0.05500313299990012,
+          "total_seconds": 0.23980672299990147
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-43",
+          "client": 3,
+          "planned_mono": 1293.3583977222443,
+          "sent_mono": 1293.360605716,
+          "sent_unix": 1794845180.3422067,
+          "send_lag_seconds": 0.002207993755746429,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1293.414576992,
+          "end_mono": 1293.599612295,
+          "pod": "api-65875d89c9-skmb6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06097016199987593,
+            0.06155049400013013,
+            0.06205112099996768
+          ],
+          "queue_seconds": 0.0002463139999235864,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845180.581212,
+          "ttfc_seconds": 0.05397127600008389,
+          "total_seconds": 0.23900657900003353
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-47",
+          "client": 3,
+          "planned_mono": 1295.3583977222443,
+          "sent_mono": 1295.360502088,
+          "sent_unix": 1794845182.3421052,
+          "send_lag_seconds": 0.0021043657557129336,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1295.416361368,
+          "end_mono": 1295.60212751,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06131127999992714,
+            0.06180870799994409,
+            0.061467089000188935
+          ],
+          "queue_seconds": 0.0003453199999512435,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845182.5837276,
+          "ttfc_seconds": 0.055859280000049694,
+          "total_seconds": 0.24162542199997006
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-51",
+          "client": 3,
+          "planned_mono": 1297.3583977222443,
+          "sent_mono": 1297.360155545,
+          "sent_unix": 1794845184.3417568,
+          "send_lag_seconds": 0.0017578227557351056,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1297.757404449,
+          "end_mono": 1297.94295158,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061950216000013825,
+            0.06137138400004005,
+            0.06157189500004279
+          ],
+          "queue_seconds": 0.00025701399999888963,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845184.9245517,
+          "ttfc_seconds": 0.39724890399998003,
+          "total_seconds": 0.5827960350000012
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-55",
+          "client": 3,
+          "planned_mono": 1299.3583977222443,
+          "sent_mono": 1299.360152697,
+          "sent_unix": 1794845186.3417552,
+          "send_lag_seconds": 0.0017549747558405215,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1299.498137444,
+          "end_mono": 1299.684559699,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06253233800021007,
+            0.061045661999969525,
+            0.062364530999957424
+          ],
+          "queue_seconds": 0.07829245499988247,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845186.6661594,
+          "ttfc_seconds": 0.13798474699979124,
+          "total_seconds": 0.3244070019998162
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-59",
+          "client": 3,
+          "planned_mono": 1301.3583977222443,
+          "sent_mono": 1301.360135286,
+          "sent_unix": 1794845188.341737,
+          "send_lag_seconds": 0.0017375637557961454,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1301.414381795,
+          "end_mono": 1301.599118964,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06145268299997042,
+            0.061480384999867965,
+            0.06133607700007815
+          ],
+          "queue_seconds": 0.00023701300005996018,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845188.5807188,
+          "ttfc_seconds": 0.05424650899999506,
+          "total_seconds": 0.23898367799984044
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-63",
+          "client": 3,
+          "planned_mono": 1303.3583977222443,
+          "sent_mono": 1303.360116675,
+          "sent_unix": 1794845190.341718,
+          "send_lag_seconds": 0.0017189527557093243,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1303.415581248,
+          "end_mono": 1303.601126658,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.0616238909999538,
+            0.06109176499990099,
+            0.06226052400006665
+          ],
+          "queue_seconds": 0.0003804189998390939,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845190.581151,
+          "ttfc_seconds": 0.05546457300010843,
+          "total_seconds": 0.24100998300013998
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-67",
+          "client": 3,
+          "planned_mono": 1305.3583977222443,
+          "sent_mono": 1305.361125117,
+          "sent_unix": 1794845192.3411508,
+          "send_lag_seconds": 0.0027273947557659994,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1305.415055311,
+          "end_mono": 1305.600484815,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06156038799986163,
+            0.06151758700002574,
+            0.061744997999994666
+          ],
+          "queue_seconds": 0.00023941200015542563,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845192.5805092,
+          "ttfc_seconds": 0.053930194000031406,
+          "total_seconds": 0.23935969800004386
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-71",
+          "client": 3,
+          "planned_mono": 1307.3583977222443,
+          "sent_mono": 1307.360168579,
+          "sent_unix": 1794845194.3401945,
+          "send_lag_seconds": 0.0017708567556837806,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1307.414362843,
+          "end_mono": 1307.59972534,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06106132700006128,
+            0.06155095300005087,
+            0.06218938699998944
+          ],
+          "queue_seconds": 0.00027801500004898116,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845194.5797498,
+          "ttfc_seconds": 0.054194263999988834,
+          "total_seconds": 0.2395567610001308
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-75",
+          "client": 3,
+          "planned_mono": 1309.3583977222443,
+          "sent_mono": 1309.360215084,
+          "sent_unix": 1794845196.3402407,
+          "send_lag_seconds": 0.0018173617556840327,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1309.414256641,
+          "end_mono": 1309.598645186,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06137884400004623,
+            0.061055225999780305,
+            0.06123703700018268
+          ],
+          "queue_seconds": 0.00024411300000792835,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845196.5786695,
+          "ttfc_seconds": 0.0540415570001187,
+          "total_seconds": 0.2384301020001658
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-79",
+          "client": 3,
+          "planned_mono": 1311.3583977222443,
+          "sent_mono": 1311.360291992,
+          "sent_unix": 1794845198.3403182,
+          "send_lag_seconds": 0.0018942697556667554,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1311.414621263,
+          "end_mono": 1311.599241021,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.0611533320000035,
+            0.061359242999969865,
+            0.061622357000032935
+          ],
+          "queue_seconds": 0.00025001300014082517,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845198.5792654,
+          "ttfc_seconds": 0.0543292710001424,
+          "total_seconds": 0.2389490289999685
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-83",
+          "client": 3,
+          "planned_mono": 1313.3583977222443,
+          "sent_mono": 1313.36020019,
+          "sent_unix": 1794845200.3402257,
+          "send_lag_seconds": 0.0018024677556240931,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1313.415062289,
+          "end_mono": 1313.600352182,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06176416500011328,
+            0.06171456099991701,
+            0.061061627000071894
+          ],
+          "queue_seconds": 0.00031891699995867384,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845200.5803766,
+          "ttfc_seconds": 0.05486209900004724,
+          "total_seconds": 0.24015199200016468
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-87",
+          "client": 3,
+          "planned_mono": 1315.3583977222443,
+          "sent_mono": 1315.360145325,
+          "sent_unix": 1794845202.3401713,
+          "send_lag_seconds": 0.0017476027558132046,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1315.414919564,
+          "end_mono": 1315.599494266,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06110567800010358,
+            0.061511099999961516,
+            0.06147799799987297
+          ],
+          "queue_seconds": 0.0002471130001140409,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845202.5795186,
+          "ttfc_seconds": 0.05477423899992573,
+          "total_seconds": 0.23934894099988924
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-91",
+          "client": 3,
+          "planned_mono": 1317.3583977222443,
+          "sent_mono": 1317.360182626,
+          "sent_unix": 1794845204.3402085,
+          "send_lag_seconds": 0.0017849037558335112,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1317.415903416,
+          "end_mono": 1317.599851285,
+          "pod": "api-65875d89c9-ltxj9",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06121208400008982,
+            0.06116088099997796,
+            0.060970070999928794
+          ],
+          "queue_seconds": 0.00041102199998022115,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845204.5798755,
+          "ttfc_seconds": 0.055720789999895715,
+          "total_seconds": 0.23966865900001721
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-95",
+          "client": 3,
+          "planned_mono": 1319.3583977222443,
+          "sent_mono": 1319.360127223,
+          "sent_unix": 1794845206.340153,
+          "send_lag_seconds": 0.0017295007558004727,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1320.033218034,
+          "end_mono": 1320.217713332,
+          "pod": "api-8f779df47-czfp6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06164410700012013,
+            0.061230085000033796,
+            0.060954369999990377
+          ],
+          "queue_seconds": 0.25605763700013995,
+          "cache_hit": false,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845207.197738,
+          "ttfc_seconds": 0.6730908109998381,
+          "total_seconds": 0.8575861089998398
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-99",
+          "client": 3,
+          "planned_mono": 1321.3583977222443,
+          "sent_mono": 1321.360050418,
+          "sent_unix": 1794845208.3400762,
+          "send_lag_seconds": 0.0016526957556379784,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1321.415380386,
+          "end_mono": 1321.599117844,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06099817300014365,
+            0.06103237399997852,
+            0.061116678999951546
+          ],
+          "queue_seconds": 0.00028371500002322136,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845208.579142,
+          "ttfc_seconds": 0.055329968000023655,
+          "total_seconds": 0.23906742600001962
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-103",
+          "client": 3,
+          "planned_mono": 1323.3583977222443,
+          "sent_mono": 1323.360142717,
+          "sent_unix": 1794845210.3401682,
+          "send_lag_seconds": 0.001744994755654261,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1323.414437629,
+          "end_mono": 1323.59863131,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061025973999903727,
+            0.061465597000051275,
+            0.06116058099996735
+          ],
+          "queue_seconds": 0.00025711400007821794,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845210.5786555,
+          "ttfc_seconds": 0.054294912000159457,
+          "total_seconds": 0.23848859300005643
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-107",
+          "client": 3,
+          "planned_mono": 1325.3583977222443,
+          "sent_mono": 1325.360148701,
+          "sent_unix": 1794845212.340175,
+          "send_lag_seconds": 0.001750978755808319,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1325.415906792,
+          "end_mono": 1325.600750508,
+          "pod": "api-8f779df47-czfp6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061015573000076984,
+            0.06193792299995948,
+            0.06146609699999317
+          ],
+          "queue_seconds": 0.00028891600004499196,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845212.580775,
+          "ttfc_seconds": 0.05575809099991602,
+          "total_seconds": 0.24060180699984812
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-111",
+          "client": 3,
+          "planned_mono": 1327.3583977222443,
+          "sent_mono": 1327.360122784,
+          "sent_unix": 1794845214.340149,
+          "send_lag_seconds": 0.0017250617556783254,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1327.414889922,
+          "end_mono": 1327.59940602,
+          "pod": "api-8f779df47-czfp6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06132219000005534,
+            0.06134788999997909,
+            0.061346490999994785
+          ],
+          "queue_seconds": 0.0003547190001427225,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845214.57943,
+          "ttfc_seconds": 0.054767137999988336,
+          "total_seconds": 0.23928323600011936
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-115",
+          "client": 3,
+          "planned_mono": 1329.3583977222443,
+          "sent_mono": 1329.360262476,
+          "sent_unix": 1794845216.3402884,
+          "send_lag_seconds": 0.001864753755626225,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1329.414866805,
+          "end_mono": 1329.599987935,
+          "pod": "api-8f779df47-nhtwv",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.061402494000049046,
+            0.061644506999982696,
+            0.06148109800005841
+          ],
+          "queue_seconds": 0.0002667139999630308,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845216.5800126,
+          "ttfc_seconds": 0.05460432900008527,
+          "total_seconds": 0.2397254590000557
+        },
+        {
+          "run_id": "a-fixed-warmup",
+          "request_id": "a-fixed-warmup-119",
+          "client": 3,
+          "planned_mono": 1331.3583977222443,
+          "sent_mono": 1331.360309963,
+          "sent_unix": 1794845218.3403366,
+          "send_lag_seconds": 0.0019122407557006227,
+          "status": 200,
+          "outcome": "completed",
+          "first_mono": 1331.417851388,
+          "end_mono": 1331.606206488,
+          "pod": "api-8f779df47-czfp6",
+          "model_version": "A",
+          "parts": 4,
+          "intervals_seconds": [
+            0.06290090600009535,
+            0.061386226999957216,
+            0.06280630100013695
+          ],
+          "queue_seconds": 0.00044072300011066545,
+          "cache_hit": true,
+          "server_client_ip": "10.244.0.7",
+          "backend_mode": "simulated",
+          "end_unix": 1794845218.586232,
+          "ttfc_seconds": 0.05754142499995396,
+          "total_seconds": 0.24589652500003467
+        }
+      ],
+      "schedule": [
+        {
+          "request_id": "a-fixed-warmup-3",
+          "offset_seconds": 1.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-3",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-7",
+          "offset_seconds": 3.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-7",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-11",
+          "offset_seconds": 5.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-11",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-15",
+          "offset_seconds": 7.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-15",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-19",
+          "offset_seconds": 9.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-3",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-23",
+          "offset_seconds": 11.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-7",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-27",
+          "offset_seconds": 13.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-11",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-31",
+          "offset_seconds": 15.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-15",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-35",
+          "offset_seconds": 17.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-3",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-39",
+          "offset_seconds": 19.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-7",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-43",
+          "offset_seconds": 21.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-11",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-47",
+          "offset_seconds": 23.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-15",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-51",
+          "offset_seconds": 25.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-3",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-55",
+          "offset_seconds": 27.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-7",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-59",
+          "offset_seconds": 29.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-11",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-63",
+          "offset_seconds": 31.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-15",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-67",
+          "offset_seconds": 33.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-3",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-71",
+          "offset_seconds": 35.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-7",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-75",
+          "offset_seconds": 37.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-11",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-79",
+          "offset_seconds": 39.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-15",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-83",
+          "offset_seconds": 41.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-3",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-87",
+          "offset_seconds": 43.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-7",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-91",
+          "offset_seconds": 45.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-11",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-95",
+          "offset_seconds": 47.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 пример 4 "
+              }
+            ],
+            "session_id": "session-15",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-99",
+          "offset_seconds": 49.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 пример 1 "
+              }
+            ],
+            "session_id": "session-3",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-103",
+          "offset_seconds": 51.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 пример 5 "
+              }
+            ],
+            "session_id": "session-7",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-107",
+          "offset_seconds": 53.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 пример 2 "
+              }
+            ],
+            "session_id": "session-11",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-111",
+          "offset_seconds": 55.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 пример 6 "
+              }
+            ],
+            "session_id": "session-15",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-115",
+          "offset_seconds": 57.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 пример 3 "
+              }
+            ],
+            "session_id": "session-3",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        },
+        {
+          "request_id": "a-fixed-warmup-119",
+          "offset_seconds": 59.5,
+          "client": 3,
+          "body": {
+            "messages": [
+              {
+                "role": "user",
+                "content": "Классифицируй: пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 пример 0 "
+              }
+            ],
+            "session_id": "session-7",
+            "prefix": "prefix-3",
+            "chunks": 4,
+            "interval_seconds": 0.05
+          }
+        }
+      ],
+      "finished_unix": 1794845218.5864363,
+      "phase_seconds": 60
+    },
+    "error": null
+  }
+]

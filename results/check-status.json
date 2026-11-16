@@ -1,0 +1,6 @@
+{
+  "exit_code": 0,
+  "log": "results/kubernetes-checks.log",
+  "tests": 7,
+  "kubernetes_checks": 5
+}

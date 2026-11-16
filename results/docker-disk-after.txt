@@ -1,0 +1,45 @@
+Images space usage:
+
+REPOSITORY                                              TAG         IMAGE ID       CREATED             SIZE      SHARED SIZE   UNIQUE SIZE   CONTAINERS
+hw11-api                                                0.1.0       36444e91bfd7   About an hour ago   450MB     2B            450MB         0
+mlops-hw6-mlflow                                        latest      42a51b254dfa   2 weeks ago         1.28GB    2B            1.284GB       1
+postgres                                                16-alpine   0cefaabd882e   3 weeks ago         420MB     0B            419.7MB       1
+registry.k8s.io/kube-state-metrics/kube-state-metrics   v2.17.0     2bbc91556733   14 months ago       85.1MB    0B            85.05MB       0
+kindest/node                                            v1.34.0     7416a61b42b1   14 months ago       1.45GB    0B            1.451GB       1
+prom/prometheus                                         v3.5.0      63805ebb8d2b   16 months ago       440MB     0B            439.8MB       0
+
+Containers space usage:
+
+CONTAINER ID   IMAGE                  COMMAND                  LOCAL VOLUMES   SIZE      CREATED             STATUS                           NAMES
+c3ea640a335d   kindest/node:v1.34.0   "/usr/local/bin/entr…"   1               3.56MB    About an hour ago   Up About an hour                 hw11-control-plane
+275e4a27ab35   mlops-hw6-mlflow       "mlflow server --hos…"   1               1.9MB     2 weeks ago         Exited (255) About an hour ago   mlops-hw6-mlflow-1
+2ca13c162eb6   postgres:16-alpine     "docker-entrypoint.s…"   1               20.5kB    2 weeks ago         Exited (255) About an hour ago   mlops-hw6-db-1
+
+Local Volumes space usage:
+
+VOLUME NAME                                                        LINKS     SIZE
+mlops-hw6_artifacts                                                1         125MB
+mlops-hw6_postgres                                                 1         48.86MB
+688ff0aec52b5e04c708f01364b12c0ed229d2ff70d34f3eb01e9a4f24031e14   1         3.177GB
+
+Build cache usage: 1.734GB
+
+CACHE ID       CACHE TYPE     SIZE      CREATED             LAST USED           USAGE     SHARED
+vus8io82bcj2   regular        118MB     2 weeks ago         2 weeks ago         1         true
+qkh0bu1x1ce4   regular        8.86MB    2 weeks ago         2 weeks ago         1         true
+ouou89xldbmj   regular        53.5MB    2 weeks ago         2 weeks ago         1         true
+t2xtmw3hhis5   source.local   8.19kB    2 weeks ago         2 weeks ago         1         false
+v67la390nx6a   source.local   8.19kB    2 weeks ago         2 weeks ago         1         false
+6idroz1q9sm1   regular        16.6kB    2 weeks ago         2 weeks ago         1         true
+8jzdskv8byuh   regular        1.1GB     2 weeks ago         2 weeks ago         1         true
+y4k3qeazw3lc   regular        113MB     About an hour ago   About an hour ago   1         true
+js0lhlvc8vcx   regular        13.9MB    About an hour ago   About an hour ago   1         true
+ppjizqlgm5ua   regular        58.6MB    About an hour ago   About an hour ago   1         true
+9whnkztlyxxq   source.local   28.7kB    About an hour ago   About an hour ago   1         false
+l0na8k8zhsvv   regular        13kB      About an hour ago   About an hour ago   1         true
+43qb74yjjhg8   regular        264MB     About an hour ago   About an hour ago   1         true
+4q0rr2mckx5e   regular        34.5kB    About an hour ago   About an hour ago   1         true
+a6grllcyxzxj   regular        8.29kB    About an hour ago   About an hour ago   1         true
+13i4pmztgzpc   source.local   8.19kB    About an hour ago   About an hour ago   1         false
+ntu39vm55997   source.local   8.19kB    About an hour ago   About an hour ago   1         false
+18rfl8wuggoy   regular        16.6kB    About an hour ago   About an hour ago   1         true

@@ -1,0 +1,379 @@
+---
+# Source: hw11/templates/monitoring.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata: {name: monitoring}
+---
+# Source: hw11/templates/api.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: model-a
+data:
+  model.json: "{\"backend_mode\":\"simulated\",\"version\":\"A\",\"seed\":42}"
+---
+# Source: hw11/templates/api.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: api-config
+data:
+  WARMUP_SECONDS: "20"
+  MODEL_VERSION: "A"
+  ARTIFACT_SHA256: "c796351f90813595066a352358f9ba79e85673189b18af54c83416bbb6223788"
+  FAIL_LOAD: "false"
+  MAX_RUNNING: "1"
+  MAX_WAITING: "8"
+  CACHE_CAPACITY: "16"
+  HIT_CPU_SECONDS: "0.04"
+  MISS_CPU_SECONDS: "0.24"
+  CHUNK_CPU_SECONDS: "0.01"
+---
+# Source: hw11/templates/monitoring.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata: {name: prometheus-config}
+data:
+  prometheus.yml: |
+    global:
+      scrape_interval: 2s
+      evaluation_interval: 5s
+    rule_files: [/etc/prometheus/alerts.yml]
+    scrape_configs:
+      - job_name: api
+        kubernetes_sd_configs:
+          - role: pod
+            namespaces: {names: [hw11]}
+        relabel_configs:
+          - {source_labels: [__meta_kubernetes_pod_label_app], regex: api, action: keep}
+          - {source_labels: [__meta_kubernetes_pod_container_port_number], regex: '8080', action: keep}
+          - {source_labels: [__meta_kubernetes_pod_name], target_label: pod}
+      - job_name: state
+        static_configs: [{targets: ['state:8080']}]
+      - job_name: cadvisor
+        scheme: https
+        bearer_token_file: /var/run/secrets/kubernetes.io/serviceaccount/token
+        tls_config: {insecure_skip_verify: true}
+        kubernetes_sd_configs: [{role: node}]
+        relabel_configs:
+          - {target_label: __address__, replacement: 'kubernetes.default.svc:443'}
+          - source_labels: [__meta_kubernetes_node_name]
+            target_label: __metrics_path__
+            replacement: /api/v1/nodes/${1}/proxy/metrics/cadvisor
+  alerts.yml: |
+    groups:
+      - name: hw11
+        rules:
+          - alert: HighTTFC
+            expr: histogram_quantile(0.95, sum by(le) (rate(api_ttfc_seconds_bucket[30s]))) > 0.8 and sum(increase(api_ttfc_seconds_count[30s])) >= 20
+            for: 15s
+            labels: {severity: warning}
+            annotations: {summary: 'p95 TTFC > 0.8 s; минимум 20 наблюдений за 30 s'}
+          - alert: HighRejectionRatio
+            expr: sum(rate(api_requests_total{outcome="rejected"}[30s])) / sum(rate(api_requests_total[30s])) > 0.1 and sum(increase(api_requests_total[30s])) >= 20
+            for: 15s
+            labels: {severity: warning}
+            annotations: {summary: 'Отказов > 10%; минимум 20 исходов за 30 s'}
+---
+# Source: hw11/templates/monitoring.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata: {name: grafana-provisioning}
+data:
+  datasource.yaml: |
+    apiVersion: 1
+    datasources:
+      - name: Prometheus
+        uid: prometheus
+        type: prometheus
+        url: http://prometheus:9090
+        access: proxy
+        isDefault: true
+  dashboards.yaml: |
+    apiVersion: 1
+    providers:
+      - name: hw11
+        type: file
+        options: {path: /dashboards}
+---
+# Source: hw11/templates/monitoring.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata: {name: grafana-dashboard}
+data:
+  hw11.json: "{\r\n  \"uid\": \"hw11\",\r\n  \"title\": \"HW11 — CPU simulated backend\",\r\n  \"schemaVersion\": 41,\r\n  \"version\": 1,\r\n  \"refresh\": \"5s\",\r\n  \"time\": {\r\n    \"from\": \"now-1h\",\r\n    \"to\": \"now\"\r\n  },\r\n  \"panels\": [\r\n    {\r\n      \"id\": 1,\r\n      \"title\": \"p95 TTFC, s\",\r\n      \"type\": \"timeseries\",\r\n      \"datasource\": {\r\n        \"type\": \"prometheus\",\r\n        \"uid\": \"prometheus\"\r\n      },\r\n      \"gridPos\": {\r\n        \"x\": 0,\r\n        \"y\": 0,\r\n        \"w\": 12,\r\n        \"h\": 8\r\n      },\r\n      \"targets\": [\r\n        {\r\n          \"refId\": \"A\",\r\n          \"expr\": \"histogram_quantile(0.95, sum by (le,pod) (rate(api_ttfc_seconds_bucket[30s])))\",\r\n          \"legendFormat\": \"{{pod}} {{outcome}}\"\r\n        }\r\n      ],\r\n      \"fieldConfig\": {\r\n        \"defaults\": {\r\n          \"unit\": \"s\"\r\n        },\r\n        \"overrides\": []\r\n      }\r\n    },\r\n    {\r\n      \"id\": 2,\r\n      \"title\": \"p95 full response, s\",\r\n      \"type\": \"timeseries\",\r\n      \"datasource\": {\r\n        \"type\": \"prometheus\",\r\n        \"uid\": \"prometheus\"\r\n      },\r\n      \"gridPos\": {\r\n        \"x\": 12,\r\n        \"y\": 0,\r\n        \"w\": 12,\r\n        \"h\": 8\r\n      },\r\n      \"targets\": [\r\n        {\r\n          \"refId\": \"A\",\r\n          \"expr\": \"histogram_quantile(0.95, sum by (le,pod) (rate(api_duration_seconds_bucket[30s])))\",\r\n          \"legendFormat\": \"{{pod}} {{outcome}}\"\r\n        }\r\n      ],\r\n      \"fieldConfig\": {\r\n        \"defaults\": {\r\n          \"unit\": \"s\"\r\n        },\r\n        \"overrides\": []\r\n      }\r\n    },\r\n    {\r\n      \"id\": 3,\r\n      \"title\": \"running / Pod\",\r\n      \"type\": \"timeseries\",\r\n      \"datasource\": {\r\n        \"type\": \"prometheus\",\r\n        \"uid\": \"prometheus\"\r\n      },\r\n      \"gridPos\": {\r\n        \"x\": 0,\r\n        \"y\": 8,\r\n        \"w\": 12,\r\n        \"h\": 8\r\n      },\r\n      \"targets\": [\r\n        {\r\n          \"refId\": \"A\",\r\n          \"expr\": \"api_running\",\r\n          \"legendFormat\": \"{{pod}} {{outcome}}\"\r\n        }\r\n      ],\r\n      \"fieldConfig\": {\r\n        \"defaults\": {\r\n          \"unit\": \"short\"\r\n        },\r\n        \"overrides\": []\r\n      }\r\n    },\r\n    {\r\n      \"id\": 4,\r\n      \"title\": \"waiting / Pod\",\r\n      \"type\": \"timeseries\",\r\n      \"datasource\": {\r\n        \"type\": \"prometheus\",\r\n        \"uid\": \"prometheus\"\r\n      },\r\n      \"gridPos\": {\r\n        \"x\": 12,\r\n        \"y\": 8,\r\n        \"w\": 12,\r\n        \"h\": 8\r\n      },\r\n      \"targets\": [\r\n        {\r\n          \"refId\": \"A\",\r\n          \"expr\": \"api_waiting\",\r\n          \"legendFormat\": \"{{pod}} {{outcome}}\"\r\n        }\r\n      ],\r\n      \"fieldConfig\": {\r\n        \"defaults\": {\r\n          \"unit\": \"short\"\r\n        },\r\n        \"overrides\": []\r\n      }\r\n    },\r\n    {\r\n      \"id\": 5,\r\n      \"title\": \"completed requests/s\",\r\n      \"type\": \"timeseries\",\r\n      \"datasource\": {\r\n        \"type\": \"prometheus\",\r\n        \"uid\": \"prometheus\"\r\n      },\r\n      \"gridPos\": {\r\n        \"x\": 0,\r\n        \"y\": 16,\r\n        \"w\": 12,\r\n        \"h\": 8\r\n      },\r\n      \"targets\": [\r\n        {\r\n          \"refId\": \"A\",\r\n          \"expr\": \"sum by(pod) (rate(api_requests_total{outcome=\\\"completed\\\"}[30s]))\",\r\n          \"legendFormat\": \"{{pod}} {{outcome}}\"\r\n        }\r\n      ],\r\n      \"fieldConfig\": {\r\n        \"defaults\": {\r\n          \"unit\": \"short\"\r\n        },\r\n        \"overrides\": []\r\n      }\r\n    },\r\n    {\r\n      \"id\": 6,\r\n      \"title\": \"errors and rejections/s\",\r\n      \"type\": \"timeseries\",\r\n      \"datasource\": {\r\n        \"type\": \"prometheus\",\r\n        \"uid\": \"prometheus\"\r\n      },\r\n      \"gridPos\": {\r\n        \"x\": 12,\r\n        \"y\": 16,\r\n        \"w\": 12,\r\n        \"h\": 8\r\n      },\r\n      \"targets\": [\r\n        {\r\n          \"refId\": \"A\",\r\n          \"expr\": \"sum by(pod,outcome) (rate(api_requests_total{outcome!=\\\"completed\\\"}[30s]))\",\r\n          \"legendFormat\": \"{{pod}} {{outcome}}\"\r\n        }\r\n      ],\r\n      \"fieldConfig\": {\r\n        \"defaults\": {\r\n          \"unit\": \"short\"\r\n        },\r\n        \"overrides\": []\r\n      }\r\n    },\r\n    {\r\n      \"id\": 7,\r\n      \"title\": \"CPU cores / Pod\",\r\n      \"type\": \"timeseries\",\r\n      \"datasource\": {\r\n        \"type\": \"prometheus\",\r\n        \"uid\": \"prometheus\"\r\n      },\r\n      \"gridPos\": {\r\n        \"x\": 0,\r\n        \"y\": 24,\r\n        \"w\": 12,\r\n        \"h\": 8\r\n      },\r\n      \"targets\": [\r\n        {\r\n          \"refId\": \"A\",\r\n          \"expr\": \"sum by(pod) (rate(container_cpu_usage_seconds_total{namespace=\\\"hw11\\\",container=\\\"api\\\"}[30s]))\",\r\n          \"legendFormat\": \"{{pod}} {{outcome}}\"\r\n        }\r\n      ],\r\n      \"fieldConfig\": {\r\n        \"defaults\": {\r\n          \"unit\": \"short\"\r\n        },\r\n        \"overrides\": []\r\n      }\r\n    },\r\n    {\r\n      \"id\": 8,\r\n      \"title\": \"RAM bytes / Pod\",\r\n      \"type\": \"timeseries\",\r\n      \"datasource\": {\r\n        \"type\": \"prometheus\",\r\n        \"uid\": \"prometheus\"\r\n      },\r\n      \"gridPos\": {\r\n        \"x\": 12,\r\n        \"y\": 24,\r\n        \"w\": 12,\r\n        \"h\": 8\r\n      },\r\n      \"targets\": [\r\n        {\r\n          \"refId\": \"A\",\r\n          \"expr\": \"sum by(pod) (container_memory_working_set_bytes{namespace=\\\"hw11\\\",container=\\\"api\\\"})\",\r\n          \"legendFormat\": \"{{pod}} {{outcome}}\"\r\n        }\r\n      ],\r\n      \"fieldConfig\": {\r\n        \"defaults\": {\r\n          \"unit\": \"short\"\r\n        },\r\n        \"overrides\": []\r\n      }\r\n    },\r\n    {\r\n      \"id\": 9,\r\n      \"title\": \"Ready replicas\",\r\n      \"type\": \"timeseries\",\r\n      \"datasource\": {\r\n        \"type\": \"prometheus\",\r\n        \"uid\": \"prometheus\"\r\n      },\r\n      \"gridPos\": {\r\n        \"x\": 0,\r\n        \"y\": 32,\r\n        \"w\": 12,\r\n        \"h\": 8\r\n      },\r\n      \"targets\": [\r\n        {\r\n          \"refId\": \"A\",\r\n          \"expr\": \"sum(kube_pod_status_ready{namespace=\\\"hw11\\\",condition=\\\"true\\\",pod=~\\\"api-.*\\\"})\",\r\n          \"legendFormat\": \"{{pod}} {{outcome}}\"\r\n        }\r\n      ],\r\n      \"fieldConfig\": {\r\n        \"defaults\": {\r\n          \"unit\": \"short\"\r\n        },\r\n        \"overrides\": []\r\n      }\r\n    },\r\n    {\r\n      \"id\": 10,\r\n      \"title\": \"p95 queue, s\",\r\n      \"type\": \"timeseries\",\r\n      \"datasource\": {\r\n        \"type\": \"prometheus\",\r\n        \"uid\": \"prometheus\"\r\n      },\r\n      \"gridPos\": {\r\n        \"x\": 12,\r\n        \"y\": 32,\r\n        \"w\": 12,\r\n        \"h\": 8\r\n      },\r\n      \"targets\": [\r\n        {\r\n          \"refId\": \"A\",\r\n          \"expr\": \"histogram_quantile(0.95, sum by(le,pod) (rate(api_queue_seconds_bucket[30s])))\",\r\n          \"legendFormat\": \"{{pod}} {{outcome}}\"\r\n        }\r\n      ],\r\n      \"fieldConfig\": {\r\n        \"defaults\": {\r\n          \"unit\": \"s\"\r\n        },\r\n        \"overrides\": []\r\n      }\r\n    }\r\n  ],\r\n  \"tags\": [\r\n    \"hw11\",\r\n    \"simulated\"\r\n  ]\r\n}"
+---
+# Source: hw11/templates/monitoring.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata: {name: hw11-monitoring}
+rules:
+  - apiGroups: [""]
+    resources: [pods, nodes, nodes/proxy, services, endpoints, namespaces, replicationcontrollers, resourcequotas, limitranges, persistentvolumes, persistentvolumeclaims]
+    verbs: [get, list, watch]
+  - apiGroups: [apps]
+    resources: [deployments, replicasets, statefulsets, daemonsets]
+    verbs: [get, list, watch]
+  - apiGroups: [autoscaling]
+    resources: [horizontalpodautoscalers]
+    verbs: [get, list, watch]
+  - apiGroups: [batch]
+    resources: [jobs, cronjobs]
+    verbs: [get, list, watch]
+  - apiGroups: [policy]
+    resources: [poddisruptionbudgets]
+    verbs: [get, list, watch]
+---
+# Source: hw11/templates/monitoring.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata: {name: hw11-monitoring}
+roleRef: {apiGroup: rbac.authorization.k8s.io, kind: ClusterRole, name: hw11-monitoring}
+subjects: [{kind: ServiceAccount, name: monitoring, namespace: hw11}]
+---
+# Source: hw11/templates/api.yaml
+apiVersion: v1
+kind: Service
+metadata: {name: api}
+spec:
+  selector: {app: api}
+  ports: [{name: http, port: 8080, targetPort: http}]
+  sessionAffinity: None
+---
+# Source: hw11/templates/api.yaml
+apiVersion: v1
+kind: Service
+metadata: {name: api-sticky}
+spec:
+  selector: {app: api}
+  ports: [{name: http, port: 8080, targetPort: http}]
+  sessionAffinity: ClientIP
+  sessionAffinityConfig:
+    clientIP: {timeoutSeconds: 10800}
+---
+# Source: hw11/templates/api.yaml
+apiVersion: v1
+kind: Service
+metadata: {name: api-headless}
+spec:
+  clusterIP: None
+  selector: {app: api}
+  ports: [{name: http, port: 8080, targetPort: http}]
+---
+# Source: hw11/templates/monitoring.yaml
+apiVersion: v1
+kind: Service
+metadata: {name: prometheus}
+spec: {selector: {app: prometheus}, ports: [{port: 9090}]}
+---
+# Source: hw11/templates/monitoring.yaml
+apiVersion: v1
+kind: Service
+metadata: {name: state}
+spec: {selector: {app: state}, ports: [{port: 8080}]}
+---
+# Source: hw11/templates/monitoring.yaml
+apiVersion: v1
+kind: Service
+metadata: {name: grafana}
+spec: {selector: {app: grafana}, ports: [{port: 3000}]}
+---
+# Source: hw11/templates/clients.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: client-0
+  labels: {app: client}
+spec:
+  containers:
+    - name: client
+      image: "hw11-api:0.1.0"
+      imagePullPolicy: IfNotPresent
+      command: [python, loadgen.py, --agent]
+      ports: [{containerPort: 8090}]
+      resources:
+        requests: {cpu: 50m, memory: 48Mi}
+        limits: {cpu: 250m, memory: 128Mi}
+---
+# Source: hw11/templates/clients.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: client-1
+  labels: {app: client}
+spec:
+  containers:
+    - name: client
+      image: "hw11-api:0.1.0"
+      imagePullPolicy: IfNotPresent
+      command: [python, loadgen.py, --agent]
+      ports: [{containerPort: 8090}]
+      resources:
+        requests: {cpu: 50m, memory: 48Mi}
+        limits: {cpu: 250m, memory: 128Mi}
+---
+# Source: hw11/templates/clients.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: client-2
+  labels: {app: client}
+spec:
+  containers:
+    - name: client
+      image: "hw11-api:0.1.0"
+      imagePullPolicy: IfNotPresent
+      command: [python, loadgen.py, --agent]
+      ports: [{containerPort: 8090}]
+      resources:
+        requests: {cpu: 50m, memory: 48Mi}
+        limits: {cpu: 250m, memory: 128Mi}
+---
+# Source: hw11/templates/clients.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: client-3
+  labels: {app: client}
+spec:
+  containers:
+    - name: client
+      image: "hw11-api:0.1.0"
+      imagePullPolicy: IfNotPresent
+      command: [python, loadgen.py, --agent]
+      ports: [{containerPort: 8090}]
+      resources:
+        requests: {cpu: 50m, memory: 48Mi}
+        limits: {cpu: 250m, memory: 128Mi}
+---
+# Source: hw11/templates/api.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api
+spec:
+  replicas: 2
+  revisionHistoryLimit: 5
+  progressDeadlineSeconds: 180
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  selector:
+    matchLabels: {app: api}
+  template:
+    metadata:
+      labels: {app: api}
+      annotations:
+        config-hash: 3ba753250b47bde00a07a2b9776ef7683a7d1ab8d7aecd4b06c67513e3df7d87
+        prometheus.io/scrape: "true"
+    spec:
+      terminationGracePeriodSeconds: 75
+      containers:
+        - name: api
+          image: "hw11-api:0.1.0"
+          imagePullPolicy: IfNotPresent
+          ports: [{name: http, containerPort: 8080}]
+          envFrom: [{configMapRef: {name: api-config}}]
+          env:
+            - name: POD_NAME
+              valueFrom: {fieldRef: {fieldPath: metadata.name}}
+          resources: {"limits":{"cpu":"600m","memory":"192Mi"},"requests":{"cpu":"250m","memory":"80Mi"}}
+          volumeMounts: [{name: artifact, mountPath: /artifact, readOnly: true}]
+          startupProbe:
+            httpGet: {path: /startup, port: http}
+            periodSeconds: 1
+            timeoutSeconds: 1
+            failureThreshold: 90
+          readinessProbe:
+            httpGet: {path: /ready, port: http}
+            periodSeconds: 1
+            timeoutSeconds: 1
+            failureThreshold: 1
+          livenessProbe:
+            httpGet: {path: /health, port: http}
+            periodSeconds: 5
+            timeoutSeconds: 2
+            failureThreshold: 6
+          lifecycle:
+            preStop:
+              exec:
+                command: [python, -c, "import urllib.request; urllib.request.urlopen(urllib.request.Request('http://127.0.0.1:8080/drain',method='POST'),timeout=10).read()"]
+      volumes:
+        - name: artifact
+          configMap: {name: model-a}
+---
+# Source: hw11/templates/monitoring.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata: {name: prometheus}
+spec:
+  replicas: 1
+  selector: {matchLabels: {app: prometheus}}
+  template:
+    metadata: {labels: {app: prometheus}}
+    spec:
+      serviceAccountName: monitoring
+      securityContext: {fsGroup: 65534}
+      containers:
+        - name: prometheus
+          image: "prom/prometheus:v3.5.0"
+          args: [--config.file=/etc/prometheus/prometheus.yml, --storage.tsdb.path=/prometheus, --storage.tsdb.retention.time=2h, --storage.tsdb.retention.size=128MB, --web.enable-lifecycle]
+          ports: [{containerPort: 9090}]
+          resources: {requests: {cpu: 100m, memory: 128Mi}, limits: {cpu: 500m, memory: 384Mi}}
+          volumeMounts: [{name: config, mountPath: /etc/prometheus}, {name: data, mountPath: /prometheus}]
+      volumes:
+        - name: config
+          configMap: {name: prometheus-config}
+        - name: data
+          emptyDir: {sizeLimit: 256Mi}
+---
+# Source: hw11/templates/monitoring.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata: {name: state}
+spec:
+  replicas: 1
+  selector: {matchLabels: {app: state}}
+  template:
+    metadata: {labels: {app: state}}
+    spec:
+      serviceAccountName: monitoring
+      containers:
+        - name: state
+          image: "registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.17.0"
+          args: ["--resources=pods,deployments,horizontalpodautoscalers"]
+          ports: [{containerPort: 8080}]
+          resources: {requests: {cpu: 50m, memory: 32Mi}, limits: {cpu: 200m, memory: 96Mi}}
+---
+# Source: hw11/templates/monitoring.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata: {name: grafana}
+spec:
+  replicas: 1
+  selector: {matchLabels: {app: grafana}}
+  template:
+    metadata: {labels: {app: grafana}}
+    spec:
+      securityContext: {fsGroup: 472}
+      containers:
+        - name: grafana
+          image: "grafana/grafana:12.1.1"
+          env:
+            - {name: GF_AUTH_ANONYMOUS_ENABLED, value: 'true'}
+            - {name: GF_AUTH_ANONYMOUS_ORG_ROLE, value: Viewer}
+            - {name: GF_ANALYTICS_REPORTING_ENABLED, value: 'false'}
+            - {name: GF_ANALYTICS_CHECK_FOR_UPDATES, value: 'false'}
+          ports: [{containerPort: 3000}]
+          resources: {requests: {cpu: 100m, memory: 128Mi}, limits: {cpu: 400m, memory: 256Mi}}
+          volumeMounts:
+            - {name: provisioning, mountPath: /etc/grafana/provisioning/datasources/datasource.yaml, subPath: datasource.yaml}
+            - {name: provisioning, mountPath: /etc/grafana/provisioning/dashboards/dashboards.yaml, subPath: dashboards.yaml}
+            - {name: dashboard, mountPath: /dashboards}
+            - {name: data, mountPath: /var/lib/grafana}
+      volumes:
+        - {name: provisioning, configMap: {name: grafana-provisioning}}
+        - {name: dashboard, configMap: {name: grafana-dashboard}}
+        - {name: data, emptyDir: {sizeLimit: 128Mi}}

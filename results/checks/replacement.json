@@ -1,0 +1,112 @@
+{
+  "before": [
+    {
+      "request_id": "cac3320f-68d3-419e-a9c2-c0a8c205a6c3",
+      "session_id": "test",
+      "pod": "api-8f779df47-9q9mg",
+      "model_version": "A",
+      "artifact_sha256": "c796351f90813595066a352358f9ba79e85673189b18af54c83416bbb6223788",
+      "backend_mode": "simulated",
+      "client_ip": "127.0.0.1",
+      "index": 0,
+      "content": "A:Сохранённая история|REPLACEMENT-MARKER:0",
+      "history_sha256": "2a1573d6675f4dbe44bdc1fda5ff9eacb1600391ff46ef58e214f5274728be92",
+      "queue_seconds": 0.0002624119997562957,
+      "cache_hit": true
+    },
+    {
+      "request_id": "cac3320f-68d3-419e-a9c2-c0a8c205a6c3",
+      "session_id": "test",
+      "pod": "api-8f779df47-9q9mg",
+      "model_version": "A",
+      "artifact_sha256": "c796351f90813595066a352358f9ba79e85673189b18af54c83416bbb6223788",
+      "backend_mode": "simulated",
+      "client_ip": "127.0.0.1",
+      "index": 1,
+      "content": "A:Сохранённая история|REPLACEMENT-MARKER:1",
+      "history_sha256": "2a1573d6675f4dbe44bdc1fda5ff9eacb1600391ff46ef58e214f5274728be92",
+      "queue_seconds": 0.0002624119997562957,
+      "cache_hit": true
+    },
+    {
+      "request_id": "cac3320f-68d3-419e-a9c2-c0a8c205a6c3",
+      "session_id": "test",
+      "pod": "api-8f779df47-9q9mg",
+      "model_version": "A",
+      "artifact_sha256": "c796351f90813595066a352358f9ba79e85673189b18af54c83416bbb6223788",
+      "backend_mode": "simulated",
+      "client_ip": "127.0.0.1",
+      "index": 2,
+      "content": "A:Сохранённая история|REPLACEMENT-MARKER:2",
+      "history_sha256": "2a1573d6675f4dbe44bdc1fda5ff9eacb1600391ff46ef58e214f5274728be92",
+      "queue_seconds": 0.0002624119997562957,
+      "cache_hit": true
+    },
+    {
+      "request_id": "cac3320f-68d3-419e-a9c2-c0a8c205a6c3",
+      "session_id": "test",
+      "pod": "api-8f779df47-9q9mg",
+      "model_version": "A",
+      "artifact_sha256": "c796351f90813595066a352358f9ba79e85673189b18af54c83416bbb6223788",
+      "backend_mode": "simulated",
+      "client_ip": "127.0.0.1",
+      "done": true,
+      "parts": 3
+    }
+  ],
+  "after": [
+    {
+      "request_id": "16294ed6-0171-490d-a353-56f4b3a8a0d9",
+      "session_id": "test",
+      "pod": "api-8f779df47-k9df9",
+      "model_version": "A",
+      "artifact_sha256": "c796351f90813595066a352358f9ba79e85673189b18af54c83416bbb6223788",
+      "backend_mode": "simulated",
+      "client_ip": "127.0.0.1",
+      "index": 0,
+      "content": "A:Сохранённая история|REPLACEMENT-MARKER:0",
+      "history_sha256": "2a1573d6675f4dbe44bdc1fda5ff9eacb1600391ff46ef58e214f5274728be92",
+      "queue_seconds": 0.011870957999235543,
+      "cache_hit": false
+    },
+    {
+      "request_id": "16294ed6-0171-490d-a353-56f4b3a8a0d9",
+      "session_id": "test",
+      "pod": "api-8f779df47-k9df9",
+      "model_version": "A",
+      "artifact_sha256": "c796351f90813595066a352358f9ba79e85673189b18af54c83416bbb6223788",
+      "backend_mode": "simulated",
+      "client_ip": "127.0.0.1",
+      "index": 1,
+      "content": "A:Сохранённая история|REPLACEMENT-MARKER:1",
+      "history_sha256": "2a1573d6675f4dbe44bdc1fda5ff9eacb1600391ff46ef58e214f5274728be92",
+      "queue_seconds": 0.011870957999235543,
+      "cache_hit": false
+    },
+    {
+      "request_id": "16294ed6-0171-490d-a353-56f4b3a8a0d9",
+      "session_id": "test",
+      "pod": "api-8f779df47-k9df9",
+      "model_version": "A",
+      "artifact_sha256": "c796351f90813595066a352358f9ba79e85673189b18af54c83416bbb6223788",
+      "backend_mode": "simulated",
+      "client_ip": "127.0.0.1",
+      "index": 2,
+      "content": "A:Сохранённая история|REPLACEMENT-MARKER:2",
+      "history_sha256": "2a1573d6675f4dbe44bdc1fda5ff9eacb1600391ff46ef58e214f5274728be92",
+      "queue_seconds": 0.011870957999235543,
+      "cache_hit": false
+    },
+    {
+      "request_id": "16294ed6-0171-490d-a353-56f4b3a8a0d9",
+      "session_id": "test",
+      "pod": "api-8f779df47-k9df9",
+      "model_version": "A",
+      "artifact_sha256": "c796351f90813595066a352358f9ba79e85673189b18af54c83416bbb6223788",
+      "backend_mode": "simulated",
+      "client_ip": "127.0.0.1",
+      "done": true,
+      "parts": 3
+    }
+  ]
+}

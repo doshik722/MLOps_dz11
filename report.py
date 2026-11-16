@@ -184,6 +184,10 @@ def main():
     kind_size=load('kind-size.json',[])
     if kind_size:
         compact_environment['kind_node_bytes']={key:kind_size[0].get(key) for key in ('SizeRw','SizeRootFs')}
+    volume=load('kind-volume-size.json')
+    if volume:
+        compact_environment['kind_var_volume_bytes']=volume['bytes']
+        compact_environment['node_plus_var_estimate_gb']=round((kind_size[0]['SizeRootFs']+volume['bytes'])/1e9,2) if kind_size else None
     tests=load('check-status.json',{})
     try: implementation=subprocess.check_output(['git','log','-1','--format=%H','--','app.py','experiments.py','chart'],cwd=ROOT,text=True).strip()
     except subprocess.CalledProcessError:implementation='не зафиксирован'
@@ -216,6 +220,12 @@ def main():
         'Идентификаторы запросов и диалогов не становятся метками Prometheus. В мастер-CSV source_run различает отдельно повторённые опыты; исходный request_id сохраняется. CSV округлён до микросекунд, полная точность сохранена в исходных JSON.')
     if complete:
         report=report.replace(' Если Docker не готов, кластерные опыты, графики и выводы остаются неподтверждёнными.','')
+        report=report.replace('Результаты выполненных опытов и их ограничения представлены в сырых журналах и таблицах.',
+          'Разделение liveness, startup и readiness устранило ранний допуск непрогретых Pod: после исправления завершены все 120 запросов. '
+          'Штатное обновление при выбранной ограниченной нагрузке сохранило длительный поток; неготовая версия исключалась из трафика, откат возвращал A. '
+          'В трёх перекошенных прогонах ClientIP завершены 1444 из 1800 запросов, после перехода на None — все 1800. '
+          'HPA показал 2→3→2, два алерта прошли pending/firing и вернулись в норму; семь собственных проверок прошли. '
+          'Численные результаты относятся к CPU-имитатору, одному локальному узлу и сохранённым условиям нагрузки.')
     (ROOT/'report.html').write_text(report,encoding='utf-8')
     print(json.dumps({'report':'report.html','complete':complete,'runs':len(all_runs),'requests':len(rows),'figures':sum(figures)},ensure_ascii=False))
 

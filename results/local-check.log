@@ -1,0 +1,45 @@
+{
+  "cold_status": 503,
+  "ready": {
+    "ready": true,
+    "pod": "local",
+    "model_version": "A",
+    "artifact_sha256": "e54ca04a2069609390cd5cf4a070ec34d5dc6199e5397febd3cc5219649d171b",
+    "backend_mode": "simulated"
+  },
+  "stream": {
+    "run_id": "local",
+    "request_id": "local-1",
+    "client": 0,
+    "planned_mono": 366171.4016451,
+    "sent_mono": 366171.4016707,
+    "sent_unix": 1794844358.0812466,
+    "send_lag_seconds": 2.5600020308047533e-05,
+    "status": 200,
+    "outcome": "completed",
+    "first_mono": 366171.6963844,
+    "end_mono": 366171.8403885,
+    "pod": "local",
+    "model_version": "A",
+    "parts": 3,
+    "intervals_seconds": [
+      0.06401929998537526,
+      0.07838790002278984
+    ],
+    "queue_seconds": 0.03544770000735298,
+    "cache_hit": false,
+    "server_client_ip": "127.0.0.1",
+    "backend_mode": "simulated",
+    "end_unix": 1794844358.5207107,
+    "ttfc_seconds": 0.2947137000155635,
+    "total_seconds": 0.43871780001791194
+  }
+}
+INFO:     Started server process [2708]
+INFO:     Waiting for application startup.
+{"kind": "loaded", "unix": 1794844355.8192732, "pod": "local", "backend_mode": "simulated", "model_version": "A", "artifact_sha256": "e54ca04a2069609390cd5cf4a070ec34d5dc6199e5397febd3cc5219649d171b"}
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:18088 (Press CTRL+C to quit)
+{"kind": "warmup_finished", "unix": 1794844357.9091763, "pod": "local", "backend_mode": "simulated", "model_version": "A"}
+{"kind": "request", "unix": 1794844358.5186994, "pod": "local", "backend_mode": "simulated", "request_id": "local-1", "session_id": "alpha", "model_version": "A", "artifact_sha256": "e54ca04a2069609390cd5cf4a070ec34d5dc6199e5397febd3cc5219649d171b", "client_ip": "127.0.0.1", "outcome": "completed", "parts": 3, "ttfc_seconds": 0.2900806000106968, "total_seconds": 0.4325925000011921}
+

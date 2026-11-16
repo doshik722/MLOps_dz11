@@ -1,0 +1,103 @@
+{
+  "pod": "api-8f779df47-fhsqv",
+  "before": 503,
+  "after": 200,
+  "endpoints": {
+    "apiVersion": "v1",
+    "items": [
+      {
+        "addressType": "IPv4",
+        "apiVersion": "discovery.k8s.io/v1",
+        "endpoints": [
+          {
+            "addresses": [
+              "10.244.0.27"
+            ],
+            "conditions": {
+              "ready": false,
+              "serving": false,
+              "terminating": true
+            },
+            "nodeName": "hw11-control-plane",
+            "targetRef": {
+              "kind": "Pod",
+              "name": "api-8f779df47-9d5ql",
+              "namespace": "hw11",
+              "uid": "12b9200f-951f-4aab-a2cb-481585c0b6a1"
+            }
+          },
+          {
+            "addresses": [
+              "10.244.0.29"
+            ],
+            "conditions": {
+              "ready": true,
+              "serving": true,
+              "terminating": false
+            },
+            "nodeName": "hw11-control-plane",
+            "targetRef": {
+              "kind": "Pod",
+              "name": "api-8f779df47-9q9mg",
+              "namespace": "hw11",
+              "uid": "51f12c9a-42e7-4f32-a7f6-e776e2e6719f"
+            }
+          },
+          {
+            "addresses": [
+              "10.244.0.33"
+            ],
+            "conditions": {
+              "ready": false,
+              "serving": false,
+              "terminating": false
+            },
+            "nodeName": "hw11-control-plane",
+            "targetRef": {
+              "kind": "Pod",
+              "name": "api-8f779df47-fhsqv",
+              "namespace": "hw11",
+              "uid": "147ada0c-a0a0-45b0-81ec-f28eec36bc00"
+            }
+          }
+        ],
+        "kind": "EndpointSlice",
+        "metadata": {
+          "creationTimestamp": "2026-11-16T16:00:13Z",
+          "generateName": "api-",
+          "generation": 91,
+          "labels": {
+            "app.kubernetes.io/managed-by": "Helm",
+            "endpointslice.kubernetes.io/managed-by": "endpointslice-controller.k8s.io",
+            "kubernetes.io/service-name": "api"
+          },
+          "name": "api-vfd4k",
+          "namespace": "hw11",
+          "ownerReferences": [
+            {
+              "apiVersion": "v1",
+              "blockOwnerDeletion": true,
+              "controller": true,
+              "kind": "Service",
+              "name": "api",
+              "uid": "e79c0483-c2c1-4920-91ca-e4253fa6c248"
+            }
+          ],
+          "resourceVersion": "7263",
+          "uid": "19d45096-1fb9-45ad-8902-d5b5af7d2d88"
+        },
+        "ports": [
+          {
+            "name": "http",
+            "port": 8080,
+            "protocol": "TCP"
+          }
+        ]
+      }
+    ],
+    "kind": "List",
+    "metadata": {
+      "resourceVersion": ""
+    }
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "meta": {
+    "type": "db",
+    "canSave": false,
+    "canEdit": false,
+    "canAdmin": false,
+    "canStar": false,
+    "canDelete": false,
+    "slug": "hw11-e28094-cpu-simulated-backend",
+    "url": "/d/hw11/hw11-e28094-cpu-simulated-backend",
+    "expires": "0001-01-01T00:00:00Z",
+    "created": "2026-11-16T16:02:30Z",
+    "updated": "2026-11-16T16:02:30Z",
+    "updatedBy": "Anonymous",
+    "createdBy": "Anonymous",
+    "version": 1,
+    "hasAcl": false,
+    "isFolder": false,
+    "apiVersion": "v0alpha1",
+    "folderId": 0,
+    "folderUid": "",
+    "folderTitle": "General",
+    "folderUrl": "",
+    "provisioned": true,
+    "provisionedExternalId": "hw11.json",
+    "annotationsPermissions": {
+      "dashboard": {
+        "canAdd": false,
+        "canEdit": false,
+        "canDelete": false
+      },
+      "organization": {
+        "canAdd": false,
+        "canEdit": false,
+        "canDelete": false
+      }
+    }
+  },
+  "dashboard": {
+    "id": 1,
+    "panels": [
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "unit": "s"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 0
+        },
+        "id": 1,
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, sum by (le,pod) (rate(api_ttfc_seconds_bucket[30s])))",
+            "legendFormat": "{{pod}} {{outcome}}",
+            "refId": "A"
+          }
+        ],
+        "title": "p95 TTFC, s",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "unit": "s"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 0
+        },
+        "id": 2,
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, sum by (le,pod) (rate(api_duration_seconds_bucket[30s])))",
+            "legendFormat": "{{pod}} {{outcome}}",
+            "refId": "A"
+          }
+        ],
+        "title": "p95 full response, s",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "unit": "short"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 8
+        },
+        "id": 3,
+        "targets": [
+          {
+            "expr": "api_running",
+            "legendFormat": "{{pod}} {{outcome}}",
+            "refId": "A"
+          }
+        ],
+        "title": "running / Pod",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "unit": "short"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 8
+        },
+        "id": 4,
+        "targets": [
+          {
+            "expr": "api_waiting",
+            "legendFormat": "{{pod}} {{outcome}}",
+            "refId": "A"
+          }
+        ],
+        "title": "waiting / Pod",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "unit": "short"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 16
+        },
+        "id": 5,
+        "targets": [
+          {
+            "expr": "sum by(pod) (rate(api_requests_total{outcome=\"completed\"}[30s]))",
+            "legendFormat": "{{pod}} {{outcome}}",
+            "refId": "A"
+          }
+        ],
+        "title": "completed requests/s",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "unit": "short"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 16
+        },
+        "id": 6,
+        "targets": [
+          {
+            "expr": "sum by(pod,outcome) (rate(api_requests_total{outcome!=\"completed\"}[30s]))",
+            "legendFormat": "{{pod}} {{outcome}}",
+            "refId": "A"
+          }
+        ],
+        "title": "errors and rejections/s",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "unit": "short"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 24
+        },
+        "id": 7,
+        "targets": [
+          {
+            "expr": "sum by(pod) (rate(container_cpu_usage_seconds_total{namespace=\"hw11\",container=\"api\"}[30s]))",
+            "legendFormat": "{{pod}} {{outcome}}",
+            "refId": "A"
+          }
+        ],
+        "title": "CPU cores / Pod",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "unit": "short"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 24
+        },
+        "id": 8,
+        "targets": [
+          {
+            "expr": "sum by(pod) (container_memory_working_set_bytes{namespace=\"hw11\",container=\"api\"})",
+            "legendFormat": "{{pod}} {{outcome}}",
+            "refId": "A"
+          }
+        ],
+        "title": "RAM bytes / Pod",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "unit": "short"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 32
+        },
+        "id": 9,
+        "targets": [
+          {
+            "expr": "sum(kube_pod_status_ready{namespace=\"hw11\",condition=\"true\",pod=~\"api-.*\"})",
+            "legendFormat": "{{pod}} {{outcome}}",
+            "refId": "A"
+          }
+        ],
+        "title": "Ready replicas",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "unit": "s"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 32
+        },
+        "id": 10,
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, sum by(le,pod) (rate(api_queue_seconds_bucket[30s])))",
+            "legendFormat": "{{pod}} {{outcome}}",
+            "refId": "A"
+          }
+        ],
+        "title": "p95 queue, s",
+        "type": "timeseries"
+      }
+    ],
+    "refresh": "5s",
+    "schemaVersion": 41,
+    "tags": [
+      "hw11",
+      "simulated"
+    ],
+    "time": {
+      "from": "now-1h",
+      "to": "now"
+    },
+    "title": "HW11 — CPU simulated backend",
+    "uid": "hw11",
+    "version": 1
+  }
+}

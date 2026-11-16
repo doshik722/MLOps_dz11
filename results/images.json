@@ -1,0 +1,125 @@
+[
+  {
+    "Id": "sha256:36444e91bfd72b64d0b5fa1385bd824a48317130e3526f14d2ae81a181a8d298",
+    "RepoTags": [
+      "hw11-api:0.1.0"
+    ],
+    "RepoDigests": [
+      "hw11-api@sha256:36444e91bfd72b64d0b5fa1385bd824a48317130e3526f14d2ae81a181a8d298"
+    ],
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": "2026-11-16T15:54:58.38551302Z",
+    "Config": {
+      "User": "10001",
+      "ExposedPorts": {
+        "8080/tcp": {}
+      },
+      "Env": [
+        "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "LANG=C.UTF-8",
+        "GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305",
+        "PYTHON_VERSION=3.12.12",
+        "PYTHON_SHA256=fb85a13414b028c49ba18bbd523c2d055a30b56b18b92ce454ea2c51edc656c4",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONDONTWRITEBYTECODE=1"
+      ],
+      "Cmd": [
+        "python",
+        "-m",
+        "uvicorn",
+        "app:app",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "8080",
+        "--timeout-graceful-shutdown",
+        "60",
+        "--no-access-log"
+      ],
+      "WorkingDir": "/app",
+      "ArgsEscaped": true
+    },
+    "Architecture": "amd64",
+    "Os": "linux",
+    "Size": 449963946,
+    "RootFS": {
+      "Type": "layers",
+      "Layers": [
+        "sha256:9eb9a78eeb101ab215acf43ffb2a709d5fca9ca2a22178564c7ee5cc30774c60",
+        "sha256:9a0912b10e7336b5032c96abfaaad92f0fba6c03cbb315ea5f9ff37442520911",
+        "sha256:78a4eeeff9630145665d0439c75b49eb0fb4ae92de07a5fa541365d8587ac5aa",
+        "sha256:1f6b48d1b8f31d448ca0c4f981b51eaec48e38809d015e7d941534aa12c452b6",
+        "sha256:89d696dc45516be6d47e09227570af96c3fbdd2c40fd41ca2917d407f917b9e8",
+        "sha256:2af88eda93cc96b78383c59d7b106bf3fb8d27ea684a856a92d17f21a62f58fe",
+        "sha256:3acbed1072dee7d3fd03841548f1b3320410fc6aff104b814e7049404000cab9",
+        "sha256:32fa72be9c6ca2920d49449160090e762dc659646430f945e1e688d9d9b0c3de"
+      ]
+    },
+    "Metadata": {
+      "LastTagTime": "2026-11-16T15:55:03.662558416Z"
+    },
+    "Descriptor": {
+      "mediaType": "application/vnd.oci.image.index.v1+json",
+      "digest": "sha256:36444e91bfd72b64d0b5fa1385bd824a48317130e3526f14d2ae81a181a8d298",
+      "size": 856
+    },
+    "Identity": {
+      "Build": [
+        {
+          "Ref": "9mokc8ubogqr733d9wkt7jv45",
+          "CreatedAt": "2026-11-16T15:55:06.183352744Z"
+        }
+      ]
+    }
+  },
+  {
+    "Id": "sha256:7416a61b42b1662ca6ca89f02028ac133a309a2a30ba309614e8ec94d976dc5a",
+    "RepoTags": [
+      "kindest/node:v1.34.0"
+    ],
+    "RepoDigests": [
+      "kindest/node@sha256:7416a61b42b1662ca6ca89f02028ac133a309a2a30ba309614e8ec94d976dc5a"
+    ],
+    "Created": "2025-08-27T17:20:56.634393738Z",
+    "Config": {
+      "Env": [
+        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "container=docker",
+        "HTTP_PROXY=",
+        "HTTPS_PROXY=",
+        "NO_PROXY="
+      ],
+      "Entrypoint": [
+        "/usr/local/bin/entrypoint",
+        "/sbin/init"
+      ],
+      "WorkingDir": "/",
+      "StopSignal": "SIGRTMIN+3"
+    },
+    "Architecture": "amd64",
+    "Os": "linux",
+    "Size": 1451189504,
+    "RootFS": {
+      "Type": "layers",
+      "Layers": [
+        "sha256:cf2281e6e29253dfa9541891e04359c0e5bbcf47bd2681db58a6ec793c02ce9e",
+        "sha256:407f758fc2e76408f1478c6fb24d2147bed8816f8290353d11549a28935bd642"
+      ]
+    },
+    "Metadata": {
+      "LastTagTime": "2026-11-16T15:59:21.696361675Z"
+    },
+    "Descriptor": {
+      "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+      "digest": "sha256:7416a61b42b1662ca6ca89f02028ac133a309a2a30ba309614e8ec94d976dc5a",
+      "size": 741
+    },
+    "Identity": {
+      "Pull": [
+        {
+          "Repository": "docker.io/kindest/node"
+        }
+      ]
+    }
+  }
+]

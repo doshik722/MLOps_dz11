@@ -1,0 +1,12 @@
+{"unix": 1794844506.3481503, "stage": "build", "exit_code": 0, "args": ["pwsh", "-NoProfile", "-File", "stand.ps1", "build"]}
+{"unix": 1794844836.7229242, "stage": "up", "exit_code": 0, "args": ["pwsh", "-NoProfile", "-File", "stand.ps1", "up"]}
+{"unix": 1794847590.2698286, "stage": "balance", "exit_code": 0, "args": ["D:\\downloads_programs\\Git_hub_progr\\Labs_MLops\\hw11\\.venv\\Scripts\\python.exe", "-u", "experiments.py", "balance"]}
+{"unix": 1794848094.4758704, "stage": "c", "exit_code": 0, "args": ["D:\\downloads_programs\\Git_hub_progr\\Labs_MLops\\hw11\\.venv\\Scripts\\python.exe", "-u", "experiments.py", "c"]}
+{"unix": 1794848094.9212458, "stage": "repeat-verification", "exit_code": 0, "args": ["D:\\downloads_programs\\Git_hub_progr\\Labs_MLops\\hw11\\.venv\\Scripts\\python.exe", "verify_runs.py"]}
+{"unix": 1794848129.9047706, "stage": "histogram-comparison", "exit_code": 1, "args": ["D:\\downloads_programs\\Git_hub_progr\\Labs_MLops\\hw11\\.venv\\Scripts\\python.exe", "-u", "verify_metrics.py"]}
+{"unix": 1794848444.7665129, "stage": "repeat-verification", "exit_code": 0, "args": ["D:\\downloads_programs\\Git_hub_progr\\Labs_MLops\\hw11\\.venv\\Scripts\\python.exe", "verify_runs.py"]}
+{"unix": 1794848482.7807713, "stage": "histogram-comparison", "exit_code": 0, "args": ["D:\\downloads_programs\\Git_hub_progr\\Labs_MLops\\hw11\\.venv\\Scripts\\python.exe", "-u", "verify_metrics.py"]}
+{"unix": 1794848531.839824, "stage": "kubernetes-checks", "exit_code": 0, "args": ["D:\\downloads_programs\\Git_hub_progr\\Labs_MLops\\hw11\\.venv\\Scripts\\python.exe", "-m", "unittest", "discover", "-s", "tests", "-v"]}
+{"unix": 1794848535.0172582, "stage": "environment", "exit_code": 0, "args": ["D:\\downloads_programs\\Git_hub_progr\\Labs_MLops\\hw11\\.venv\\Scripts\\python.exe", "environment.py"]}
+{"unix": 1794848541.7533038, "stage": "evidence", "exit_code": 0, "args": ["D:\\downloads_programs\\Git_hub_progr\\Labs_MLops\\hw11\\.venv\\Scripts\\python.exe", "collect_evidence.py"]}
+{"unix": 1794848543.7728195, "stage": "report", "exit_code": 0, "args": ["D:\\downloads_programs\\Git_hub_progr\\Labs_MLops\\hw11\\.venv\\Scripts\\python.exe", "report.py"]}

@@ -1,0 +1,12 @@
+test_aborted_http_200_is_excluded_from_success_quantile (test_analysis.AnalysisChecks.test_aborted_http_200_is_excluded_from_success_quantile) ... ok
+test_empty_observations_have_no_quantile (test_analysis.AnalysisChecks.test_empty_observations_have_no_quantile) ... ok
+test_01_warmup_excluded_from_endpoints (test_kubernetes.KubernetesChecks.test_01_warmup_excluded_from_endpoints) ... ok
+test_02_actual_version_after_rollback (test_kubernetes.KubernetesChecks.test_02_actual_version_after_rollback) ... ok
+test_03_replacement_restores_version_and_dialog (test_kubernetes.KubernetesChecks.test_03_replacement_restores_version_and_dialog) ... ok
+test_04_rejections_and_aborts_not_counted_as_success (test_kubernetes.KubernetesChecks.test_04_rejections_and_aborts_not_counted_as_success) ... ok
+test_05_two_dialogs_are_isolated (test_kubernetes.KubernetesChecks.test_05_two_dialogs_are_isolated) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 48.154s
+
+OK

@@ -1,0 +1,55 @@
+[
+  {
+    "request_id": "d0bdedee-b047-4459-bb5c-d82d07b2cc9d",
+    "session_id": "test",
+    "pod": "api-8f779df47-9q9mg",
+    "model_version": "A",
+    "artifact_sha256": "c796351f90813595066a352358f9ba79e85673189b18af54c83416bbb6223788",
+    "backend_mode": "simulated",
+    "client_ip": "127.0.0.1",
+    "index": 0,
+    "content": "A:Сохранённая история|ROLLBACK-CONTROL:0",
+    "history_sha256": "973266939c012bf9357902b50aa68341061633089f9317b2ed61c50ebff4605a",
+    "queue_seconds": 0.0002862130004359642,
+    "cache_hit": false
+  },
+  {
+    "request_id": "d0bdedee-b047-4459-bb5c-d82d07b2cc9d",
+    "session_id": "test",
+    "pod": "api-8f779df47-9q9mg",
+    "model_version": "A",
+    "artifact_sha256": "c796351f90813595066a352358f9ba79e85673189b18af54c83416bbb6223788",
+    "backend_mode": "simulated",
+    "client_ip": "127.0.0.1",
+    "index": 1,
+    "content": "A:Сохранённая история|ROLLBACK-CONTROL:1",
+    "history_sha256": "973266939c012bf9357902b50aa68341061633089f9317b2ed61c50ebff4605a",
+    "queue_seconds": 0.0002862130004359642,
+    "cache_hit": false
+  },
+  {
+    "request_id": "d0bdedee-b047-4459-bb5c-d82d07b2cc9d",
+    "session_id": "test",
+    "pod": "api-8f779df47-9q9mg",
+    "model_version": "A",
+    "artifact_sha256": "c796351f90813595066a352358f9ba79e85673189b18af54c83416bbb6223788",
+    "backend_mode": "simulated",
+    "client_ip": "127.0.0.1",
+    "index": 2,
+    "content": "A:Сохранённая история|ROLLBACK-CONTROL:2",
+    "history_sha256": "973266939c012bf9357902b50aa68341061633089f9317b2ed61c50ebff4605a",
+    "queue_seconds": 0.0002862130004359642,
+    "cache_hit": false
+  },
+  {
+    "request_id": "d0bdedee-b047-4459-bb5c-d82d07b2cc9d",
+    "session_id": "test",
+    "pod": "api-8f779df47-9q9mg",
+    "model_version": "A",
+    "artifact_sha256": "c796351f90813595066a352358f9ba79e85673189b18af54c83416bbb6223788",
+    "backend_mode": "simulated",
+    "client_ip": "127.0.0.1",
+    "done": true,
+    "parts": 3
+  }
+]

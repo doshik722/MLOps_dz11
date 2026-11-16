@@ -25,6 +25,10 @@ switch($Action) {
   }
   'ports' {
     Write-Host 'Grafana: http://127.0.0.1:13000 ; Prometheus: http://127.0.0.1:19090'
+    try {
+      $dashboard=Invoke-RestMethod -Uri 'http://127.0.0.1:13000/api/dashboards/uid/hw11' -TimeoutSec 2
+      if($dashboard.dashboard.uid -eq 'hw11') { Write-Host 'Просмотр этого стенда уже работает.'; return }
+    } catch {}
     Start-Process -FilePath 'kubectl' -ArgumentList @('-n','hw11','port-forward','service/prometheus','19090:9090') -WindowStyle Hidden
     kubectl -n hw11 port-forward service/grafana 13000:3000
   }
@@ -32,6 +36,16 @@ switch($Action) {
     kubectl -n hw11 get pods,services,hpa
   }
   'down' {
+    $pidFile=Join-Path $PSScriptRoot 'logs\view-pids.json'
+    if(Test-Path -LiteralPath $pidFile) {
+      $ownedViews=Get-Content -LiteralPath $pidFile -Raw | ConvertFrom-Json
+      foreach($property in $ownedViews.PSObject.Properties) {
+        $viewProcess=Get-CimInstance Win32_Process -Filter "ProcessId=$($property.Value)" -ErrorAction SilentlyContinue
+        if($viewProcess -and $viewProcess.CommandLine.Contains($PSScriptRoot) -and $viewProcess.Name -in @('kubectl.exe','python.exe')) {
+          Stop-Process -Id $viewProcess.ProcessId -ErrorAction SilentlyContinue
+        }
+      }
+    }
     # Удаляется только отдельный кластер этого задания, Docker volumes других ДЗ не затрагиваются.
     & $kind delete cluster --name hw11; Check-Exit
   }

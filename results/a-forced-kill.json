@@ -1,0 +1,39 @@
+{
+  "kill_unix": 1794845626.9043036,
+  "container_id": "651aaf67011017379b36aff130d05efc8d3111f509afedae0ac20614d7e1df31",
+  "node_pid": 8177,
+  "row": {
+    "run_id": "a-long",
+    "request_id": "forced-kill",
+    "client": 0,
+    "planned_mono": 367438.5100919,
+    "sent_mono": 367438.5101731,
+    "sent_unix": 1794845625.1904118,
+    "send_lag_seconds": 8.11999780125916e-05,
+    "status": 200,
+    "outcome": "aborted",
+    "first_mono": 367438.8952733,
+    "end_mono": 367441.7037514,
+    "pod": "api-8f779df47-9d5ql",
+    "model_version": "A",
+    "parts": 2,
+    "intervals_seconds": [
+      1.0111691000056453
+    ],
+    "queue_seconds": 0.00027591499997470237,
+    "cache_hit": false,
+    "server_client_ip": "127.0.0.1",
+    "backend_mode": "simulated",
+    "error": "RemoteProtocolError",
+    "end_unix": 1794845628.3837783,
+    "ttfc_seconds": 0.38510020001558587,
+    "total_seconds": 3.1935783000080846
+  },
+  "recovered": {
+    "ready": true,
+    "pod": "api-8f779df47-9d5ql",
+    "model_version": "A",
+    "artifact_sha256": "c796351f90813595066a352358f9ba79e85673189b18af54c83416bbb6223788",
+    "backend_mode": "simulated"
+  }
+}
