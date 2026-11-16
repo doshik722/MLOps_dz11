@@ -1,0 +1,6 @@
+apiVersion: v2
+name: hw11
+description: Kubernetes CPU simulator with probes, streaming and monitoring
+type: application
+version: 0.1.0
+appVersion: "0.1.0"

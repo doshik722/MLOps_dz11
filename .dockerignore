@@ -1,0 +1,8 @@
+.venv
+.git
+tools
+results
+logs
+homework11.html
+report.html
+__pycache__

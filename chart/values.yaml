@@ -1,0 +1,27 @@
+image: hw11-api:0.1.0
+replicas: 2
+modelVersion: A
+warmupSeconds: 20
+failLoad: false
+brokenProbes: false
+maxRunning: 1
+maxWaiting: 8
+cacheCapacity: 16
+hitCpuSeconds: 0.04
+missCpuSeconds: 0.24
+chunkCpuSeconds: 0.01
+resources:
+  requests:
+    cpu: 250m
+    memory: 80Mi
+  limits:
+    cpu: 600m
+    memory: 192Mi
+hpa:
+  enabled: false
+  targetCPU: 65
+  downWindowSeconds: 30
+monitoring:
+  prometheusImage: prom/prometheus:v3.5.0
+  grafanaImage: grafana/grafana:12.1.1
+  stateImage: registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.17.0
